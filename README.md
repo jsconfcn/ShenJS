@@ -3,4 +3,4 @@
 > Shenjs is the biggest JavaScript conference in China, Shenzhen.
 
 ### Join us in Slack  
-![https://shenjs.herokuapp.com](https://shenjs.herokuapp.com/badge.svg)
+[![shenjs on slack](https://shenjs.herokuapp.com/badge.svg)](https://shenjs.herokuapp.com)
