@@ -1,0 +1,33 @@
+# SRC = $(wildcard lib/*/*.js)
+# HTML = $(wildcard lib/*/*.html)
+# TEMPLATES = $(HTML:.html=.js)
+# LESS = $(wildcard lib/*/*.less)
+# CSS = $(LESS:.less=.css)
+
+# build: components $(SRC) $(TEMPLATES) $(CSS)
+# 	@component build --verbose --out . --name assets
+
+# components: component.json
+# 	@component install
+
+# %.js: %.html
+# 	@component convert $<
+
+# %.css: %.less
+# 	@lessc $< $@
+
+# clean:
+# 	rm -fr build components $(TEMPLATES)
+
+# .PHONY: clean
+dev: install
+	@./node_modules/.bin/gulp development --open --port 4000
+
+install:
+	@npm install
+	@./node_modules/.bin/bower install
+
+build: install
+	@./node_modules/.bin/gulp
+
+.PHONY: dev install build

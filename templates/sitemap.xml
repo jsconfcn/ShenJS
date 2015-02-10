@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for post in blog %}
+  <url>
+    <loc>{{ site.url }}/{{ post.path }}</loc>
+    <lastmod>{{ post.date | date("Y-m-d") }}</lastmod>
+  </url>
+  {% endfor %}
+  <url>
+    <loc>{{ site.url }}/</loc>
+    <lastmod>{{ date | date("Y-m-d") }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/about</loc>
+    <lastmod>{{ date | date("Y-m-d") }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/blog</loc>
+    <lastmod>{{ date | date("Y-m-d") }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/privacy</loc>
+    <lastmod>{{ date | date("Y-m-d") }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/tos</loc>
+    <lastmod>{{ date | date("Y-m-d") }}</lastmod>
+  </url>
+</urlset>

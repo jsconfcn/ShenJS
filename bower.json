@@ -1,0 +1,8 @@
+{
+    "name": "Wiredcraft",
+    "version": "0.2.0",
+    "devDependencies": {
+        "jquery": "*",
+        "highlightjs": "*"
+    }
+}

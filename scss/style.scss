@@ -1,0 +1,88 @@
+/* Eggshell */
+
+$font: 'Roboto', Arial, sans;
+
+@import 'eggshell';
+
+/* Variables */
+
+$width: 960px;
+$code: 'Lucida Sans Typewriter', 'Lucida Console', Monaco, 'Bitstream Vera Sans Mono', monospace;
+
+/* Grayscale fix (see https://github.com/sass/libsass/issues/151#issuecomment-33536506) */
+
+@function grayscale($value) {
+  @return #{ "grayscale(" + $value + ")" };
+}
+
+/* General */
+
+body {
+  padding: 2*$gutter;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: $width;
+  text-align: left;
+  width: 90%;
+}
+
+code {
+  font-family: $code;
+}
+
+/* Header */
+
+#header {
+  
+  .wrapper {
+    border-bottom: 1px solid $line;
+    @include clearfix;
+    margin-bottom: 2*$gutter;
+    padding-bottom: 2*$gutter;
+  }
+  .logo {
+    float: left;
+    font-weight: bold;
+  }
+  .menu {
+    float: right;
+  }
+}
+
+/* Content */
+
+#content {
+  .action {
+    form * {
+      display: inline;
+      vertical-align: middle;
+    }
+  }
+  .social {
+    @import '_social.scss';
+  }
+}
+
+/* Footer */
+
+#footer {
+  .wrapper {
+    border-top: 1px solid $line;
+    @include font-size($small);
+    margin-top: 2*$gutter;
+    opacity: 0.8;
+    padding-top: 2*$gutter;
+  }
+}

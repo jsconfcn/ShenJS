@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+
+  <title>{{ title }} | {{ site.name }}</title>
+
+  <meta http-equiv='Content-Language' content='en'/>
+  <meta name='keywords' content='{{ site.keywords | join(", ") }}{% if tags %}, {{ tags | join(", ") }}{% endif %}'/>
+  {% if site.description %}<meta name='description' content='{{ site.description }}'/>{% endif %}
+  
+  <!-- Favicons -->
+  {% include 'partials/_favicons.html' %}
+
+  <!-- CSS -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link href='/assets/styles.css' rel='stylesheet' type='text/css'/>
+</head>
+<body class='page-{{ path | default("front") }}'>
+  <header id='header'>
+    <section class='wrapper'>
+      <a href='/' class='logo'>{{ site.name }}</a>
+      
+      <nav class='menu'>
+        <a href='/work'>See on GitHub</a>
+      </nav>
+    </section>
+  </header>
+
+  <section id='content'>
+    {% block content %}{{ contents | safe }}{% endblock %}
+  </section>
+
+  <footer id='footer'>
+    <section class='wrapper'>
+      Built by <a href='http://wiredcraft.com'>Wiredcraft</a>
+    </section>
+  </footer>
+
+  <!-- JS -->
+  <script src='/assets/scripts.js' type='text/javascript'></script>
+  <!--[if lt IE 9]><script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script><![endif]-->
+  {% if site.gauges %}{% include 'partials/_gauges.html' %}{% endif %}
+	{% if site.ga %}{% include 'partials/_ga.html' %}{% endif %}
+</body>
+</html>

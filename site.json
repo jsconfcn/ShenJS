@@ -1,0 +1,64 @@
+{
+    "source": "./source",
+    "destination": "./_site",
+    "metadata": {
+        "site": {
+            "name": "Foundation",
+            "description": "A simple static website boilerplate with Metalsmith & Gulp",
+            "url": "http://github.com/Wiredcraft/foundation",
+            "author": "Wiredcraft",
+            "email": "info@wiredcraft.com",
+            "keywords": [
+                "Wiredcraft",
+                "Metalsmith.io",
+                "static website",
+                "Gulp"
+            ]
+        }
+    },
+    "metalsmith": {
+        "metalsmith-markdown": {
+            "xhtml": true
+        },
+        "metalsmith-include": {},
+        "metalsmith-drafts": {},
+        "metalsmith-build-date": true,
+        "metalsmith-collections": {
+            "blog": {
+                "sortBy": "date",
+                "reverse": true
+            },
+            "team": {
+                "sortBy": "title"
+            }
+        },
+        "metalsmith-excerpts": true,
+        "metalsmith-permalinks": {},
+        "metalsmith-templates": {
+            "engine": "swig",
+            "cache": false,
+            "default": "default.html",
+            "directory": "./templates"
+        },
+        "metalsmith-assets": null
+    },
+    "assets": {
+        "vendor": {
+            "js": [
+                "bower_components/jquery/dist/jquery.js",
+                "bower_components/highlightjs/highlight.pack.js"
+            ],
+            "css": [
+                "bower_components/highlightjs/styles/github.css"
+            ]
+        },
+        "custom": {
+            "js": [
+                "js/*.js"
+            ],
+            "scss": [
+                "scss/**/*.{scss,sass}"
+            ]
+        }
+    }
+}
