@@ -1,0 +1,16 @@
+{
+  "name": "substitute",
+  "repo": "segmentio/substitute",
+  "version": "0.0.1",
+  "description": "substitute :props in strings.",
+  "main": "index.js",
+  "scripts": ["index.js"],
+  "version": "0.0.1",
+  "dependencies": {},
+  "development": {
+    "visionmedia/mocha-matrix": "*",
+    "visionmedia/mocha": "*",
+    "component/assert": "*",
+    "yields/gravy": "*"
+  }
+}

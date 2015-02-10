@@ -45,7 +45,8 @@ code {
 /* Header */
 
 #header {
-  
+  @include clearfix;
+
   .wrapper {
     border-bottom: 1px solid $line;
     @include clearfix;
@@ -85,4 +86,66 @@ code {
     opacity: 0.8;
     padding-top: 2*$gutter;
   }
+}
+
+
+
+
+/// SHENJS
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* GENERALITY ABOUT SECTION */
+section {
+  background-color: white;
+  min-height: 200px;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
+.section-annonce {
+  background-color: rgb(64, 128, 255);
+  color: white;
+  min-height: 600px;
+  height: 100%;
+
+  a, h1 {
+    color: white;
+  }
+
+  img, h1, p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  img {
+    margin-top: 30px;
+  }
+}
+
+.section-callforaction {
+  background-color: rgb(214,229,255);
+  color: blue;
+  padding: 40px;
+  min-height: 400px;
+
+  .clock {
+    font-size: 2em;
+    
+    .times {
+      font-size: 1em;
+    }
+  }
+
+}
+
+.section-infos {
+  background-color: white;
+  height: 600px;
+
 }

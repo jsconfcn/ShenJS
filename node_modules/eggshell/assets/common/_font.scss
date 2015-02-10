@@ -1,0 +1,13 @@
+@mixin font-size($size: $normal) {
+  font-size: $size + px;
+  font-size: ($size/10) + rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @include font-size();
+  line-height: 140%;
+}

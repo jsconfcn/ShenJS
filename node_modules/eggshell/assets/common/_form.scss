@@ -1,0 +1,66 @@
+/* Forms */
+
+form {
+  line-height: 140%;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: $gutter/4;
+}
+
+input,
+textarea,
+select {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input:not([type=submit]),
+textarea,
+.select select {
+  background: $light;
+  border: 1px solid $line;
+  border-radius: $radius;
+  padding: $gutter/5 $gutter/2;
+  @include transition-property(background, border);
+  @include transition-duration(0.2s);
+  &:hover {
+    border-color: shade($line, 20%);
+  }
+  &:active,
+  &:focus {
+    background: #FFF;
+    border-color: $blue;
+    outline: none;
+  }
+  &[disabled],
+  &[disabled=disabled],
+  &[disabled=true],
+  &[disabled],
+  &[readonly=true],
+  &[readonly=readonly],
+  &[readonly] {
+    border-color: $light;
+    &:active,
+    &:focus,
+    &:hover {
+      background: $light;
+      border-color: $light;
+    }
+  }
+}
+
+.select {
+  cursor: pointer;
+  display: inline-block;
+  & > select {
+    @include appearance(none);
+    background: #FFF;
+    cursor: pointer;
+  }
+}

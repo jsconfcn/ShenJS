@@ -1,0 +1,40 @@
+@mixin arrow($position: left, $color: $black, $size: 5px) {
+  content: '';
+  position: absolute;
+  @if $position == top {
+    border-left: $size solid transparent;
+    border-top-color: $color;
+    border-bottom: $size solid $color;
+    border-right: $size solid transparent;
+    left: 50%;
+    top: -$size;
+    @include transform(translateX(-50%));
+  }
+  @else if $position == right {
+    border-top: $size solid transparent;
+    border-right-color: $color;
+    border-left: $size solid $color;
+    border-bottom: $size solid transparent;
+    right: -$size;
+    top: 50%;
+    @include transform(translateY(-50%));
+  }
+  @else if $position == bottom {
+    border-right: $size solid transparent;
+    border-bottom-color: $color;
+    border-top: $size solid $color;
+    border-left: $size solid transparent;
+    bottom: -$size;
+    left: 50%;
+    @include transform(translateX(-50%));
+  }
+  @else {
+    border-bottom: $size solid transparent;
+    border-left-color: $color;
+    border-right: $size solid $color;
+    border-top: $size solid transparent;
+    left: -$size;
+    top: 50%;
+    @include transform(translateY(-50%));
+  }
+}

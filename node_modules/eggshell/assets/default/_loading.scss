@@ -1,0 +1,33 @@
+.loading {
+  position: relative;
+  @include user-select(none);
+  &:before {
+    background: rgba(255, 255, 255, 0.8);
+    bottom: 0;
+    content: ' ';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 999;
+  }
+  &:after {
+    background: $black;
+    border: 1px solid #000;
+    border-radius: 50%;
+    color: #FFF;
+    content: 'L';
+    @include font-size($large);
+    @include icon();
+    left: 50%;
+    line-height: 1;
+    margin-left: -1.7rem;
+    margin-top: -1.7rem;
+    opacity: 0.3;
+    padding: 0.5rem;
+    position: absolute;
+    @include spin(1.2s);
+    top: 50%;
+    z-index: 999;
+  }
+}

@@ -1,0 +1,20 @@
+code,
+.code {
+  background: $light;
+  border: 1px solid $line;
+  border-radius: $radius;
+  display: inline-block;
+  font-family: 'Lucidatypewriter', monospace;
+  @include font-size($smaller);
+  line-height: 140%;
+  padding: 0 $gutter/4;
+}
+
+pre {
+  code,
+  .code {
+    display: block;
+    padding: $gutter/4 $gutter/2;
+    white-space: pre-wrap;
+  }
+}

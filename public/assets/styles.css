@@ -1272,6 +1272,10 @@ code {
   font-family: 'Lucida Sans Typewriter', 'Lucida Console', Monaco, 'Bitstream Vera Sans Mono', monospace; }
 
 /* Header */
+#header:after {
+  content: "";
+  display: table;
+  clear: both; }
 #header .wrapper {
   border-bottom: 1px solid #dde0e2;
   margin-bottom: 40px;
@@ -1397,3 +1401,43 @@ code {
   margin-top: 40px;
   opacity: 0.8;
   padding-top: 40px; }
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+/* GENERALITY ABOUT SECTION */
+section {
+  background-color: white;
+  min-height: 200px;
+  position: relative;
+  text-align: center;
+  padding: 20px; }
+
+.section-annonce {
+  background-color: #4080ff;
+  color: white;
+  min-height: 600px;
+  height: 100%; }
+  .section-annonce a, .section-annonce h1 {
+    color: white; }
+  .section-annonce img, .section-annonce h1, .section-annonce p {
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .section-annonce img {
+    margin-top: 30px; }
+
+.section-callforaction {
+  background-color: #d6e5ff;
+  color: blue;
+  padding: 40px;
+  min-height: 400px; }
+  .section-callforaction .clock {
+    font-size: 2em; }
+    .section-callforaction .clock .times {
+      font-size: 1em; }
+
+.section-infos {
+  background-color: white;
+  height: 600px; }

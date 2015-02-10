@@ -3,7 +3,7 @@
     "destination": "./_site",
     "metadata": {
         "site": {
-            "name": "Foundation",
+            "name": "ShenJS",
             "description": "A simple static website boilerplate with Metalsmith & Gulp",
             "url": "http://github.com/Wiredcraft/foundation",
             "author": "Wiredcraft",

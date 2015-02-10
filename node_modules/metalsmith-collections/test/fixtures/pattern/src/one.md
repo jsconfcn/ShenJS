@@ -1,0 +1,5 @@
+---
+collection: articles
+---
+
+one

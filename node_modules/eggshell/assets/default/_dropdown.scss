@@ -1,0 +1,44 @@
+.dropdown {
+  @include dropdown(true);
+  > *:first-child {
+    cursor: pointer;
+  }
+  > a,
+  .options > a {
+    color: inherit;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .options {
+    background: #FFF;
+    border: 1px solid $line;
+    border-radius: $radius;
+    box-shadow: rgba(0, 0, 0, 0.03) 0 1px 0 0;
+    > .item,
+    > a {
+      display: block;
+      margin: $gutter/5 0;
+      padding: $gutter/5 $gutter/2;
+      white-space: nowrap;
+      @include transition-property(background);
+      @include transition-duration(0.2s);
+      &:hover {
+        background: $light;
+      }
+    }
+    .separated{
+      margin-top: $gutter/2;
+      position: relative;
+      &:after {
+        content: ' ';
+        display: block;
+        border-top: 1px solid $line;
+        left: 0;
+        position: absolute;
+        top: -$gutter/4;
+        width: 100%;
+      }
+    }
+  }
+}

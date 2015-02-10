@@ -1,0 +1,49 @@
+.notification {
+  background: $light;
+  border-radius: $radius;
+  display: block;
+  margin-bottom: $gutter;
+  padding: $gutter/2 1.5*$gutter/2;
+  &.error,
+  &.info,
+  &.ok,
+  &.undefined,
+  &.warning { color: #FFF; }
+  &.error { background: $red; }
+  &.info { background: $blue; }
+  &.ok { background: $green; }
+  &.undefined { background: $purple; }
+  &.warning {
+    background: tint($yellow, 40%);
+    color: shade($yellow, 80%);
+  }
+  > *:last-child {
+    margin-bottom: 0;
+  }
+  a {
+    color: inherit;
+    text-decoration: underline;
+    &:active,
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .close {
+    color: inherit;
+    float: right;
+    opacity: 0.7;
+    text-decoration: none;
+    @include transition-property(opacity);
+    @include transition-duration(0.2s);
+    &:hover {
+      opacity: 1;
+    }
+    &:before {
+      @include icon();
+      content: 'x';
+    }
+    span {
+      display: none;
+    }
+  }
+}

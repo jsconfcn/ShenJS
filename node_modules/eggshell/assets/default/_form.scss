@@ -1,0 +1,83 @@
+/* Forms */
+
+.field {
+  margin-bottom: $gutter/2;
+}
+
+/* Validation */
+
+.field .status:before {
+  display: inline-block;
+  @include icon();
+  margin-left: $gutter/4;
+}
+
+.field .description {
+  color: $grey;
+  display: block;
+  @include font-size($small);
+  margin-top: $gutter/4;
+}
+
+input:not([type=submit]),
+textarea {
+  &.ng-dirty.ng-invalid {
+    border-color: $red;
+    & + .description,
+    & + .status + .description {
+      color: $red;
+    }
+    & + .status:before {
+      color: $red;
+      content: 'x';
+    }
+  }
+  &.ng-valid {
+    & + .status:before {
+      color: $green;
+      content: 'o';
+    }
+  }
+  &.processing {
+    & + .status:before {
+      color: $blue;
+      content: 'l';
+      @include spin(1.2s);
+    }
+  }
+}
+
+label,
+.label {
+  @include font-size($small);
+  color: inherit;
+  margin: 0 0 $gutter/5;
+  text-transform: uppercase;
+}
+
+.select {
+  position: relative;
+  &:after {
+    bottom: 0;
+    color: $grey;
+    @include icon();
+    content: '/';
+    cursor: pointer;
+    line-height: inherit;
+    pointer-events: none;
+    position: absolute;
+    right: $gutter/2;
+    top: 0;
+    &:hover {
+      color: inherit;
+    }
+  }
+  &:hover {
+    &:after {
+      color: inherit;
+    }
+  }
+  select {
+    padding-right: 1.5*$gutter;
+  }
+}

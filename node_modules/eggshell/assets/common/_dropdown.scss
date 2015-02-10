@@ -1,0 +1,29 @@
+@mixin dropdown($hover: false) {
+  display: inline-block;
+  position: relative;
+  .options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 999;
+    > a {
+      display: block;
+      float: none;
+      white-space: nowrap;
+      width: auto;
+    }
+  }
+  &.active .options {
+    display: block;
+  }
+  @if $hover == true {
+    &:hover {
+      .options {
+        display: block;
+      }
+    }
+    .options:hover {
+      display: block;
+    }
+  }
+}
