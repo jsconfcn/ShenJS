@@ -1,5 +1,0 @@
----
-collection: articles
----
-
-three
