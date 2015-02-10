@@ -1,6 +1,8 @@
 /* Eggshell */
 
 $font: 'Roboto', Arial, sans;
+$blue: #4E91FF;
+$light: #DBEAFF;
 
 @import 'eggshell';
 
@@ -18,7 +20,6 @@ $code: 'Lucida Sans Typewriter', 'Lucida Console', Monaco, 'Bitstream Vera Sans 
 /* General */
 
 body {
-  padding: 2*$gutter;
   text-align: center;
 }
 
@@ -45,18 +46,9 @@ code {
 /* Header */
 
 #header {
+  background: $blue;
   @include clearfix;
-
-  .wrapper {
-    border-bottom: 1px solid $line;
-    @include clearfix;
-    margin-bottom: 2*$gutter;
-    padding-bottom: 2*$gutter;
-  }
-  .logo {
-    float: left;
-    font-weight: bold;
-  }
+  color: #FFF;
   .menu {
     float: right;
   }
@@ -65,7 +57,24 @@ code {
 /* Content */
 
 #content {
+  .hero {
+    background: $blue;
+    color: #FFF;
+    .wrapper {
+      text-align: center;
+    }
+    h1 {
+      color: inherit;
+      & + p {
+        margin: 0;
+      }
+    }
+  }
+  .section {
+    padding: 2*$gutter 0;
+  }
   .action {
+    background: $light;
     form * {
       display: inline;
       vertical-align: middle;
@@ -79,73 +88,10 @@ code {
 /* Footer */
 
 #footer {
+  border-top: 1px solid $light;
+  @include font-size($small);
+  padding: $gutter 0;
   .wrapper {
-    border-top: 1px solid $line;
-    @include font-size($small);
-    margin-top: 2*$gutter;
-    opacity: 0.8;
-    padding-top: 2*$gutter;
+    text-align: center;
   }
-}
-
-
-
-
-/// SHENJS
-
-body, html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-/* GENERALITY ABOUT SECTION */
-section {
-  background-color: white;
-  min-height: 200px;
-  position: relative;
-  text-align: center;
-  padding: 20px;
-}
-
-.section-annonce {
-  background-color: rgb(64, 128, 255);
-  color: white;
-  min-height: 600px;
-  height: 100%;
-
-  a, h1 {
-    color: white;
-  }
-
-  img, h1, p {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-
-  img {
-    margin-top: 30px;
-  }
-}
-
-.section-callforaction {
-  background-color: rgb(214,229,255);
-  color: blue;
-  padding: 40px;
-  min-height: 400px;
-
-  .clock {
-    font-size: 2em;
-    
-    .times {
-      font-size: 1em;
-    }
-  }
-
-}
-
-.section-infos {
-  background-color: white;
-  height: 600px;
-
 }
