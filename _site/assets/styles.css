@@ -1396,6 +1396,21 @@ code {
   #content .social a.hn:before {
     content: 'Y';
     font-weight: bold; }
+#content .info:after {
+  content: "";
+  display: table;
+  clear: both; }
+#content .info .about, #content .info .map {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%; }
+  #content .info .about:nth-child(odd), #content .info .map:nth-child(odd) {
+    float: left;
+    padding-right: 20px; }
+  #content .info .about:nth-child(even), #content .info .map:nth-child(even) {
+    float: right;
+    padding-left: 20px; }
 
 /* Footer */
 #footer {

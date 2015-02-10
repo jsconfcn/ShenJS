@@ -43,6 +43,31 @@ code {
   font-family: $code;
 }
 
+@mixin halves($reverse: false) {
+  @include box-sizing(border-box);
+  width: 50%;
+  @if $reverse == true {
+    &:nth-child(odd) {
+      float: right;
+      padding-left: $gutter;
+    }
+    &:nth-child(even) {
+      float: left;
+      padding-right: $gutter;
+    }
+  }
+  @else {
+    &:nth-child(odd) {
+      float: left;
+      padding-right: $gutter;
+    }
+    &:nth-child(even) {
+      float: right;
+      padding-left: $gutter;
+    }
+  }
+}
+
 /* Header */
 
 #header {
@@ -82,6 +107,13 @@ code {
   }
   .social {
     @import '_social.scss';
+  }
+  .info {
+    @include clearfix;
+    .about,
+    .map {
+      @include halves;
+    }
   }
 }
 
