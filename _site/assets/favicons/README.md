@@ -1,1 +1,0 @@
-We usually use http://realfavicongenerator.net/ to generate a series of favicon images. For the smallest sizes (16x16 for example), you may prefer to design custom pixel art favicons to ensure they are readable and contrasted.
