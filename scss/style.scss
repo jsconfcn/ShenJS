@@ -43,6 +43,33 @@ code {
   font-family: $code;
 }
 
+.button,
+a.button {
+  border-radius: 2*$gutter;
+  border: 2px solid $blue;
+  @include transition-property(background, border);
+  @include transition-duration(0.2s);
+  &:hover,
+  &:focus {
+    border-color: tint($blue, 10%);
+  }
+  &:active,
+  &.active {
+    border-color: shade($blue, 10%);
+  }
+}
+
+input:not([type=submit]),
+textarea {
+  border-color: $light;
+  border-radius: 2*$gutter;
+  &:hover,
+  &:focus {
+    background: #FFF;
+    border-color: $light;
+  }
+}
+
 @mixin halves($reverse: false) {
   @include box-sizing(border-box);
   width: 50%;
@@ -74,8 +101,24 @@ code {
   background: $blue;
   @include clearfix;
   color: #FFF;
+  padding: $gutter;
   .menu {
     float: right;
+    a {
+      border: 2px solid tint($blue, 30%);
+      border-radius: 50%;
+      color: tint($blue, 30%);
+      display: block;
+      height: $gutter;
+      padding: $gutter/2;
+      width: $gutter;
+      @include transition-property(border, color);
+      @include transition-duration(0.2s);
+      &:hover {
+        border-color: #FFF;
+        color: #FFF;
+      }
+    }
   }
 }
 
@@ -90,23 +133,71 @@ code {
     }
     h1 {
       color: inherit;
+      @include font-size($gigantic);
+      &:before {
+        @include icon;
+        content: '0';
+        display: block;
+        @include font-size(64);
+        margin-bottom: $gutter;
+      }
       & + p {
+        color: tint($blue, 80%);
+        @include font-size($larger);
         margin: 0;
       }
     }
   }
   .section {
-    padding: 2*$gutter 0;
+    padding: 4*$gutter 0;
   }
   .action {
     background: $light;
+    .wrapper {
+      text-align: center;
+    }
     form * {
-      display: inline;
+      display: inline-block;
       vertical-align: middle;
     }
-  }
-  .social {
-    @import '_social.scss';
+    .button,
+    input:not([type=submit]),
+    textarea {
+      border: 0;
+      line-height: 180%;
+      font-family: $font;
+      font-size: inherit;
+      padding: $gutter/2 1.5*$gutter;
+    }
+    input:not([type=submit]),
+    textarea {
+      background: #FFF;
+      border-radius: 2*$gutter 0 0 2*$gutter;
+    }
+    .button {
+      border-radius: 0 2*$gutter 2*$gutter 0;
+      margin-left: -$gutter/4;
+    }
+    .countdown {
+      @include clearfix;
+      margin-bottom: 4*$gutter;
+      span {
+        display: inline-block;
+        text-align: center;
+        margin: 0 $gutter;
+      }
+      strong {
+        color: $black;
+        display: block;
+        @include font-size($huge);
+        margin: 0 auto $gutter/4;
+      }
+    }
+    .social {
+      @include clearfix;
+      @import '_social.scss';
+      margin-top: $gutter;
+    }
   }
   .info {
     @include clearfix;

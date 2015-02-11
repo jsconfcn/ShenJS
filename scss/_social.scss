@@ -1,13 +1,7 @@
 a {
-  border: 1px solid $line;
-  border-right-width: 0;
-  color: $grey;
-  display: inline-block;
+  @include font-size($huge);
   padding: $gutter/2 1.5*$gutter/2;
   @include tooltip;
-  &:hover {
-    text-decoration: none;
-  }
   &:first-child {
     border-radius: $radius 0 0 $radius;
   }
@@ -22,13 +16,17 @@ a {
     &:hover { color: $black; }
     &:before { content: 'm'; }
   }
+  &.github {
+    &:hover { color: $black; }
+    &:before { content: 'g'; }
+  }
   &.facebook {
     &:hover { color: #3B5998; }
     &:before { content: 'f'; }
   }
   &.google {
     &:hover { color: #d64937; }
-    &:before { content: 'g'; }
+    &:before { content: 'p'; }
   }
   &.linkedin {
     &:hover { color: #0073b2; }
