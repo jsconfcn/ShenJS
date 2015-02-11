@@ -1,0 +1,4 @@
+Sitemap: http://github.com/Wiredcraft/foundation/sitemap.xml
+
+User-agent: *
+Disallow: /images/

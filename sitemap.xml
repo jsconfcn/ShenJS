@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://github.com/Wiredcraft/foundation/blog/my-first-post</loc>
+    <lastmod>2015-01-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://github.com/Wiredcraft/foundation/</loc>
+    <lastmod>2015-02-11</lastmod>
+  </url>
+  <url>
+    <loc>http://github.com/Wiredcraft/foundation/about</loc>
+    <lastmod>2015-02-11</lastmod>
+  </url>
+  <url>
+    <loc>http://github.com/Wiredcraft/foundation/blog</loc>
+    <lastmod>2015-02-11</lastmod>
+  </url>
+  <url>
+    <loc>http://github.com/Wiredcraft/foundation/privacy</loc>
+    <lastmod>2015-02-11</lastmod>
+  </url>
+  <url>
+    <loc>http://github.com/Wiredcraft/foundation/tos</loc>
+    <lastmod>2015-02-11</lastmod>
+  </url>
+</urlset>
