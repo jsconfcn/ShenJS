@@ -8,6 +8,17 @@
     <h1>JSConf China</h1>
     <p>21th-22th Jun, 2015, Shenzhen, China</p>
   </div>
+  <div id='parallax' class='parallax'>
+    <ul id='scene' class='scene'>
+      <li class='layer' data-depth='1.00'><div class='city'></div></li>
+      <li class='layer' data-depth='0.80'><div class='city'></div></li>
+      <li class='layer' data-depth='0.60'><div class='city'></div></li>
+      <li class='layer' data-depth='0.40'><div class='cloud'></div></li>
+      <li class='layer' data-depth='0.20'><div class='cloud'></div></li>
+      <li class='layer' data-depth='0.30'><div class='cloud'></div></li>
+    </ul>
+  </div>
+  <div class='arrow'></div>
 </header>
 
 <section class='section action'>
@@ -18,11 +29,9 @@
       <span class='minutes'><strong>23</strong> {{ time.minutes }}</span>
       <span class='seconds'><strong>43</strong> {{ time.seconds }}</span>
     </div>
-
+    <img src='/images/line.png' class='line'>
     <h2>{{ subscribe.title }}</h2>
-
     {% include 'partials/_subscribe.html' %}
-
     <nav class='social'>
       <a class='weibo' href='http://weibo.com/JSConfChina'><span>Weibo</span></a>
       <a class='twitter' href='http://twitter.com/jsconfcn'><span>Twitter</span></a>
@@ -38,7 +47,7 @@
       <p>{{ about.content }}</p>
     </div>
     <div class='map'>
-      <img src='http://lorempixel.com/g/400/200/'>
+      <img src='/images/map.png'>
     </div>
   </div>
 </section>

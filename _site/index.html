@@ -30,7 +30,6 @@
 <meta name='msapplication-config' content='/assets/favicons/browserconfig.xml'>
 
   <!-- CSS -->
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link href='/assets/styles.css' rel='stylesheet' type='text/css'/>
 </head>
 <body class='page-front'>
@@ -49,6 +48,17 @@
     <h1>JSConf China</h1>
     <p>21th-22th Jun, 2015, Shenzhen, China</p>
   </div>
+  <div id='parallax' class='parallax'>
+    <ul id='scene' class='scene'>
+      <li class='layer' data-depth='1.00'><div class='city'></div></li>
+      <li class='layer' data-depth='0.80'><div class='city'></div></li>
+      <li class='layer' data-depth='0.60'><div class='city'></div></li>
+      <li class='layer' data-depth='0.40'><div class='cloud'></div></li>
+      <li class='layer' data-depth='0.20'><div class='cloud'></div></li>
+      <li class='layer' data-depth='0.30'><div class='cloud'></div></li>
+    </ul>
+  </div>
+  <div class='arrow'></div>
 </header>
 
 <section class='section action'>
@@ -59,9 +69,8 @@
       <span class='minutes'><strong>23</strong> minutes</span>
       <span class='seconds'><strong>43</strong> seconds</span>
     </div>
-
+    <img src='/images/line.png' class='line'>
     <h2>Leave us your email, we&#39;ll keep you posted</h2>
-
     <form action='http://wiredcraft.us2.list-manage1.com/subscribe/post?u=18eb8d6c34ad5d4e781541da9&amp;id=db875395f9' method='post' target='_blank'>
   <div class='field'>
     <input type='email' value='' name='EMAIL' class='required email' placeholder='Your email address'/>
@@ -70,7 +79,6 @@
     <input type='submit' value='Subscribe' name='subscribe' class='button'/>
   </div>
 </form>
-
     <nav class='social'>
       <a class='weibo' href='http://weibo.com/JSConfChina'><span>Weibo</span></a>
       <a class='twitter' href='http://twitter.com/jsconfcn'><span>Twitter</span></a>
@@ -86,7 +94,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div class='map'>
-      <img src='http://lorempixel.com/g/400/200/'>
+      <img src='/images/map.png'>
     </div>
   </div>
 </section>
@@ -101,7 +109,8 @@
   </footer>
 
   <!-- JS -->
-  <script src='/assets/scripts.js' type='text/javascript'></script>
+  <script src='/assets/js/scripts.js' type='text/javascript'></script>
+  <script src='/assets/js/plug/jquery.parallax.min.js' type='text/javascript'></script>
   <!--[if lt IE 9]><script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script><![endif]-->
   
 	
