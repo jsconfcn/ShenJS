@@ -2,6 +2,7 @@
 
 $font: 'Roboto', Arial, sans;
 $blue: #5399fc;
+$black: #4d4d4d;
 $light: #DBEAFF;
 
 @import 'eggshell';
@@ -22,7 +23,8 @@ $code: 'Lucida Sans Typewriter', 'Lucida Console', Monaco, 'Bitstream Vera Sans 
 
 body {
   text-align: center;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.4px;
+  min-width: $gutter*16;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
@@ -48,6 +50,9 @@ code {
     border-color: shade($blue, 10%);
   }
 }
+input{
+  letter-spacing: 0.4px;
+}
 input:not([type=submit]), textarea {
   border-color: $light;
   border-radius: 2*$gutter;
@@ -62,7 +67,7 @@ input:not([type=submit]), textarea {
   @if $reverse= true {
     &:nth-child(even) {
       float: right;
-      padding-left: $gutter;
+      padding: $gutter*3 0 0 $gutter;
     }
     &:nth-child(odd) {
       float: left;
@@ -84,50 +89,67 @@ input:not([type=submit]), textarea {
 
 @-webkit-keyframes cloud {
   0% {
-    -webkit-transform: translate(15%, 0);
-    -moz-transform: translate(15%, 0);
-    transform: translate(15%, 0);
+    @include transform(translate(15%, 0));
   }
   100% {
-    -webkit-transform: translate(-15%, 0);
-    -moz-transform: translate(-15%, 0);
-    transform: translate(-15%, 0);
+    @include transform(translate(-15%, 0));
   }
 }
 @-moz-keyframes cloud {
   0% {
-    -webkit-transform: translate(15%, 0);
-    -moz-transform: translate(15%, 0);
-    transform: translate(15%, 0);
+    @include transform(translate(15%, 0));
   }
   100% {
-    -webkit-transform: translate(-15%, 0);
-    -moz-transform: translate(-15%, 0);
-    transform: translate(-15%, 0);
+    @include transform(translate(-15%, 0));
   }
 }
 @-ms-keyframes cloud {
   0% {
-    -webkit-transform: translate(15%, 0);
-    -moz-transform: translate(15%, 0);
-    transform: translate(15%, 0);
+    @include transform(translate(15%, 0));
   }
   100% {
-    -webkit-transform: translate(-15%, 0);
-    -moz-transform: translate(-15%, 0);
-    transform: translate(-15%, 0);
+    @include transform(translate(-15%, 0));
   }
 }
 @keyframes cloud {
   0% {
-    -webkit-transform: translate(15%, 0);
-    -moz-transform: translate(15%, 0);
-    transform: translate(15%, 0);
+    @include transform(translate(15%, 0));
   }
   100% {
-    -webkit-transform: translate(-15%, 0);
-    -moz-transform: translate(-15%, 0);
-    transform: translate(-15%, 0);
+    @include transform(translate(-15%, 0));
+  }
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    @include transform(translate(0, 15%));
+  }
+  100% {
+    @include transform(translate(0, -15%));
+  }
+}
+@-moz-keyframes arrow {
+  0% {
+    @include transform(translate(0, 15%));
+  }
+  100% {
+    @include transform(translate(0, -15%));
+  }
+}
+@-ms-keyframes arrow {
+  0% {
+    @include transform(translate(0, 15%));
+  }
+  100% {
+    @include transform(translate(0, -15%));
+  }
+}
+@keyframes arrow {
+  0% {
+    @include transform(translate(0, 15%));
+  }
+  100% {
+    @include transform(translate(0, -15%));
   }
 }
 /* Header */
@@ -144,9 +166,10 @@ input:not([type=submit]), textarea {
       border-radius: 50%;
       color: tint($blue, 30%);
       display: block;
-      height: $gutter;
-      padding: $gutter/2;
-      width: $gutter;
+      height: $gutter*2;
+      line-height: $gutter*2;
+      text-align: center;
+      width: $gutter*2;
       @include transition-property(border, color);
       @include transition-duration(0.2s);
       &:hover {
@@ -170,17 +193,21 @@ input:not([type=submit]), textarea {
       z-index: 2;
       h1 {
         color: inherit;
-        @include font-size($gigantic);
+        font-weight: normal;
+        @include font-size($gigantic+10);
+        line-height: 110%;
+        margin-bottom: $gutter;
         &:before {
           @include icon;
           content: '0';
           display: block;
-          @include font-size(64);
-          margin-bottom: $gutter;
+          @include font-size(80);
+          line-height: 120%;
+          margin-bottom: $gutter/2;
         }
         & + p {
-          color: tint($blue, 80%);
-          @include font-size($larger);
+          color: tint($blue, 90%);
+          @include font-size($large);
           margin: 0;
         }
       }
@@ -206,8 +233,8 @@ input:not([type=submit]), textarea {
             height: 100%;
             left: 50%;
             position: absolute;
-            margin-left: -$width;
-            width: $width*2;
+            margin-left: -$width*0.9;
+            width: $width*1.8;
             @include medium {
               margin-left: -$width*0.65;
               width: $width*1.3;
@@ -222,9 +249,6 @@ input:not([type=submit]), textarea {
             background-size: contain;
             height: 100px;
             position: absolute;
-            -webkit-transform-origin: 50% 90%;
-            -moz-transform-origin: 50% 90%;
-            transform-origin: 50% 90%;
             -webkit-animation: cloud 3s 0.1s infinite alternate cubic-bezier(0.455, 0.33, 0.515, 0.955);
             -moz-animation: cloud 3s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.415, 0.955);
             animation: cloud 3s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -238,25 +262,25 @@ input:not([type=submit]), textarea {
           &:nth-child(1) {
             z-index: 1;
             div {
-              background-image: url('/images/layer1.png');
+              background-image: url('/images/parallax/layer1.png');
               background-size: contain;
             }
           }
           &:nth-child(2) {
             div {
-              background-image: url('/images/layer2.png');
+              background-image: url('/images/parallax/layer2.png');
               background-size: contain;
             }
           }
           &:nth-child(3) {
             div {
-              background-image: url('/images/layer3.png');
+              background-image: url('/images/parallax/layer3.png');
               background-size: contain;
             }
           }
           &:nth-child(4) {
             div {
-              background-image: url('/images/cloud1.png');
+              background-image: url('/images/parallax/cloud1.png');
               width: 148px;
               left: 10%;
               opacity: 0.6;
@@ -268,7 +292,7 @@ input:not([type=submit]), textarea {
           }
           &:nth-child(5) {
             div {
-              background-image: url('/images/cloud2.png');
+              background-image: url('/images/parallax/cloud2.png');
               width: 147px;
               left: 20%;
               opacity: 0.4;
@@ -280,7 +304,7 @@ input:not([type=submit]), textarea {
           }
           &:nth-child(6) {
             div {
-              background-image: url('/images/cloud3.png');
+              background-image: url('/images/parallax/cloud3.png');
               width: 162px;
               left: 80%;
               opacity: 0.5;
@@ -293,13 +317,40 @@ input:not([type=submit]), textarea {
         }
       }
     }
-    .arrow{
+    .arrow {
       background: #fff;
       border-radius: 50%;
-      box-shadow: rgba(0, 0, 0, 0.03) 0 1px 0 0;
-      height: $gutter*2;
-      width: $gutter*2;
-      content:'>';
+      bottom: $gutter*3.5;
+      cursor: pointer;
+      height: $gutter*2.5;
+      position: absolute;
+      left: 50%;
+      margin-left: -$gutter;
+      opacity: 0.8;
+      width: $gutter*2.5;
+      @include transition(all, 0.5s, ease);
+      &:after {
+        @include icon;
+        content: 'd';
+        color: $blue;
+        @include font-size(20);
+        left: $gutter*0.75;
+        position: absolute;
+        text-align: center;
+        top: $gutter*0.75;
+        width: $gutter;
+        -webkit-animation: arrow 1s 0.1s infinite alternate cubic-bezier(0.455, 0.33, 0.515, 0.955);
+        -moz-animation: arrow 1s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.415, 0.955);
+        animation: arrow 1s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      }
+      &:hover{
+        bottom: $gutter*3.3;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px 0;
+        opacity: 0.9;
+      }
+      &:active{
+        bottom: $gutter*3.5;
+      }
     }
   }
   .section {
@@ -308,74 +359,148 @@ input:not([type=submit]), textarea {
   .action {
     background: $light;
     .wrapper {
-      text-align: center;
       color: $blue;
-      h2{
-       color: $blue; 
+      text-align: center;
+      h2 {
+        color: $blue;
+        font-weight: normal;
+        @include font-size($large);
       }
-    }
-    form * {
-      display: inline-block;
-      vertical-align: middle;
-    }
-    .button, input:not([type=submit]), textarea {
-      border: 0;
-      line-height: 180%;
-      font-family: $font;
-      font-size: inherit;
-      padding: $gutter/2 1.5*$gutter;
-    }
-    input:not([type=submit]), textarea {
-      background: #FFF;
-      border-radius: 2*$gutter 0 0 2*$gutter;
-    }
-    .button {
-      border-radius: 0 2*$gutter 2*$gutter 0;
-      margin-left: -$gutter/4;
+      form * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      form {
+        height: $gigantic*1px;
+        margin-bottom: $gutter*3;
+        .button, input:not([type=submit]){
+          border: 0;
+          line-height: 180%;
+          font-family: $font;
+          font-size: inherit;
+          padding: $gutter/2 1.5*$gutter;
+        }
+        .button {
+          border-radius: 0 2*$gutter 2*$gutter 0;        
+          margin-left: -$gutter/4;
+          @include tablet {
+            @include font-size($small);
+            padding: $gutter/2 $gutter/2;
+            width: $gutter*4.5;
+          }
+        }
+        input:not([type=submit]) {
+          background: #FFF;
+          border-radius: 2*$gutter 0 0 2*$gutter;
+          color: $black;
+          padding: $gutter/2 $gutter+5;
+          width: $gutter*10;
+          @include tablet {
+            @include font-size($small);
+            width: $gutter*7.4;
+          }
+        }
+        ::-webkit-input-placeholder {
+          -webkit-backface-visibility: hidden;
+          -webkit-transform-style: preserve-3d;
+          -webkit-transform: translate3d(0, 0, 0);
+        }
+        [placeholder]:focus::-webkit-input-placeholder {
+          @include transition(all, 0.2s, ease);
+          @include transform(translate(5%, 0));
+          opacity: 0;
+        }
+      }
     }
     .countdown {
       @include clearfix;
       text-transform: uppercase;
       span {
         display: inline-block;
-        @include font-size($smaller); 
+        @include font-size($smaller);
+        margin: 0 $gutter*2 $gutter/2 $gutter*2;
         text-align: center;
-        margin: 0 $gutter;
+        width: $gutter*3.5;
       }
       strong {
         color: $blue;
         display: block;
         font-weight: normal;
-        @include font-size($huge);
+        @include font-size(46);
+        line-height: 100%;
         margin: 0 auto $gutter/4;
       }
+      @include tablet{
+        padding: 0 10%;
+        span{
+          width: 50%;
+          margin: 0 0 10px 0;
+          float: left;
+        }
+      }
     }
-    .line{
-      margin: 40px 0;
+    .line {
+      margin: $gutter*2 0 $gutter*2.5 0;
+      width: 320px;
     }
     .social {
       @include clearfix;
       @import '_social.scss';
-      margin-top: $gutter;
     }
   }
+
   .info {
     @include clearfix;
     .about, .map {
       @include halves;
+      @include tablet {
+        width: 100%;
+        margin: 0px 0px $gutter 0px;
+        padding: 0px!important;
+      }
+    }
+    .about {
+      h2 {
+        color: $blue;
+        @include font-size($large);
+        font-weight: normal;
+        margin-bottom: $gutter*1.5;
+      }
+      p {
+        color: $black;
+        @include font-size($normal);
+        line-height: 180%;
+      }
+    }
+    .map {
+      img {      
+          width: 100%;
+      }
     }
   }
+
 }
 
 /* Footer */
 
 #footer {
   border-top: 1px solid $light;
-  @include font-size($small);
-  padding: $gutter 0;
-  .wrapper {
-    text-align: center;
+  @include font-size($smaller);
+  padding: $gutter*1.5 0;
+  text-align: center;
+  a {
+    margin: 0 $gutter*2;
+    @include transition(all, 0.2s, ease);
   }
+  @include tablet {
+   @include clearfix;
+    a{
+      float: left;
+      margin: 0px;
+      width: 100%;
+    }
+  }
+
 }
 
 

@@ -46,7 +46,8 @@
         "vendor": {
             "js": [
                 "bower_components/jquery/dist/jquery.js",
-                "bower_components/highlightjs/highlight.pack.js"
+                "bower_components/highlightjs/highlight.pack.js",
+                "bower_components/parallax/deploy/jquery.parallax.js"
             ],
             "css": [
                 "bower_components/highlightjs/styles/github.css"

@@ -13,6 +13,12 @@ $(function() {
       });
     }
   }
+  function scrollto(){
+    $('.arrow').click(function(){
+      $("html,body").stop().animate({scrollTop: $(window).height()},500);
+    })
+  }
   center();
+  scrollto();
   $(window).resize(center);
 });
