@@ -8,6 +8,7 @@ $light: #DBEAFF;
 @import 'eggshell';
 @import 'layout';
 @import 'fonts';
+@import 'animations';
 /* Variables */
 
 $width: 960px;
@@ -22,9 +23,9 @@ $code: 'Lucida Sans Typewriter', 'Lucida Console', Monaco, 'Bitstream Vera Sans 
 /* General */
 
 body {
-  text-align: center;
   letter-spacing: 0.4px;
   min-width: $gutter*16;
+  text-align: center;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
@@ -50,7 +51,7 @@ code {
     border-color: shade($blue, 10%);
   }
 }
-input{
+input {
   letter-spacing: 0.4px;
 }
 input:not([type=submit]), textarea {
@@ -64,7 +65,7 @@ input:not([type=submit]), textarea {
 @mixin halves($reverse: false) {
   @include box-sizing(border-box);
   width: 50%;
-  @if $reverse= true {
+  @if $reverse true {
     &:nth-child(even) {
       float: right;
       padding: $gutter*3 0 0 $gutter;
@@ -85,73 +86,7 @@ input:not([type=submit]), textarea {
     }
   }
 }
-/* keyframes */
 
-@-webkit-keyframes cloud {
-  0% {
-    @include transform(translate(15%, 0));
-  }
-  100% {
-    @include transform(translate(-15%, 0));
-  }
-}
-@-moz-keyframes cloud {
-  0% {
-    @include transform(translate(15%, 0));
-  }
-  100% {
-    @include transform(translate(-15%, 0));
-  }
-}
-@-ms-keyframes cloud {
-  0% {
-    @include transform(translate(15%, 0));
-  }
-  100% {
-    @include transform(translate(-15%, 0));
-  }
-}
-@keyframes cloud {
-  0% {
-    @include transform(translate(15%, 0));
-  }
-  100% {
-    @include transform(translate(-15%, 0));
-  }
-}
-
-@-webkit-keyframes arrow {
-  0% {
-    @include transform(translate(0, 15%));
-  }
-  100% {
-    @include transform(translate(0, -15%));
-  }
-}
-@-moz-keyframes arrow {
-  0% {
-    @include transform(translate(0, 15%));
-  }
-  100% {
-    @include transform(translate(0, -15%));
-  }
-}
-@-ms-keyframes arrow {
-  0% {
-    @include transform(translate(0, 15%));
-  }
-  100% {
-    @include transform(translate(0, -15%));
-  }
-}
-@keyframes arrow {
-  0% {
-    @include transform(translate(0, 15%));
-  }
-  100% {
-    @include transform(translate(0, -15%));
-  }
-}
 /* Header */
 
 #header {
@@ -209,6 +144,16 @@ input:not([type=submit]), textarea {
           color: tint($blue, 90%);
           @include font-size($large);
           margin: 0;
+        }
+        @include tablet {
+          @include font-size(42);
+          margin-bottom: $gutter/2;
+          &:before {
+            @include font-size(60);
+          }
+          & + p {
+            @include font-size($larger);
+          }
         }
       }
     }
@@ -343,18 +288,21 @@ input:not([type=submit]), textarea {
         -moz-animation: arrow 1s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.415, 0.955);
         animation: arrow 1s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
       }
-      &:hover{
+      &:hover {
         bottom: $gutter*3.3;
-        box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px 0;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 3px $gutter/4 0;
         opacity: 0.9;
       }
-      &:active{
+      &:active {
         bottom: $gutter*3.5;
       }
     }
   }
   .section {
     padding: 4*$gutter 0;
+    @include tablet {
+      padding: 3*$gutter 5%;
+    }
   }
   .action {
     background: $light;
@@ -373,7 +321,7 @@ input:not([type=submit]), textarea {
       form {
         height: $gigantic*1px;
         margin-bottom: $gutter*3;
-        .button, input:not([type=submit]){
+        .button, input:not([type=submit]) {
           border: 0;
           line-height: 180%;
           font-family: $font;
@@ -381,7 +329,7 @@ input:not([type=submit]), textarea {
           padding: $gutter/2 1.5*$gutter;
         }
         .button {
-          border-radius: 0 2*$gutter 2*$gutter 0;        
+          border-radius: 0 2*$gutter 2*$gutter 0;
           margin-left: -$gutter/4;
           @include tablet {
             @include font-size($small);
@@ -397,7 +345,8 @@ input:not([type=submit]), textarea {
           width: $gutter*10;
           @include tablet {
             @include font-size($small);
-            width: $gutter*7.4;
+            padding: $gutter/2 $gutter*0.75;
+            width: $gutter*6.9;
           }
         }
         ::-webkit-input-placeholder {
@@ -421,34 +370,37 @@ input:not([type=submit]), textarea {
         margin: 0 $gutter*2 $gutter/2 $gutter*2;
         text-align: center;
         width: $gutter*3.5;
+        strong {
+          color: $blue;
+          display: block;
+          font-weight: normal;
+          @include font-size(46);
+          line-height: 100%;
+          margin: 0 auto $gutter/4;
+        }
       }
-      strong {
-        color: $blue;
-        display: block;
-        font-weight: normal;
-        @include font-size(46);
-        line-height: 100%;
-        margin: 0 auto $gutter/4;
-      }
-      @include tablet{
-        padding: 0 10%;
-        span{
-          width: 50%;
-          margin: 0 0 10px 0;
-          float: left;
+      @include tablet {
+        span {
+          margin: 0 $gutter+5 $gutter/2 $gutter+5;
+          width: $gutter*3;
+          strong {
+            @include font-size(36);
+          }
         }
       }
     }
     .line {
       margin: $gutter*2 0 $gutter*2.5 0;
-      width: 320px;
+      width: $gutter*15;
+      @include tablet{
+        width: $gutter*13;
+      }
     }
     .social {
       @include clearfix;
       @import '_social.scss';
     }
   }
-
   .info {
     @include clearfix;
     .about, .map {
@@ -465,6 +417,10 @@ input:not([type=submit]), textarea {
         @include font-size($large);
         font-weight: normal;
         margin-bottom: $gutter*1.5;
+        @include tablet{
+          margin-bottom: $gutter/2;
+          text-align: center;
+        }
       }
       p {
         color: $black;
@@ -473,12 +429,14 @@ input:not([type=submit]), textarea {
       }
     }
     .map {
-      img {      
-          width: 100%;
+      text-align: center;
+      margin: 0px;
+      img {
+        max-width: $gutter*25;
+        width: 100%;
       }
     }
   }
-
 }
 
 /* Footer */
@@ -493,14 +451,11 @@ input:not([type=submit]), textarea {
     @include transition(all, 0.2s, ease);
   }
   @include tablet {
-   @include clearfix;
-    a{
+    @include clearfix;
+    a {
       float: left;
       margin: 0px;
       width: 100%;
     }
   }
-
 }
-
-

@@ -1271,50 +1271,6 @@ table {
   font-weight: 700;
   font-style: normal; }
 
-/* Variables */
-/* Grayscale fix (see https://github.com/sass/libsass/issues/151#issuecomment-33536506) */
-/* General */
-body {
-  text-align: center;
-  letter-spacing: 0.4px;
-  min-width: 320px; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold; }
-
-.wrapper {
-  margin: 0 auto;
-  max-width: 960px;
-  text-align: left;
-  width: 90%; }
-
-code {
-  font-family: 'Lucida Sans Typewriter', 'Lucida Console', Monaco, 'Bitstream Vera Sans Mono', monospace; }
-
-.button, a.button {
-  border-radius: 40px;
-  border: 2px solid #5399fc;
-  -webkit-transition-property: background, border;
-  -moz-transition-property: background, border;
-  transition-property: background, border;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  transition-duration: 0.2s; }
-  .button:hover, .button:focus, a.button:hover, a.button:focus {
-    border-color: #64a3fc; }
-  .button:active, .button.active, a.button:active, a.button.active {
-    border-color: #4a89e2; }
-
-input {
-  letter-spacing: 0.4px; }
-
-input:not([type=submit]), textarea {
-  border-color: #DBEAFF;
-  border-radius: 40px; }
-  input:not([type=submit]):hover, input:not([type=submit]):focus, textarea:hover, textarea:focus {
-    background: #FFF;
-    border-color: #DBEAFF; }
-
 /* keyframes */
 @-webkit-keyframes cloud {
   0% {
@@ -1436,6 +1392,50 @@ input:not([type=submit]), textarea {
     -o-transform: translate(0, -15%);
     transform: translate(0, -15%); } }
 
+/* Variables */
+/* Grayscale fix (see https://github.com/sass/libsass/issues/151#issuecomment-33536506) */
+/* General */
+body {
+  letter-spacing: 0.4px;
+  min-width: 320px;
+  text-align: center; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  text-align: left;
+  width: 90%; }
+
+code {
+  font-family: 'Lucida Sans Typewriter', 'Lucida Console', Monaco, 'Bitstream Vera Sans Mono', monospace; }
+
+.button, a.button {
+  border-radius: 40px;
+  border: 2px solid #5399fc;
+  -webkit-transition-property: background, border;
+  -moz-transition-property: background, border;
+  transition-property: background, border;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s; }
+  .button:hover, .button:focus, a.button:hover, a.button:focus {
+    border-color: #64a3fc; }
+  .button:active, .button.active, a.button:active, a.button.active {
+    border-color: #4a89e2; }
+
+input {
+  letter-spacing: 0.4px; }
+
+input:not([type=submit]), textarea {
+  border-color: #DBEAFF;
+  border-radius: 40px; }
+  input:not([type=submit]):hover, input:not([type=submit]):focus, textarea:hover, textarea:focus {
+    background: #FFF;
+    border-color: #DBEAFF; }
+
 /* Header */
 #header {
   background: #5399fc;
@@ -1501,6 +1501,17 @@ input:not([type=submit]), textarea {
         font-size: 24px;
         font-size: 2.4rem;
         margin: 0; }
+      @media only screen and (max-width: 768px) {
+        #content .hero .wrapper h1 {
+          font-size: 42px;
+          font-size: 4.2rem;
+          margin-bottom: 10px; }
+          #content .hero .wrapper h1:before {
+            font-size: 60px;
+            font-size: 6rem; }
+          #content .hero .wrapper h1 + p {
+            font-size: 18px;
+            font-size: 1.8rem; } }
   #content .hero .parallax {
     bottom: 0px;
     height: 100%;
@@ -1625,6 +1636,9 @@ input:not([type=submit]), textarea {
       bottom: 70px; }
 #content .section {
   padding: 80px 0; }
+  @media only screen and (max-width: 768px) {
+    #content .section {
+      padding: 60px 5%; } }
 #content .action {
   background: #DBEAFF; }
   #content .action .wrapper {
@@ -1666,7 +1680,8 @@ input:not([type=submit]), textarea {
           #content .action .wrapper form input:not([type=submit]) {
             font-size: 12px;
             font-size: 1.2rem;
-            width: 148px; } }
+            padding: 10px 15px;
+            width: 138px; } }
       #content .action .wrapper form ::-webkit-input-placeholder {
         -webkit-backface-visibility: hidden;
         -webkit-transform-style: preserve-3d;
@@ -1694,24 +1709,27 @@ input:not([type=submit]), textarea {
       margin: 0 40px 10px 40px;
       text-align: center;
       width: 70px; }
-    #content .action .countdown strong {
-      color: #5399fc;
-      display: block;
-      font-weight: normal;
-      font-size: 46px;
-      font-size: 4.6rem;
-      line-height: 100%;
-      margin: 0 auto 5px; }
+      #content .action .countdown span strong {
+        color: #5399fc;
+        display: block;
+        font-weight: normal;
+        font-size: 46px;
+        font-size: 4.6rem;
+        line-height: 100%;
+        margin: 0 auto 5px; }
     @media only screen and (max-width: 768px) {
-      #content .action .countdown {
-        padding: 0 10%; }
-        #content .action .countdown span {
-          width: 50%;
-          margin: 0 0 10px 0;
-          float: left; } }
+      #content .action .countdown span {
+        margin: 0 25px 10px 25px;
+        width: 60px; }
+        #content .action .countdown span strong {
+          font-size: 36px;
+          font-size: 3.6rem; } }
   #content .action .line {
     margin: 40px 0 50px 0;
-    width: 320px; }
+    width: 300px; }
+    @media only screen and (max-width: 768px) {
+      #content .action .line {
+        width: 260px; } }
   #content .action .social:after {
     content: "";
     display: table;
@@ -1843,13 +1861,21 @@ input:not([type=submit]), textarea {
   font-size: 2.4rem;
   font-weight: normal;
   margin-bottom: 30px; }
+  @media only screen and (max-width: 768px) {
+    #content .info .about h2 {
+      margin-bottom: 10px;
+      text-align: center; } }
 #content .info .about p {
   color: #4d4d4d;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 180%; }
-#content .info .map img {
-  width: 100%; }
+#content .info .map {
+  text-align: center;
+  margin: 0px; }
+  #content .info .map img {
+    max-width: 500px;
+    width: 100%; }
 
 /* Footer */
 #footer {

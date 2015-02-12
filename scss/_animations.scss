@@ -1,0 +1,66 @@
+/* keyframes */
+
+@-webkit-keyframes cloud {
+  0% {
+    @include transform(translate(15%, 0));
+  }
+  100% {
+    @include transform(translate(-15%, 0));
+  }
+}
+@-moz-keyframes cloud {
+  0% {
+    @include transform(translate(15%, 0));
+  }
+  100% {
+    @include transform(translate(-15%, 0));
+  }
+}
+@-ms-keyframes cloud {
+  0% {
+    @include transform(translate(15%, 0));
+  }
+  100% {
+    @include transform(translate(-15%, 0));
+  }
+}
+@keyframes cloud {
+  0% {
+    @include transform(translate(15%, 0));
+  }
+  100% {
+    @include transform(translate(-15%, 0));
+  }
+}
+@-webkit-keyframes arrow {
+  0% {
+    @include transform(translate(0, 15%));
+  }
+  100% {
+    @include transform(translate(0, -15%));
+  }
+}
+@-moz-keyframes arrow {
+  0% {
+    @include transform(translate(0, 15%));
+  }
+  100% {
+    @include transform(translate(0, -15%));
+  }
+}
+@-ms-keyframes arrow {
+  0% {
+    @include transform(translate(0, 15%));
+  }
+  100% {
+    @include transform(translate(0, -15%));
+  }
+}
+@keyframes arrow {
+  0% {
+    @include transform(translate(0, 15%));
+  }
+  100% {
+    @include transform(translate(0, -15%));
+  }
+}

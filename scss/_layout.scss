@@ -39,7 +39,6 @@ $large-height: 900px;
 }
 
 /* screen */
-
 @mixin retina {
   @media
     only screen and (-webkit-min-device-pixel-ratio: 2),
