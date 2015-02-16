@@ -1515,8 +1515,8 @@ input:not([type=submit]), textarea {
           margin: 0; }
         @media only screen and (min-width: 769px) and (max-width: 1600px) {
           #header .hero .wrapper h1 {
-            font-size: 48px;
-            font-size: 4.8rem;
+            font-size: 44px;
+            font-size: 4.4rem;
             margin-bottom: 10px; }
             #header .hero .wrapper h1:before {
               font-size: 70px;
