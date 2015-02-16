@@ -157,7 +157,7 @@ input:not([type=submit]), textarea {
           margin: 0;
         }
         @include medium{
-          @include font-size(48);
+          @include font-size(44);
           margin-bottom: $gutter/2;
           &:before {
             @include font-size(70);
