@@ -1,4 +1,4 @@
-Sitemap: http://github.com/Wiredcraft/foundation/sitemap.xml
+Sitemap: http://2015.jsconf.cn/sitemap.xml
 
 User-agent: *
 Disallow: /images/

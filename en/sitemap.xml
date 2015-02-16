@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://github.com/Wiredcraft/foundation/blog/my-first-post</loc>
+    <loc>http://2015.jsconf.cn/blog/my-first-post</loc>
     <lastmod>2015-01-01</lastmod>
   </url>
   
   <url>
-    <loc>http://github.com/Wiredcraft/foundation/</loc>
+    <loc>http://2015.jsconf.cn/</loc>
     <lastmod>2015-02-16</lastmod>
   </url>
   <url>
-    <loc>http://github.com/Wiredcraft/foundation/about</loc>
+    <loc>http://2015.jsconf.cn/about</loc>
     <lastmod>2015-02-16</lastmod>
   </url>
   <url>
-    <loc>http://github.com/Wiredcraft/foundation/blog</loc>
+    <loc>http://2015.jsconf.cn/blog</loc>
     <lastmod>2015-02-16</lastmod>
   </url>
   <url>
-    <loc>http://github.com/Wiredcraft/foundation/privacy</loc>
+    <loc>http://2015.jsconf.cn/privacy</loc>
     <lastmod>2015-02-16</lastmod>
   </url>
   <url>
-    <loc>http://github.com/Wiredcraft/foundation/tos</loc>
+    <loc>http://2015.jsconf.cn/tos</loc>
     <lastmod>2015-02-16</lastmod>
   </url>
 </urlset>
