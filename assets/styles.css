@@ -1443,7 +1443,8 @@ input:not([type=submit]), textarea {
   height: 100%;
   position: fixed;
   top: 0px;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
   #header:after {
     content: "";
     display: table;
