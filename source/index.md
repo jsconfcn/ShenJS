@@ -1,19 +1,27 @@
 ---
-title: JS conference in Shenzhen
-description: A list of blog posts.
+locale: zh
+title: JS中国开发者大会
+description: 今年夏天，我们一起在深圳，中国主要的Javascript会议
+
+event:
+  title: JS中国开发者大会
+  details: 2015年夏, 中国深圳
 
 subscribe:
-  title: Leave us your email, we'll keep you posted
+  title: 留下你的邮箱，我们会及时向大家发布
 
 about:
-  title: About ShenJS
-  content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  title: 关于ShenJS
+  content: |
+    <p>JS中国开发者大会是一场专注于JavaScript和Node.js技术，为期两天的国际性技术大会。届时，大会会邀请国内外的优秀讲师为大家分享在JavaScript和Node.js技术方面的经验。继上海，北京和杭州之后，JSConf中国开发者大会将于2015年夏天在深圳召开。</p>
+    <p>想参与讨论？<a href='https://github.com/JSConfcn/ShenJS/issues' target="new">在GitHub上加入我们</a>！</p>
+    <p><small><a href='http://JSConf.cn/' target="new">了解更多关于JSConf中国开发者大会</a></small></p>
 
 time:
-  days: days
-  hours: hours
-  minutes: minutes
-  seconds: seconds
+  days: 天
+  hours: 小时
+  minutes: 分钟
+  seconds: 秒
 
 collection: page
 template: index.html

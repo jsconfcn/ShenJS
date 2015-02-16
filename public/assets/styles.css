@@ -613,7 +613,7 @@ input:not([type=submit]), textarea, .select select {
 body {
   background: #FFF;
   color: #797979;
-  font-family: 'Roboto', Arial, sans;
+  font-family: 'Roboto', Arial, 'Microsoft YaHei';
   font-weight: normal;
   position: relative; }
 
@@ -1274,63 +1274,63 @@ table {
 /* keyframes */
 @-webkit-keyframes cloud {
   0% {
-    -webkit-transform: translate(15%, 0);
-    -moz-transform: translate(15%, 0);
-    -ms-transform: translate(15%, 0);
-    -o-transform: translate(15%, 0);
-    transform: translate(15%, 0); }
+    -webkit-transform: translate(40%, 0);
+    -moz-transform: translate(40%, 0);
+    -ms-transform: translate(40%, 0);
+    -o-transform: translate(40%, 0);
+    transform: translate(40%, 0); }
 
   100% {
-    -webkit-transform: translate(-15%, 0);
-    -moz-transform: translate(-15%, 0);
-    -ms-transform: translate(-15%, 0);
-    -o-transform: translate(-15%, 0);
-    transform: translate(-15%, 0); } }
+    -webkit-transform: translate(-40%, 0);
+    -moz-transform: translate(-40%, 0);
+    -ms-transform: translate(-40%, 0);
+    -o-transform: translate(-40%, 0);
+    transform: translate(-40%, 0); } }
 
 @-moz-keyframes cloud {
   0% {
-    -webkit-transform: translate(15%, 0);
-    -moz-transform: translate(15%, 0);
-    -ms-transform: translate(15%, 0);
-    -o-transform: translate(15%, 0);
-    transform: translate(15%, 0); }
+    -webkit-transform: translate(40%, 0);
+    -moz-transform: translate(40%, 0);
+    -ms-transform: translate(40%, 0);
+    -o-transform: translate(40%, 0);
+    transform: translate(40%, 0); }
 
   100% {
-    -webkit-transform: translate(-15%, 0);
-    -moz-transform: translate(-15%, 0);
-    -ms-transform: translate(-15%, 0);
-    -o-transform: translate(-15%, 0);
-    transform: translate(-15%, 0); } }
+    -webkit-transform: translate(-40%, 0);
+    -moz-transform: translate(-40%, 0);
+    -ms-transform: translate(-40%, 0);
+    -o-transform: translate(-40%, 0);
+    transform: translate(-40%, 0); } }
 
 @-ms-keyframes cloud {
   0% {
-    -webkit-transform: translate(15%, 0);
-    -moz-transform: translate(15%, 0);
-    -ms-transform: translate(15%, 0);
-    -o-transform: translate(15%, 0);
-    transform: translate(15%, 0); }
+    -webkit-transform: translate(40%, 0);
+    -moz-transform: translate(40%, 0);
+    -ms-transform: translate(40%, 0);
+    -o-transform: translate(40%, 0);
+    transform: translate(40%, 0); }
 
   100% {
-    -webkit-transform: translate(-15%, 0);
-    -moz-transform: translate(-15%, 0);
-    -ms-transform: translate(-15%, 0);
-    -o-transform: translate(-15%, 0);
-    transform: translate(-15%, 0); } }
+    -webkit-transform: translate(-40%, 0);
+    -moz-transform: translate(-40%, 0);
+    -ms-transform: translate(-40%, 0);
+    -o-transform: translate(-40%, 0);
+    transform: translate(-40%, 0); } }
 
 @keyframes cloud {
   0% {
-    -webkit-transform: translate(15%, 0);
-    -moz-transform: translate(15%, 0);
-    -ms-transform: translate(15%, 0);
-    -o-transform: translate(15%, 0);
-    transform: translate(15%, 0); }
+    -webkit-transform: translate(40%, 0);
+    -moz-transform: translate(40%, 0);
+    -ms-transform: translate(40%, 0);
+    -o-transform: translate(40%, 0);
+    transform: translate(40%, 0); }
 
   100% {
-    -webkit-transform: translate(-15%, 0);
-    -moz-transform: translate(-15%, 0);
-    -ms-transform: translate(-15%, 0);
-    -o-transform: translate(-15%, 0);
-    transform: translate(-15%, 0); } }
+    -webkit-transform: translate(-40%, 0);
+    -moz-transform: translate(-40%, 0);
+    -ms-transform: translate(-40%, 0);
+    -o-transform: translate(-40%, 0);
+    transform: translate(-40%, 0); } }
 
 @-webkit-keyframes arrow {
   0% {
@@ -1448,6 +1448,12 @@ input:not([type=submit]), textarea {
     content: "";
     display: table;
     clear: both; }
+  @media only screen and (min-width: 769px) and (max-width: 1600px) {
+    #header {
+      max-height: 800px; } }
+  @media only screen and (max-width: 768px) {
+    #header {
+      max-height: 600px; } }
   #header .menu {
     float: right;
     padding: 18px;
@@ -1485,8 +1491,8 @@ input:not([type=submit]), textarea {
       #header .hero .wrapper h1 {
         color: inherit;
         font-weight: normal;
-        font-size: 58px;
-        font-size: 5.8rem;
+        font-size: 52px;
+        font-size: 5.2rem;
         line-height: 110%;
         margin-bottom: 20px; }
         #header .hero .wrapper h1:before {
@@ -1507,6 +1513,17 @@ input:not([type=submit]), textarea {
           font-size: 24px;
           font-size: 2.4rem;
           margin: 0; }
+        @media only screen and (min-width: 769px) and (max-width: 1600px) {
+          #header .hero .wrapper h1 {
+            font-size: 48px;
+            font-size: 4.8rem;
+            margin-bottom: 10px; }
+            #header .hero .wrapper h1:before {
+              font-size: 70px;
+              font-size: 7rem; }
+            #header .hero .wrapper h1 + p {
+              font-size: 18px;
+              font-size: 1.8rem; } }
         @media only screen and (max-width: 768px) {
           #header .hero .wrapper h1 {
             font-size: 42px;
@@ -1541,11 +1558,11 @@ input:not([type=submit]), textarea {
             position: absolute;
             margin-left: -864px;
             width: 1728px; }
-            @media only screen and (min-width: 769px) and (max-height: 900px) and (min-height: 600px) {
+            @media only screen and (min-width: 769px) and (max-width: 1600px) {
               #header .hero .parallax .scene .layer .city {
                 margin-left: -624px;
                 width: 1248px; } }
-            @media only screen and (max-width: 768px) and (max-height: 800px) {
+            @media only screen and (max-width: 768px) {
               #header .hero .parallax .scene .layer .city {
                 margin-left: -480px;
                 width: 960px; } }
@@ -1557,22 +1574,20 @@ input:not([type=submit]), textarea {
             -webkit-animation: cloud 3s 0.1s infinite alternate cubic-bezier(0.455, 0.33, 0.515, 0.955);
             -moz-animation: cloud 3s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.415, 0.955);
             animation: cloud 3s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-            @media only screen and (min-width: 769px) and (max-height: 900px) and (min-height: 600px) {
+            @media only screen and (min-width: 769px) and (max-width: 1600px) {
               #header .hero .parallax .scene .layer .cloud {
                 width: 100px !important; } }
-            @media only screen and (max-width: 768px) and (max-height: 800px) {
+            @media only screen and (max-width: 768px) {
               #header .hero .parallax .scene .layer .cloud {
                 width: 70px !important; } }
-          #header .hero .parallax .scene .layer:nth-child(1) {
-            z-index: 1; }
-            #header .hero .parallax .scene .layer:nth-child(1) div {
-              background-image: url('/images/parallax/layer1.png');
-              background-size: contain; }
-          #header .hero .parallax .scene .layer:nth-child(2) div {
+          #header .hero .parallax .scene .layer:nth-child(1) div {
             background-image: url('/images/parallax/layer2.png');
             background-size: contain; }
-          #header .hero .parallax .scene .layer:nth-child(3) div {
+          #header .hero .parallax .scene .layer:nth-child(2) div {
             background-image: url('/images/parallax/layer3.png');
+            background-size: contain; }
+          #header .hero .parallax .scene .layer:nth-child(3) div {
+            background-image: url('/images/parallax/layer1.png');
             background-size: contain; }
           #header .hero .parallax .scene .layer:nth-child(4) div {
             background-image: url('/images/parallax/cloud1.png');
@@ -1668,7 +1683,7 @@ input:not([type=submit]), textarea {
         #content .action .wrapper form .button, #content .action .wrapper form input:not([type=submit]) {
           border: 0;
           line-height: 180%;
-          font-family: 'Roboto', Arial, sans;
+          font-family: 'Roboto', Arial, 'Microsoft YaHei';
           font-size: inherit;
           padding: 10px 30px; }
         #content .action .wrapper form .button {

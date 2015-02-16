@@ -21,19 +21,19 @@ $large-height: 900px;
 /* responsive with height*/
 
 @mixin small {
-  @media only screen and (max-width: $small-width) and (max-height: $medium-height) {
+  @media only screen and (max-width: $small-width)  {
     @content;
   }
 }
 
 @mixin medium {
-  @media only screen and (min-width: $small-width+1px) and (max-height: $large-height) and (min-height: $small-height) {
+  @media only screen and (min-width: $small-width+1px) and (max-width: $large-width) {
     @content;
   }
 }
 
 @mixin large {
-  @media only screen and (min-width: $large-width){
+  @media only screen and (min-width: $large-width+1){
     @content;
   }
 }

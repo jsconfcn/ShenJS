@@ -1,6 +1,6 @@
 /* Eggshell */
 
-$font: 'Roboto', Arial, sans;
+$font: 'Roboto', Arial, 'Microsoft YaHei';
 $blue: #5399fc;
 $black: #4d4d4d;
 $light: #DBEAFF;
@@ -97,6 +97,12 @@ input:not([type=submit]), textarea {
   position: fixed;
   top: 0px;
   width: 100%;
+  @include medium {
+    max-height: 800px;
+  }
+  @include small {
+    max-height: 600px;
+  }
   .menu {
     float: right;
     padding: 18px;
@@ -134,7 +140,7 @@ input:not([type=submit]), textarea {
       h1 {
         color: inherit;
         font-weight: normal;
-        @include font-size($gigantic+10);
+        @include font-size($gigantic+4);
         line-height: 110%;
         margin-bottom: $gutter;
         &:before {
@@ -150,7 +156,17 @@ input:not([type=submit]), textarea {
           @include font-size($large);
           margin: 0;
         }
-        @include tablet {
+        @include medium{
+          @include font-size(48);
+          margin-bottom: $gutter/2;
+          &:before {
+            @include font-size(70);
+          }
+          & + p {
+            @include font-size($larger);
+          }
+        }
+        @include small {
           @include font-size(42);
           margin-bottom: $gutter/2;
           &:before {
@@ -210,21 +226,20 @@ input:not([type=submit]), textarea {
             }
           }
           &:nth-child(1) {
-            z-index: 1;
-            div {
-              background-image: url('/images/parallax/layer1.png');
-              background-size: contain;
-            }
-          }
-          &:nth-child(2) {
             div {
               background-image: url('/images/parallax/layer2.png');
               background-size: contain;
             }
           }
-          &:nth-child(3) {
+          &:nth-child(2) {
             div {
               background-image: url('/images/parallax/layer3.png');
+              background-size: contain;
+            }
+          }
+          &:nth-child(3) {
+            div {
+              background-image: url('/images/parallax/layer1.png');
               background-size: contain;
             }
           }

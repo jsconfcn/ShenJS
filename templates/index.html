@@ -3,15 +3,16 @@
 {% block content %}
 {% parent %}
 
+
 <section class='section action'>
   <div class='wrapper'>
-    <div class='countdown'>
+    <!-- <div class='countdown'>
       <span class='days'><strong>50</strong> {{ time.days }}</span>
       <span class='hours'><strong>5</strong> {{ time.hours }}</span>
       <span class='minutes'><strong>23</strong> {{ time.minutes }}</span>
       <span class='seconds'><strong>43</strong> {{ time.seconds }}</span>
-    </div>
-    <img src='/images/line.png' class='line'>
+    </div> -->
+    <!-- <img src='/images/line.png' class='line'> -->
     <h2>{{ subscribe.title }}</h2>
     {% include 'partials/_subscribe.html' %}
     <nav class='social'>
@@ -26,7 +27,7 @@
   <div class='wrapper'>
     <div class='about'>
       <h2>{{ about.title }}</h2>
-      <p>{{ about.content }}</p>
+      <p>{{ about.content | raw }}</p>
     </div>
     <div class='map'>
       <img src='/images/map.png'>

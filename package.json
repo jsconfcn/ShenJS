@@ -1,21 +1,21 @@
 {
-  "name": "foundation",
+  "name": "ShenJS",
   "version": "1.0.0",
-  "description": "A simple static website boilerplate",
+  "description": "Official ShenJS website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/wiredcraft/foundation.git"
+    "url": "git://github.com/jsconfcn/ShenJS.git"
   },
   "author": "Ronan Berder",
   "license": "MIT",
   "bugs": {
-    "url": "git://github.com/wiredcraft/foundation/issues"
+    "url": "git://github.com/jsconfcn/ShenJS/issues"
   },
-  "homepage": "http://github.com/wiredcraft/foundation",
+  "homepage": "http://2015.jsconf.cn",
   "dependencies": {
     "gulp": "3.*.*",
     "gulp-util": "3.0.1",
