@@ -68,7 +68,7 @@ input:not([type=submit]), textarea {
   @if $reverse true {
     &:nth-child(even) {
       float: right;
-      padding: $gutter*3 0 0 $gutter;
+      padding: $gutter*3.5 0 0 $gutter;
     }
     &:nth-child(odd) {
       float: left;
@@ -93,9 +93,15 @@ input:not([type=submit]), textarea {
   background: $blue;
   @include clearfix;
   color: #FFF;
-  padding: $gutter;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  width: 100%;
   .menu {
     float: right;
+    padding: 18px;
+    position: relative;
+    z-index: 1;
     a {
       border: 2px solid tint($blue, 30%);
       border-radius: 50%;
@@ -113,14 +119,13 @@ input:not([type=submit]), textarea {
       }
     }
   }
-}
-/* Content */
-
-#content {
   .hero {
     background: $blue;
+    box-sizing: border-box;
     color: #FFF;
-    position: relative;
+    height: 100%;
+    padding-top: $gutter*4;
+    // min-height: $gutter*20;
     .wrapper {
       margin: 0 auto;
       position: relative;
@@ -289,7 +294,7 @@ input:not([type=submit]), textarea {
         animation: arrow 1s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
       }
       &:hover {
-        bottom: $gutter*3.3;
+        bottom: $gutter*3;
         box-shadow: rgba(0, 0, 0, 0.2) 0 3px $gutter/4 0;
         opacity: 0.9;
       }
@@ -298,6 +303,11 @@ input:not([type=submit]), textarea {
       }
     }
   }
+}
+/* Content */
+
+#content {
+  padding-top: 100%;
   .section {
     padding: 4*$gutter 0;
     @include tablet {
@@ -414,9 +424,9 @@ input:not([type=submit]), textarea {
     .about {
       h2 {
         color: $blue;
-        @include font-size($large);
+        @include font-size($large+10);
         font-weight: normal;
-        margin-bottom: $gutter*1.5;
+        margin-bottom: $gutter*0.75;
         @include tablet{
           margin-bottom: $gutter/2;
           text-align: center;

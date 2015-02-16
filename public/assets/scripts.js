@@ -9789,27 +9789,31 @@ $(function() {
 });
 $(function() {
   function center(){
-    var hero = $('body.page-front #content .hero');
-    if (hero.length) {
+    var header = $('body.page-front #header');
+    if (header.length) {
       // Reset for calculations
-      hero.css({ 'height': '' });
+      header.css({ 'height': '' });
       // Apply our magic
       var viewport = $(window).height();
-      var position = hero.offset();
-      hero.css({
+      var position = header.offset();
+      header.css({
         'height': (viewport - position.top),
-        'min-height': hero.height()
+        'min-height': header.height()
       });
     }
   }
-  function scrollto(){
-    $('.arrow').click(function(){
-      $("html,body").stop().animate({scrollTop: $(window).height()},500);
-    })
+  function firstlaunch(){
+      $('#header').css({'position':'relative'});
+      $('#content').css({'padding':'0'});
   }
+  
+  $('.arrow').click(function(){
+    $('html,body').stop().animate({scrollTop: $(window).height()},300);
+  });
   center();
-  scrollto();
+  firstlaunch();
   $(window).resize(center);
+  
 });
 hljs.initHighlightingOnLoad();
 $(function() {
