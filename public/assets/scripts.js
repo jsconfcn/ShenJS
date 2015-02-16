@@ -9789,7 +9789,7 @@ $(function() {
 });
 $(function() {
   function center(){
-    var hero = $('body.page-front #content .hero');
+    var hero = $('body #content .hero');
     if (hero.length) {
       // Reset for calculations
       hero.css({ 'height': '' });
@@ -9804,7 +9804,7 @@ $(function() {
   }
   function scrollto(){
     $('.arrow').click(function(){
-      $("html,body").stop().animate({scrollTop: $(window).height()},500);
+      $('html, body').stop().animate({scrollTop: $(window).height()},500);
     })
   }
   center();

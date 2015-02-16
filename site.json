@@ -4,15 +4,18 @@
     "metadata": {
         "site": {
             "name": "ShenJS",
-            "description": "A simple static website boilerplate with Metalsmith & Gulp",
-            "url": "http://github.com/Wiredcraft/foundation",
+            "description": "2015 JS Conference in China",
+            "url": "http://2015.jsconf.cn",
             "author": "Wiredcraft",
             "email": "info@wiredcraft.com",
             "keywords": [
-                "Wiredcraft",
-                "Metalsmith.io",
-                "static website",
-                "Gulp"
+                "Javascript",
+                "Node.js",
+                "realtime",
+                "JSconf",
+                "Shenzhen",
+                "China",
+                "conference"
             ]
         }
     },
