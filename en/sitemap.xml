@@ -2,11 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://2015.jsconf.cn/blog/my-first-post</loc>
-    <lastmod>2015-01-01</lastmod>
-  </url>
-  
-  <url>
     <loc>http://2015.jsconf.cn/</loc>
     <lastmod>2015-02-16</lastmod>
   </url>
