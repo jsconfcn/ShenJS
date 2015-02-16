@@ -26,15 +26,7 @@
         "metalsmith-include": {},
         "metalsmith-drafts": {},
         "metalsmith-build-date": true,
-        "metalsmith-collections": {
-            "blog": {
-                "sortBy": "date",
-                "reverse": true
-            },
-            "team": {
-                "sortBy": "title"
-            }
-        },
+        "metalsmith-collections": {},
         "metalsmith-excerpts": true,
         "metalsmith-permalinks": {},
         "metalsmith-templates": {
