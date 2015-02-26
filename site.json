@@ -16,7 +16,8 @@
                 "Shenzhen",
                 "China",
                 "conference"
-            ]
+            ],
+            "gauges": "54ee7d005dd053560400c9bd"
         }
     },
     "metalsmith": {
