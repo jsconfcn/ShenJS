@@ -6,7 +6,7 @@ description: 今年夏天中国主要的JavaScript会议，我们一起在深圳
 event:
   title: JS中国开发者大会
   subtitle: 讲师征集
-  details: 2015年夏, 中国深圳
+  details: 2015年7月11－12日, 中国深圳
 
 register:
   arrow: 提交申请

@@ -1,9 +1,11 @@
 /* Eggshell */
 
-$font: 'Roboto', Arial, 'Microsoft YaHei';
+$font: 'Roboto', Arial, "Hiragino Sans GB", "Microsoft YaHei",
+"WenQuanYi Micro Hei", sans-serif;
 $blue: #5399fc;
 $black: #4d4d4d;
 $light: #DBEAFF;
+$white: #FFFFFF;
 
 @import 'eggshell';
 @import 'layout';
@@ -68,21 +70,21 @@ input:not([type=submit]), textarea {
   @if $reverse true {
     &:nth-child(even) {
       float: right;
-      padding: $gutter*3.5 0 0 $gutter;
+      padding: $gutter*3.5 0 0 $gutter*2;
     }
     &:nth-child(odd) {
       float: left;
-      padding-right: $gutter;
+      padding-right: $gutter*2;
     }
   }
   @else {
     &:nth-child(even) {
       float: left;
-      padding-right: $gutter;
+      padding-right: $gutter*2;
     }
     &:nth-child(odd) {
       float: right;
-      padding-left: $gutter;
+      padding-left: $gutter*2;
     }
   }
 }
@@ -329,7 +331,7 @@ input:not([type=submit]), textarea {
 #content {
   padding-top: 100%;
   .section {
-    padding: 4*$gutter 0;
+    padding: 5*$gutter 0;
     @include tablet {
       padding: 3*$gutter 5%;
     }
@@ -427,9 +429,9 @@ input:not([type=submit]), textarea {
       }
     }
   }
-  .info {
+  .info, .call {
     @include clearfix;
-    .about, .map {
+    .about, .map, .content, .speaker {
       @include halves;
       @include tablet {
         width: 100%;
@@ -437,13 +439,13 @@ input:not([type=submit]), textarea {
         padding: 0px!important;
       }
     }
-    .about {
+    .about, .content {
       h2 {
         color: $blue;
         @include font-size($large+10);
         font-weight: normal;
         margin-bottom: $gutter*0.75;
-        @include tablet{
+        @include tablet {
           margin-bottom: $gutter/2;
           text-align: center;
         }
@@ -454,12 +456,41 @@ input:not([type=submit]), textarea {
         line-height: 180%;
       }
     }
-    .map {
+    .map, .speaker {
       text-align: center;
       margin: 0px;
       img {
         max-width: $gutter*25;
         width: 100%;
+      }
+    }
+  }
+  .call {
+    background: $blue;
+    .content {
+      h2, p {
+        color: $white;
+      }
+      &:nth-child(even) {
+        padding-top:0px;
+      }
+      a{
+        &.button{
+          background: #fff;
+          border-radius: 5px;
+          color: $blue;
+          display: block;
+          margin-top: $gutter/2;
+          padding: $gutter/2;
+          width: 140px;
+          @include font-size($normal);
+          @include tablet{
+            margin: 0 auto;
+          }
+          &:hover{
+            background: #EFEFEF;
+          }
+        }
       }
     }
   }
@@ -549,14 +580,14 @@ input:not([type=submit]), textarea {
           .arrow {
               &.register{
               background: $blue;
-              border-radius: 4px;
+              border-radius: 5px;
               color: #fff;
               cursor: pointer;
               margin-top: 50px;
               padding: $gutter/2;
               text-align: center;
               width: 140px;
-              @include font-size($larger);
+              @include font-size($normal);
              }
           }
         }
@@ -569,7 +600,7 @@ input:not([type=submit]), textarea {
     .wrapper{
       color: #fff;
       padding: 50px 20px;
-      width: 700px;
+      max-width: 700px;
     } 
   }
 }

@@ -25,6 +25,10 @@ a {
     &:hover { color: #3B5998; }
     &:before { content: 'f'; }
   }
+  &.slack {
+    &:hover { color: #E4236F; }
+    &:before { content: 's'; }
+  }
   &.google {
     &:hover { color: #d64937; }
     &:before { content: 'p'; }

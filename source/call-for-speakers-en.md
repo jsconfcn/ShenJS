@@ -6,10 +6,10 @@ description: Join us for the main Javascript conference in Shenzhen, China this 
 event:
   title: JSConf China
   subtitle: Call for speakers
-  details: Summer 2015 in Shenzhen, China
+  details: 11th-12th July, 2015, Shenzhen, China
 
 register:
-  arrow: Register
+  arrow: Submit
 
 content:
   title: 讲师征集

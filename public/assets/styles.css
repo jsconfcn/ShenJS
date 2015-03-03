@@ -613,7 +613,7 @@ input:not([type=submit]), textarea, .select select {
 body {
   background: #FFF;
   color: #797979;
-  font-family: 'Roboto', Arial, 'Microsoft YaHei';
+  font-family: 'Roboto', Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-weight: normal;
   position: relative; }
 
@@ -1661,7 +1661,7 @@ input:not([type=submit]), textarea {
 #content {
   padding-top: 100%; }
   #content .section {
-    padding: 80px 0; }
+    padding: 100px 0; }
     @media only screen and (max-width: 768px) {
       #content .section {
         padding: 60px 5%; } }
@@ -1684,7 +1684,7 @@ input:not([type=submit]), textarea {
         #content .action .wrapper form .button, #content .action .wrapper form input:not([type=submit]) {
           border: 0;
           line-height: 180%;
-          font-family: 'Roboto', Arial, 'Microsoft YaHei';
+          font-family: 'Roboto', Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
           font-size: inherit;
           padding: 10px 30px; }
         #content .action .wrapper form .button {
@@ -1756,47 +1756,68 @@ input:not([type=submit]), textarea {
       @media only screen and (max-width: 768px) {
         #content .action .line {
           width: 260px; } }
-  #content .info:after {
+  #content .info:after, #content .call:after {
     content: "";
     display: table;
     clear: both; }
-  #content .info .about, #content .info .map {
+  #content .info .about, #content .info .map, #content .info .content, #content .info .speaker, #content .call .about, #content .call .map, #content .call .content, #content .call .speaker {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 50%; }
-    #content .info .about:nth-child(even), #content .info .map:nth-child(even) {
+    #content .info .about:nth-child(even), #content .info .map:nth-child(even), #content .info .content:nth-child(even), #content .info .speaker:nth-child(even), #content .call .about:nth-child(even), #content .call .map:nth-child(even), #content .call .content:nth-child(even), #content .call .speaker:nth-child(even) {
       float: right;
-      padding: 70px 0 0 20px; }
-    #content .info .about:nth-child(odd), #content .info .map:nth-child(odd) {
+      padding: 70px 0 0 40px; }
+    #content .info .about:nth-child(odd), #content .info .map:nth-child(odd), #content .info .content:nth-child(odd), #content .info .speaker:nth-child(odd), #content .call .about:nth-child(odd), #content .call .map:nth-child(odd), #content .call .content:nth-child(odd), #content .call .speaker:nth-child(odd) {
       float: left;
-      padding-right: 20px; }
+      padding-right: 40px; }
     @media only screen and (max-width: 768px) {
-      #content .info .about, #content .info .map {
+      #content .info .about, #content .info .map, #content .info .content, #content .info .speaker, #content .call .about, #content .call .map, #content .call .content, #content .call .speaker {
         width: 100%;
         margin: 0px 0px 20px 0px;
         padding: 0px !important; } }
-  #content .info .about h2 {
+  #content .info .about h2, #content .info .content h2, #content .call .about h2, #content .call .content h2 {
     color: #5399fc;
     font-size: 34px;
     font-size: 3.4rem;
     font-weight: normal;
     margin-bottom: 15px; }
     @media only screen and (max-width: 768px) {
-      #content .info .about h2 {
+      #content .info .about h2, #content .info .content h2, #content .call .about h2, #content .call .content h2 {
         margin-bottom: 10px;
         text-align: center; } }
-  #content .info .about p {
+  #content .info .about p, #content .info .content p, #content .call .about p, #content .call .content p {
     color: #4d4d4d;
     font-size: 16px;
     font-size: 1.6rem;
     line-height: 180%; }
-  #content .info .map {
+  #content .info .map, #content .info .speaker, #content .call .map, #content .call .speaker {
     text-align: center;
     margin: 0px; }
-    #content .info .map img {
+    #content .info .map img, #content .info .speaker img, #content .call .map img, #content .call .speaker img {
       max-width: 500px;
       width: 100%; }
+  #content .call {
+    background: #5399fc; }
+    #content .call .content h2, #content .call .content p {
+      color: #FFFFFF; }
+    #content .call .content:nth-child(even) {
+      padding-top: 0px; }
+    #content .call .content a.button {
+      background: #fff;
+      border-radius: 5px;
+      color: #5399fc;
+      display: block;
+      margin-top: 10px;
+      padding: 10px;
+      width: 140px;
+      font-size: 16px;
+      font-size: 1.6rem; }
+      @media only screen and (max-width: 768px) {
+        #content .call .content a.button {
+          margin: 0 auto; } }
+      #content .call .content a.button:hover {
+        background: #EFEFEF; }
 
 /* Footer */
 #footer {
@@ -1837,10 +1858,10 @@ input:not([type=submit]), textarea {
       width: 50%; }
       .call-for-speakers #header .hero .wrapper .logo:nth-child(even), .call-for-speakers #header .hero .wrapper .title:nth-child(even) {
         float: right;
-        padding: 70px 0 0 20px; }
+        padding: 70px 0 0 40px; }
       .call-for-speakers #header .hero .wrapper .logo:nth-child(odd), .call-for-speakers #header .hero .wrapper .title:nth-child(odd) {
         float: left;
-        padding-right: 20px; }
+        padding-right: 40px; }
     .call-for-speakers #header .hero .wrapper .logo {
       left: 0px;
       margin-top: -230px;
@@ -1883,21 +1904,21 @@ input:not([type=submit]), textarea {
         color: #5399fc; }
       .call-for-speakers #header .hero .wrapper .title .arrow.register {
         background: #5399fc;
-        border-radius: 4px;
+        border-radius: 5px;
         color: #fff;
         cursor: pointer;
         margin-top: 50px;
         padding: 10px;
         text-align: center;
         width: 140px;
-        font-size: 18px;
-        font-size: 1.8rem; }
+        font-size: 16px;
+        font-size: 1.6rem; }
 .call-for-speakers #content {
   background: #5399fc; }
   .call-for-speakers #content .wrapper {
     color: #fff;
     padding: 50px 20px;
-    width: 700px; }
+    max-width: 700px; }
 
 /* Social */
 #social {
@@ -1988,6 +2009,10 @@ input:not([type=submit]), textarea {
     color: #3B5998; }
   .social a.facebook:before {
     content: 'f'; }
+  .social a.slack:hover {
+    color: #E4236F; }
+  .social a.slack:before {
+    content: 's'; }
   .social a.google:hover {
     color: #d64937; }
   .social a.google:before {

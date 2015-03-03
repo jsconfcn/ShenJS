@@ -1,12 +1,13 @@
-{% extends 'default.html' %}
 
+
+{% extends 'default.html' %}
 {% block content %}
 {% parent %}
 
 
 <section class='section action'>
   <div class='wrapper'>
-    <!-- <div class='countdown'>
+<!--     <div class='countdown'>
       <span class='days'><strong>50</strong> {{ time.days }}</span>
       <span class='hours'><strong>5</strong> {{ time.hours }}</span>
       <span class='minutes'><strong>23</strong> {{ time.minutes }}</span>
@@ -15,11 +16,7 @@
     <!-- <img src='/images/line.png' class='line'> -->
     <h2>{{ subscribe.title }}</h2>
     {% include 'partials/_subscribe.html' %}
-    <nav class='social'>
-      <a class='weibo' href='http://weibo.com/JSConfChina'><span>Weibo</span></a>
-      <a class='twitter' href='http://twitter.com/jsconfcn'><span>Twitter</span></a>
-      <a class='github' href='http://github.com/jsconfcn/ShenJS'><span>GitHub</span></a>
-    </nav>
+    {% include 'partials/_social.html' %}
   </div>
 </section>
 <section class='section info'>
@@ -32,6 +29,10 @@
       <img src='/images/map.png'>
     </div>
   </div>
+</section>
+
+<section class='section call'>
+{% include 'partials/_call.html' %}
 </section>
 
 {% endblock %}
