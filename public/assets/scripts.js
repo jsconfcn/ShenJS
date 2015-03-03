@@ -9806,7 +9806,13 @@ $(function() {
       $('#content').css({'padding':'0'});
   }
   $('.arrow').click(function(){
-    $('html,body').stop().animate({scrollTop: $(window).height()},300);
+    if($(this).hasClass('register')){
+      $('html,body').stop().animate({scrollTop: $('#register').offset().top },300);
+      console.log($('#register').offset().top);
+
+    }else if($(this).hasClass('down')){
+      $('html,body').stop().animate({scrollTop: $(window).height()},300);
+    }
   });
   center();
   firstlaunch();

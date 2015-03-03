@@ -1,22 +1,6 @@
 <!doctype html>
 <html lang='{{ locale }}'>
-<head>
-  <meta charset='utf-8'/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-
-  <title>{{ title }} | {{ site.name }}</title>
-
-  <meta http-equiv='Content-Language' content='en'/>
-  <meta name='keywords' content='{{ site.keywords | join(", ") }}{% if tags %}, {{ tags | join(", ") }}{% endif %}'/>
-  {% if description %}<meta name='description' content='{{ description }}'/>
-  {% elseif site.description %}<meta name='description' content='{{ site.description }}'/>{% endif %}
-  
-  <!-- Favicons -->
-  {% include 'partials/_favicons.html' %}
-
-  <!-- CSS -->
-  <link href='/assets/styles.css' rel='stylesheet' type='text/css'/>
-</head>
+{% include 'partials/_head.html' %}
 <body class='page-{{ path | default("front") }}'>
 
   <header id='header'>
@@ -39,7 +23,7 @@
           <li class='layer' data-depth='0.30'><div class='cloud'></div></li>
         </ul>
       </div>
-      <div class='arrow'></div>
+      <div class='arrow down'></div>
     </header>
   </header>
 

@@ -284,42 +284,46 @@ input:not([type=submit]), textarea {
       }
     }
     .arrow {
-      background: #fff;
-      border-radius: 50%;
-      bottom: $gutter*3.5;
-      cursor: pointer;
-      height: $gutter*2.5;
-      position: absolute;
-      left: 50%;
-      margin-left: -$gutter;
-      opacity: 0.8;
-      width: $gutter*2.5;
-      @include transition(all, 0.5s, ease);
-      &:after {
-        @include icon;
-        content: 'd';
-        color: $blue;
-        @include font-size(20);
-        left: $gutter*0.75;
-        position: absolute;
-        text-align: center;
-        top: $gutter*0.75;
-        width: $gutter;
-        -webkit-animation: arrow 1s 0.1s infinite alternate cubic-bezier(0.455, 0.33, 0.515, 0.955);
-        -moz-animation: arrow 1s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.415, 0.955);
-        animation: arrow 1s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-      }
-      &:hover {
-        bottom: $gutter*3;
-        box-shadow: rgba(0, 0, 0, 0.2) 0 3px $gutter/4 0;
-        opacity: 0.9;
-      }
-      &:active {
+      &.down {
+        background: #fff;
+        border-radius: 50%;
         bottom: $gutter*3.5;
+        cursor: pointer;
+        height: $gutter*2.5;
+        position: absolute;
+        left: 50%;
+        margin-left: -$gutter;
+        opacity: 0.8;
+        width: $gutter*2.5;
+        @include transition(all, 0.5s, ease);
+        &:after {
+          @include icon;
+          content: 'd';
+          color: $blue;
+          @include font-size(20);
+          left: $gutter*0.75;
+          position: absolute;
+          text-align: center;
+          top: $gutter*0.75;
+          width: $gutter;
+          -webkit-animation: arrow 1s 0.1s infinite alternate cubic-bezier(0.455, 0.33, 0.515, 0.955);
+          -moz-animation: arrow 1s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.415, 0.955);
+          animation: arrow 1s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        }
+        &:hover {
+          bottom: $gutter*3;
+          box-shadow: rgba(0, 0, 0, 0.2) 0 3px $gutter/4 0;
+          opacity: 0.9;
+        }
+        &:active {
+          bottom: $gutter*3.5;
+        }
       }
     }
+
   }
 }
+
 /* Content */
 
 #content {
@@ -422,10 +426,6 @@ input:not([type=submit]), textarea {
         width: $gutter*13;
       }
     }
-    .social {
-      @include clearfix;
-      @import '_social.scss';
-    }
   }
   .info {
     @include clearfix;
@@ -485,3 +485,110 @@ input:not([type=submit]), textarea {
     }
   }
 }
+
+/* Call For Speakers */
+.call-for-speakers {
+  #header {
+    .menu {
+      a{
+        &:hover{
+          color: $blue;
+          border-color: $blue;
+        }
+      }
+    }
+    .hero {
+      background: #fff;
+      color: $blue;    
+      .wrapper {
+        height: 100%;
+        position: relative;
+        .logo, .title {
+          @include halves;
+        }
+        .logo {
+          left: 0px;
+          margin-top: -230px;
+          position: absolute;
+          top: 50%;
+          &:before {
+            @include icon;
+            content: '0';
+            display: block;
+            @include font-size(180);
+            line-height: 300px;
+            margin-bottom: $gutter/2;
+            @include tablet {
+             @include font-size(120);
+            }
+          }
+        }
+        .title {
+          height: 300px;
+          position: absolute;
+          padding-top: 0px;
+          margin-top: -230px;
+          right: 0px;
+          top: 50%;
+          text-align: left;
+          &:nth-child(even) {
+            padding-top: 50px;
+          }
+          h1 {
+            line-height: 100%;
+            &:before {
+              content: '';
+            }
+          }
+          h2 {
+            color: $blue;
+          }
+          p {
+            color: $blue;
+          }
+          .arrow {
+              &.register{
+              background: $blue;
+              border-radius: 4px;
+              color: #fff;
+              cursor: pointer;
+              margin-top: 50px;
+              padding: $gutter/2;
+              text-align: center;
+              width: 140px;
+              @include font-size($larger);
+             }
+          }
+        }
+      }
+    }
+  }
+  #content {
+    background: $blue;
+
+    .wrapper{
+      color: #fff;
+      padding: 50px 20px;
+      width: 700px;
+    } 
+  }
+}
+
+
+/* Social */
+#social {
+  background: #DBEAFF;
+  padding: 50px
+}
+.social {
+  @include clearfix;
+  @import '_social.scss';
+}
+
+/* Register Form */
+.entry-container{
+  .banner{
+    display: none!important;
+  }
+}
+
