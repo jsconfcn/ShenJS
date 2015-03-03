@@ -4,6 +4,7 @@ $font: 'Roboto', Arial, 'Microsoft YaHei';
 $blue: #5399fc;
 $black: #4d4d4d;
 $light: #DBEAFF;
+$white: #FFFFFF;
 
 @import 'eggshell';
 @import 'layout';
@@ -427,9 +428,9 @@ input:not([type=submit]), textarea {
       @import '_social.scss';
     }
   }
-  .info {
+  .info, .call {
     @include clearfix;
-    .about, .map {
+    .about, .map, .content, .speaker {
       @include halves;
       @include tablet {
         width: 100%;
@@ -437,13 +438,13 @@ input:not([type=submit]), textarea {
         padding: 0px!important;
       }
     }
-    .about {
+    .about, .content {
       h2 {
         color: $blue;
         @include font-size($large+10);
         font-weight: normal;
         margin-bottom: $gutter*0.75;
-        @include tablet{
+        @include tablet {
           margin-bottom: $gutter/2;
           text-align: center;
         }
@@ -454,12 +455,20 @@ input:not([type=submit]), textarea {
         line-height: 180%;
       }
     }
-    .map {
+    .map, .speaker {
       text-align: center;
       margin: 0px;
       img {
         max-width: $gutter*25;
         width: 100%;
+      }
+    }
+  }
+  .call {
+    background: $blue;
+    .content {
+      h2, p {
+        color: $white;
       }
     }
   }

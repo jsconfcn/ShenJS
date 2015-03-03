@@ -6,12 +6,12 @@
 
 <section class='section action'>
   <div class='wrapper'>
-    <!-- <div class='countdown'>
+    <div class='countdown'>
       <span class='days'><strong>50</strong> {{ time.days }}</span>
       <span class='hours'><strong>5</strong> {{ time.hours }}</span>
       <span class='minutes'><strong>23</strong> {{ time.minutes }}</span>
       <span class='seconds'><strong>43</strong> {{ time.seconds }}</span>
-    </div> -->
+    </div>
     <!-- <img src='/images/line.png' class='line'> -->
     <h2>{{ subscribe.title }}</h2>
     {% include 'partials/_subscribe.html' %}
@@ -31,6 +31,19 @@
     </div>
     <div class='map'>
       <img src='/images/map.png'>
+    </div>
+  </div>
+</section>
+
+<section class='section call'>
+  <div class='wrapper'>
+    <div class='speaker'>
+      <img src='/images/speaker.png'>
+    </div>
+    <div class='content'>
+      <h2>{{ call.title }}</h2>
+      <p>{{ call.content | raw }}</p>
+      <a class='button' href='/cfp'>{{call.button}}</a>
     </div>
   </div>
 </section>

@@ -1861,47 +1861,51 @@ input:not([type=submit]), textarea {
       #content .action .social a.hn:before {
         content: 'Y';
         font-weight: bold; }
-  #content .info:after {
+  #content .info:after, #content .call:after {
     content: "";
     display: table;
     clear: both; }
-  #content .info .about, #content .info .map {
+  #content .info .about, #content .info .map, #content .info .content, #content .info .speaker, #content .call .about, #content .call .map, #content .call .content, #content .call .speaker {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 50%; }
-    #content .info .about:nth-child(even), #content .info .map:nth-child(even) {
+    #content .info .about:nth-child(even), #content .info .map:nth-child(even), #content .info .content:nth-child(even), #content .info .speaker:nth-child(even), #content .call .about:nth-child(even), #content .call .map:nth-child(even), #content .call .content:nth-child(even), #content .call .speaker:nth-child(even) {
       float: right;
       padding: 70px 0 0 20px; }
-    #content .info .about:nth-child(odd), #content .info .map:nth-child(odd) {
+    #content .info .about:nth-child(odd), #content .info .map:nth-child(odd), #content .info .content:nth-child(odd), #content .info .speaker:nth-child(odd), #content .call .about:nth-child(odd), #content .call .map:nth-child(odd), #content .call .content:nth-child(odd), #content .call .speaker:nth-child(odd) {
       float: left;
       padding-right: 20px; }
     @media only screen and (max-width: 768px) {
-      #content .info .about, #content .info .map {
+      #content .info .about, #content .info .map, #content .info .content, #content .info .speaker, #content .call .about, #content .call .map, #content .call .content, #content .call .speaker {
         width: 100%;
         margin: 0px 0px 20px 0px;
         padding: 0px !important; } }
-  #content .info .about h2 {
+  #content .info .about h2, #content .info .content h2, #content .call .about h2, #content .call .content h2 {
     color: #5399fc;
     font-size: 34px;
     font-size: 3.4rem;
     font-weight: normal;
     margin-bottom: 15px; }
     @media only screen and (max-width: 768px) {
-      #content .info .about h2 {
+      #content .info .about h2, #content .info .content h2, #content .call .about h2, #content .call .content h2 {
         margin-bottom: 10px;
         text-align: center; } }
-  #content .info .about p {
+  #content .info .about p, #content .info .content p, #content .call .about p, #content .call .content p {
     color: #4d4d4d;
     font-size: 16px;
     font-size: 1.6rem;
     line-height: 180%; }
-  #content .info .map {
+  #content .info .map, #content .info .speaker, #content .call .map, #content .call .speaker {
     text-align: center;
     margin: 0px; }
-    #content .info .map img {
+    #content .info .map img, #content .info .speaker img, #content .call .map img, #content .call .speaker img {
       max-width: 500px;
       width: 100%; }
+  #content .call {
+    background: #5399fc; }
+    #content .call .content h2, #content .call .content p {
+      color: #FFFFFF; }
 
 /* Footer */
 #footer {
