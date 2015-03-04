@@ -1899,7 +1899,9 @@ input:not([type=submit]), textarea {
       text-align: left; }
       @media only screen and (max-width: 768px) {
         .call-for-speakers #header .hero .wrapper .title {
-          padding-top: 130px !important; } }
+          padding-top: 130px !important; }
+          .call-for-speakers #header .hero .wrapper .title h1, .call-for-speakers #header .hero .wrapper .title p {
+            text-align: center; } }
       .call-for-speakers #header .hero .wrapper .title:nth-child(even) {
         padding-top: 50px; }
       .call-for-speakers #header .hero .wrapper .title h1 {
@@ -1916,18 +1918,24 @@ input:not([type=submit]), textarea {
         color: #fff;
         cursor: pointer;
         display: block;
-        margin: 50px auto;
+        margin-top: 50px;
         padding: 10px;
         text-align: center;
         width: 140px;
         font-size: 16px;
         font-size: 1.6rem; }
+        @media only screen and (max-width: 768px) {
+          .call-for-speakers #header .hero .wrapper .title .arrow.register {
+            margin: 50px auto 0px auto; } }
 .call-for-speakers #content {
-  background: #5399fc; }
+  background: #5399fc;
+  padding: 100px 0; }
   .call-for-speakers #content .wrapper {
     color: #fff;
-    padding: 50px 20px;
+    padding: 0 20px;
     max-width: 700px; }
+    .call-for-speakers #content .wrapper p {
+      line-height: 180%; }
 @media only screen and (max-width: 768px) {
   .call-for-speakers #register {
     padding: 0 30px; } }
@@ -1935,7 +1943,7 @@ input:not([type=submit]), textarea {
 /* Social */
 #social {
   background: #DBEAFF;
-  padding: 50px; }
+  padding: 50px 0; }
 
 .social:after {
   content: "";
