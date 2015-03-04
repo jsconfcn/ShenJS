@@ -13,7 +13,7 @@ register:
 
 content:
   title: 讲师征集
-  paragraph: We believe that the Open Web is made better by a variety of perspectives. Our goal is to create a respectful, inclusive, and diverse environment for all, where we can seek out and explore new ideas and concepts that push the boundaries of CSS and the web community at large.
+  paragraph: 2014 has been a great year for JavaScript and the JavaScript community. io.js began to steal the attention from Node.js, ES6 has been making huge progress and will publish a standard this year. We saw people start to use ES6 today with tools like babel.js. With Johny Five, Tessel, we saw more possibilities of what JavaScript can do. We want to hear your thoughts on JavaScript, your experiences, and of course your mad science. You are welcome to share any topic that is related(or not) to JavaScript.
 
 collection: page
 template: call-for-speakers.html
