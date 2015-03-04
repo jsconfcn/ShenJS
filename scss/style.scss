@@ -95,8 +95,8 @@ input:not([type=submit]), textarea {
   background: $blue;
   @include clearfix;
   color: #FFF;
-  height: 100%;
-  position: fixed;
+  height: 920px;
+  position: relative;
   top: 0px;
   width: 100%;
   z-index: 1;
@@ -329,7 +329,6 @@ input:not([type=submit]), textarea {
 /* Content */
 
 #content {
-  padding-top: 100%;
   .section {
     padding: 5*$gutter 0;
     @include tablet {
@@ -536,12 +535,18 @@ input:not([type=submit]), textarea {
         position: relative;
         .logo, .title {
           @include halves;
+          @include tablet {
+            width: 100%;
+            margin: 0px 0px $gutter 0px;
+            padding: 0px!important;
+          }
         }
         .logo {
           left: 0px;
           margin-top: -230px;
           position: absolute;
           top: 50%;
+          z-index: 1;
           &:before {
             @include icon;
             content: '0';
@@ -550,7 +555,8 @@ input:not([type=submit]), textarea {
             line-height: 300px;
             margin-bottom: $gutter/2;
             @include tablet {
-             @include font-size(120);
+             @include font-size(100);
+             line-height: 100px;
             }
           }
         }
@@ -562,6 +568,9 @@ input:not([type=submit]), textarea {
           right: 0px;
           top: 50%;
           text-align: left;
+          @include tablet {
+            padding-top: 130px!important;
+          }
           &:nth-child(even) {
             padding-top: 50px;
           }
@@ -583,7 +592,8 @@ input:not([type=submit]), textarea {
               border-radius: 5px;
               color: #fff;
               cursor: pointer;
-              margin-top: 50px;
+              display: block;
+              margin: 50px auto;
               padding: $gutter/2;
               text-align: center;
               width: 140px;
@@ -596,12 +606,16 @@ input:not([type=submit]), textarea {
   }
   #content {
     background: $blue;
-
     .wrapper{
       color: #fff;
       padding: 50px 20px;
       max-width: 700px;
     } 
+  }
+  #register {
+    @include tablet {
+      padding: 0 30px;
+    }
   }
 }
 
