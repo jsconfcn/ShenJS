@@ -570,6 +570,9 @@ input:not([type=submit]), textarea {
           text-align: left;
           @include tablet {
             padding-top: 130px!important;
+            h1,p {
+              text-align: center;
+            }
           }
           &:nth-child(even) {
             padding-top: 50px;
@@ -593,12 +596,15 @@ input:not([type=submit]), textarea {
               color: #fff;
               cursor: pointer;
               display: block;
-              margin: 50px auto;
+              margin-top: 50px;
               padding: $gutter/2;
               text-align: center;
               width: 140px;
               @include font-size($normal);
-             }
+              @include tablet {
+                 margin: 50px auto 0px auto;
+              }
+            }
           }
         }
       }
@@ -606,10 +612,14 @@ input:not([type=submit]), textarea {
   }
   #content {
     background: $blue;
+    padding: $gutter*5 0;
     .wrapper{
       color: #fff;
-      padding: 50px 20px;
+      padding: 0 $gutter;
       max-width: 700px;
+      p {
+        line-height: 180%;
+      }
     } 
   }
   #register {
@@ -623,7 +633,7 @@ input:not([type=submit]), textarea {
 /* Social */
 #social {
   background: #DBEAFF;
-  padding: 50px
+  padding: 50px 0;
 }
 .social {
   @include clearfix;
