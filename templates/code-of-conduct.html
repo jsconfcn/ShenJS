@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang='{{ locale }}'>
+{% include 'partials/_head.html' %}
+<body class='page-{{ path | default("front") }} code-of-conducts'>
+
+  <header id='header'>
+    <nav class='menu'>
+      {% if locale == 'zh' %}<a href='/code-of-conduct-en'>EN</a>{% endif %}
+      {% if locale == 'en' %}<a href='/code-of-conduct'>中文</a>{% endif %}
+    </nav> 
+    <header class='hero'> 
+      <div class='wrapper'>
+        <a class='logo' href='/'></a>
+        <div class='title'>
+          <h1>{{ event.title }}</h1>
+          <h2>{{ event.subtitle }}</h2>
+          <p>{{ event.details }}</p>
+        </div>  
+      </div>  
+    </header>
+  </header>
+
+  <section id='content'>
+    <div class='wrapper'>
+      <p>{{ content.paragraph }}</p>
+      <h2>{{ content.title }}</h2>
+      <p>{{ content.paragraph }}</p>
+      <h3>{{ content.short.title }}</h3>
+      <p>{{ content.short.content }}</p>
+
+      <h3>{{ content.long.title }}</h3>
+      <h4>{{ content.long.harassment.title }}</h4>
+      <p>{{ content.long.harassment.content }}</p>
+
+      <h4>{{ content.long.sponsors.title }}</h4>
+      <p>{{ content.long.sponsors.content }}</p>
+
+      <h4>{{ content.long.participants.title }}</h4>
+      <p>{{ content.long.participants.content }}</p>
+
+      <h4>{{ content.long.staff.title }}</h4>
+      <p>{{ content.long.staff.content }}</p>
+
+      <h4>{{ content.long.venue.title }}</h4>
+      <p>{{ content.long.venue.content }}</p>
+
+      <h4>{{ content.licence.venue.title }}</h4>
+      <p>{{ content.licence.venue.content }}</p>
+    </div> 
+  </section>
+
+  <section id='social'>
+  {% include 'partials/_social.html' %}
+  </section>
+  <footer id='footer'>
+    {% include 'partials/_footer.html' %}
+  </footer>
+
+  <!-- JS -->
+  <script src='/assets/scripts.js' type='text/javascript'></script>
+  <!--[if lt IE 9]><script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script><![endif]-->
+  {% if site.gauges %}{% include 'partials/_gauges.html' %}{% endif %}
+    {% if site.ga %}{% include 'partials/_ga.html' %}{% endif %}
+</body>
+</html>
