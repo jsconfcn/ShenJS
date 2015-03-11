@@ -1681,7 +1681,7 @@ input:not([type=submit]), textarea {
       margin-bottom: 60px; }
       #content .action .wrapper form .button, #content .action .wrapper form input:not([type=submit]) {
         border: 0;
-        line-height: 180%;
+        line-height: 200%;
         font-family: 'Roboto', Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
         font-size: inherit;
         padding: 10px 30px; }
@@ -1788,13 +1788,15 @@ input:not([type=submit]), textarea {
   color: #4d4d4d;
   font-size: 16px;
   font-size: 1.6rem;
-  line-height: 180%; }
+  line-height: 200%; }
 #content .info .map, #content .info .speaker, #content .call .map, #content .call .speaker {
   text-align: center;
   margin: 0px; }
   #content .info .map img, #content .info .speaker img, #content .call .map img, #content .call .speaker img {
     max-width: 500px;
     width: 100%; }
+#content .info .speaker img, #content .call .speaker img {
+  margin-bottom: 20px; }
 #content .call {
   background: #5399fc; }
   #content .call .content h2, #content .call .content p {
@@ -1806,7 +1808,7 @@ input:not([type=submit]), textarea {
     border-radius: 5px;
     color: #5399fc;
     display: block;
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 10px;
     width: 140px;
     font-size: 16px;
@@ -1822,7 +1824,7 @@ input:not([type=submit]), textarea {
   border-top: 1px solid #DBEAFF;
   font-size: 14px;
   font-size: 1.4rem;
-  padding: 30px 0;
+  padding: 40px 0;
   text-align: center; }
   #footer a {
     margin: 0 40px;
@@ -1853,7 +1855,9 @@ input:not([type=submit]), textarea {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
-      width: 50%; }
+      width: 50%;
+      padding-right: 0px !important;
+      padding-left: 0px !important; }
       .call-for-speakers #header .hero .wrapper .logo:nth-child(even), .call-for-speakers #header .hero .wrapper .title:nth-child(even), .code-of-conduct #header .hero .wrapper .logo:nth-child(even), .code-of-conduct #header .hero .wrapper .title:nth-child(even) {
         float: right;
         padding: 70px 0 0 40px; }
@@ -1930,19 +1934,26 @@ input:not([type=submit]), textarea {
             margin: 50px auto 0px auto; } }
 .call-for-speakers #content, .code-of-conduct #content {
   background: #5399fc;
-  padding: 100px 0; }
+  padding: 60px 0; }
   .call-for-speakers #content .wrapper, .code-of-conduct #content .wrapper {
     color: #fff;
     padding: 0 20px;
     max-width: 700px; }
     .call-for-speakers #content .wrapper p, .code-of-conduct #content .wrapper p {
-      line-height: 180%; }
+      line-height: 200%;
+      margin-bottom: 60px; }
     .call-for-speakers #content .wrapper h2, .call-for-speakers #content .wrapper h4, .call-for-speakers #content .wrapper h3, .code-of-conduct #content .wrapper h2, .code-of-conduct #content .wrapper h4, .code-of-conduct #content .wrapper h3 {
       color: #fff;
-      font-weight: normal; }
-    .call-for-speakers #content .wrapper h2, .code-of-conduct #content .wrapper h2 {
+      font-weight: normal;
+      margin-bottom: 40px; }
+    .call-for-speakers #content .wrapper h3, .code-of-conduct #content .wrapper h3 {
       font-size: 32px;
-      font-size: 3.2rem; }
+      font-size: 3.2rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    .call-for-speakers #content .wrapper h4, .code-of-conduct #content .wrapper h4 {
+      font-size: 20px;
+      font-size: 2rem;
+      margin-bottom: 10px; }
 @media only screen and (max-width: 768px) {
   .call-for-speakers #register, .code-of-conduct #register {
     padding: 0 30px; } }
@@ -1950,7 +1961,7 @@ input:not([type=submit]), textarea {
 /* Social */
 #social {
   background: #DBEAFF;
-  padding: 50px 0; }
+  padding: 60px 0; }
 
 .social:after {
   content: "";
@@ -1959,7 +1970,7 @@ input:not([type=submit]), textarea {
 .social a {
   font-size: 30px;
   font-size: 3rem;
-  padding: 0 10px;
+  padding: 0 15px;
   position: relative;
   -webkit-transition: all, 0.2s, ease;
   -moz-transition: all, 0.2s, ease;

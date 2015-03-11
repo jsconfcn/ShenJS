@@ -354,7 +354,7 @@ input:not([type=submit]), textarea {
         margin-bottom: $gutter*3;
         .button, input:not([type=submit]) {
           border: 0;
-          line-height: 180%;
+          line-height: 200%;
           font-family: $font;
           font-size: inherit;
           padding: $gutter/2 1.5*$gutter;
@@ -452,7 +452,7 @@ input:not([type=submit]), textarea {
       p {
         color: $black;
         @include font-size($normal);
-        line-height: 180%;
+        line-height: 200%;
       }
     }
     .map, .speaker {
@@ -461,6 +461,11 @@ input:not([type=submit]), textarea {
       img {
         max-width: $gutter*25;
         width: 100%;
+      }
+    }
+    .speaker {
+      img {
+        margin-bottom: 20px
       }
     }
   }
@@ -479,7 +484,7 @@ input:not([type=submit]), textarea {
           border-radius: 5px;
           color: $blue;
           display: block;
-          margin-top: $gutter/2;
+          margin-top: $gutter*1.5;
           padding: $gutter/2;
           width: 140px;
           @include font-size($normal);
@@ -500,7 +505,7 @@ input:not([type=submit]), textarea {
 #footer {
   border-top: 1px solid $light;
   @include font-size($smaller);
-  padding: $gutter*1.5 0;
+  padding: $gutter*2 0;
   text-align: center;
   a {
     margin: 0 $gutter*2;
@@ -535,6 +540,8 @@ input:not([type=submit]), textarea {
         position: relative;
         .logo, .title {
           @include halves;
+          padding-right: 0px!important;
+          padding-left: 0px!important;
           @include tablet {
             width: 100%;
             margin: 0px 0px $gutter 0px;
@@ -613,20 +620,27 @@ input:not([type=submit]), textarea {
   }
   #content {
     background: $blue;
-    padding: $gutter*5 0;
+    padding: $gutter*3 0;
     .wrapper{
       color: #fff;
       padding: 0 $gutter;
       max-width: 700px;
       p {
-        line-height: 180%;
+        line-height: 200%;
+        margin-bottom: $gutter*3;
       }
       h2, h4, h3 {
         color: #fff;
         font-weight: normal;
+        margin-bottom: $gutter*2;
       }
-      h2 {
+      h3 {
         @include font-size($huge);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      h4 {
+        @include font-size(20);
+        margin-bottom: $gutter/2;
       }
     } 
   }
@@ -641,7 +655,7 @@ input:not([type=submit]), textarea {
 /* Social */
 #social {
   background: #DBEAFF;
-  padding: 50px 0;
+  padding: $gutter*3 0;
 }
 .social {
   @include clearfix;
