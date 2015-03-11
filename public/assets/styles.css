@@ -1492,9 +1492,10 @@ input:not([type=submit]), textarea {
       #header .hero .wrapper h1 {
         color: inherit;
         font-weight: normal;
-        font-size: 52px;
-        font-size: 5.2rem;
+        font-size: 48px;
+        font-size: 4.8rem;
         line-height: 110%;
+        letter-spacing: 1px;
         margin-bottom: 20px; }
         #header .hero .wrapper h1:before {
           font-family: 'icons';
@@ -1505,10 +1506,10 @@ input:not([type=submit]), textarea {
           -webkit-font-smoothing: antialiased;
           content: '0';
           display: block;
-          font-size: 80px;
-          font-size: 8rem;
+          font-size: 95px;
+          font-size: 9.5rem;
           line-height: 120%;
-          margin-bottom: 10px; }
+          margin-bottom: 20px; }
         #header .hero .wrapper h1 + p {
           color: #edf4fe;
           font-size: 24px;
@@ -1516,19 +1517,19 @@ input:not([type=submit]), textarea {
           margin: 0; }
         @media only screen and (min-width: 769px) and (max-width: 1600px) {
           #header .hero .wrapper h1 {
-            font-size: 44px;
-            font-size: 4.4rem;
+            font-size: 45px;
+            font-size: 4.5rem;
             margin-bottom: 10px; }
             #header .hero .wrapper h1:before {
-              font-size: 70px;
-              font-size: 7rem; }
+              font-size: 90px;
+              font-size: 9rem; }
             #header .hero .wrapper h1 + p {
               font-size: 18px;
               font-size: 1.8rem; } }
         @media only screen and (max-width: 768px) {
           #header .hero .wrapper h1 {
-            font-size: 42px;
-            font-size: 4.2rem;
+            font-size: 30px;
+            font-size: 3rem;
             margin-bottom: 10px; }
             #header .hero .wrapper h1:before {
               font-size: 60px;
@@ -1954,6 +1955,11 @@ input:not([type=submit]), textarea {
       font-size: 20px;
       font-size: 2rem;
       margin-bottom: 10px; }
+    .call-for-speakers #content .wrapper a, .code-of-conduct #content .wrapper a {
+      color: #fff;
+      opacity: 0.6; }
+      .call-for-speakers #content .wrapper a:hover, .code-of-conduct #content .wrapper a:hover {
+        opacity: 0.7; }
 @media only screen and (max-width: 768px) {
   .call-for-speakers #register, .code-of-conduct #register {
     padding: 0 30px; } }

@@ -30,7 +30,10 @@ content:
       content: If a participant engages in harassing behavior, the conference organizers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund. If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff can be identified by t-shirts/special badges. Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.
     staff: 
       title: Staff Contact Information
-      infos: XXX (English) XXXX
+      content: 
+          name: Claire Sheng
+          mail: claire@wiredcraft.com
+          tel: +86 15901839750
     venue:
       title: Venue & Social Events
       content: We expect participants to follow these rules at all conference venues and conference-related social events.

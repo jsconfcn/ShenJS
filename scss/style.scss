@@ -143,16 +143,17 @@ input:not([type=submit]), textarea {
       h1 {
         color: inherit;
         font-weight: normal;
-        @include font-size($gigantic+4);
+        @include font-size(48);
         line-height: 110%;
+        letter-spacing: 1px;
         margin-bottom: $gutter;
         &:before {
           @include icon;
           content: '0';
           display: block;
-          @include font-size(80);
+          @include font-size(95);
           line-height: 120%;
-          margin-bottom: $gutter/2;
+          margin-bottom: $gutter;
         }
         & + p {
           color: tint($blue, 90%);
@@ -160,17 +161,17 @@ input:not([type=submit]), textarea {
           margin: 0;
         }
         @include medium{
-          @include font-size(44);
+          @include font-size(45);
           margin-bottom: $gutter/2;
           &:before {
-            @include font-size(70);
+            @include font-size(90);
           }
           & + p {
             @include font-size($larger);
           }
         }
         @include small {
-          @include font-size(42);
+          @include font-size(30);
           margin-bottom: $gutter/2;
           &:before {
             @include font-size(60);
@@ -641,6 +642,13 @@ input:not([type=submit]), textarea {
       h4 {
         @include font-size(20);
         margin-bottom: $gutter/2;
+      }
+      a {
+        color: #fff;
+        opacity: 0.6;
+        &:hover {
+          opacity: 0.7;
+        }
       }
     } 
   }
