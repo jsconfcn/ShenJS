@@ -1440,7 +1440,7 @@ input:not([type=submit]), textarea {
 #header {
   background: #5399fc;
   color: #FFF;
-  height: 920px;
+  height: 960px;
   position: relative;
   top: 0px;
   width: 100%;
@@ -1451,7 +1451,7 @@ input:not([type=submit]), textarea {
     clear: both; }
   @media only screen and (min-width: 769px) and (max-width: 1600px) {
     #header {
-      max-height: 800px; } }
+      max-height: 740px; } }
   @media only screen and (max-width: 768px) {
     #header {
       max-height: 600px; } }
@@ -1840,38 +1840,38 @@ input:not([type=submit]), textarea {
       width: 100%; } }
 
 /* Call For Speakers */
-.call-for-speakers #header .menu a:hover {
+.call-for-speakers #header .menu a:hover, .code-of-conduct #header .menu a:hover {
   color: #5399fc;
   border-color: #5399fc; }
-.call-for-speakers #header .hero {
+.call-for-speakers #header .hero, .code-of-conduct #header .hero {
   background: #fff;
   color: #5399fc; }
-  .call-for-speakers #header .hero .wrapper {
+  .call-for-speakers #header .hero .wrapper, .code-of-conduct #header .hero .wrapper {
     height: 100%;
     position: relative; }
-    .call-for-speakers #header .hero .wrapper .logo, .call-for-speakers #header .hero .wrapper .title {
+    .call-for-speakers #header .hero .wrapper .logo, .call-for-speakers #header .hero .wrapper .title, .code-of-conduct #header .hero .wrapper .logo, .code-of-conduct #header .hero .wrapper .title {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       width: 50%; }
-      .call-for-speakers #header .hero .wrapper .logo:nth-child(even), .call-for-speakers #header .hero .wrapper .title:nth-child(even) {
+      .call-for-speakers #header .hero .wrapper .logo:nth-child(even), .call-for-speakers #header .hero .wrapper .title:nth-child(even), .code-of-conduct #header .hero .wrapper .logo:nth-child(even), .code-of-conduct #header .hero .wrapper .title:nth-child(even) {
         float: right;
         padding: 70px 0 0 40px; }
-      .call-for-speakers #header .hero .wrapper .logo:nth-child(odd), .call-for-speakers #header .hero .wrapper .title:nth-child(odd) {
+      .call-for-speakers #header .hero .wrapper .logo:nth-child(odd), .call-for-speakers #header .hero .wrapper .title:nth-child(odd), .code-of-conduct #header .hero .wrapper .logo:nth-child(odd), .code-of-conduct #header .hero .wrapper .title:nth-child(odd) {
         float: left;
         padding-right: 40px; }
       @media only screen and (max-width: 768px) {
-        .call-for-speakers #header .hero .wrapper .logo, .call-for-speakers #header .hero .wrapper .title {
+        .call-for-speakers #header .hero .wrapper .logo, .call-for-speakers #header .hero .wrapper .title, .code-of-conduct #header .hero .wrapper .logo, .code-of-conduct #header .hero .wrapper .title {
           width: 100%;
           margin: 0px 0px 20px 0px;
           padding: 0px !important; } }
-    .call-for-speakers #header .hero .wrapper .logo {
+    .call-for-speakers #header .hero .wrapper .logo, .code-of-conduct #header .hero .wrapper .logo {
       left: 0px;
       margin-top: -230px;
       position: absolute;
       top: 50%;
       z-index: 1; }
-      .call-for-speakers #header .hero .wrapper .logo:before {
+      .call-for-speakers #header .hero .wrapper .logo:before, .code-of-conduct #header .hero .wrapper .logo:before {
         font-family: 'icons';
         font-variant: normal;
         font-weight: normal;
@@ -1885,12 +1885,12 @@ input:not([type=submit]), textarea {
         line-height: 300px;
         margin-bottom: 10px; }
         @media only screen and (max-width: 768px) {
-          .call-for-speakers #header .hero .wrapper .logo:before {
+          .call-for-speakers #header .hero .wrapper .logo:before, .code-of-conduct #header .hero .wrapper .logo:before {
             font-size: 100px;
             font-size: 10rem;
             line-height: 100px; } }
-    .call-for-speakers #header .hero .wrapper .title {
-      height: 300px;
+    .call-for-speakers #header .hero .wrapper .title, .code-of-conduct #header .hero .wrapper .title {
+      height: 260px;
       position: absolute;
       padding-top: 0px;
       margin-top: -230px;
@@ -1898,46 +1898,53 @@ input:not([type=submit]), textarea {
       top: 50%;
       text-align: left; }
       @media only screen and (max-width: 768px) {
-        .call-for-speakers #header .hero .wrapper .title {
+        .call-for-speakers #header .hero .wrapper .title, .code-of-conduct #header .hero .wrapper .title {
           padding-top: 130px !important; }
-          .call-for-speakers #header .hero .wrapper .title h1, .call-for-speakers #header .hero .wrapper .title p {
+          .call-for-speakers #header .hero .wrapper .title h1, .call-for-speakers #header .hero .wrapper .title p, .code-of-conduct #header .hero .wrapper .title h1, .code-of-conduct #header .hero .wrapper .title p {
             text-align: center; } }
-      .call-for-speakers #header .hero .wrapper .title:nth-child(even) {
+      .call-for-speakers #header .hero .wrapper .title:nth-child(even), .code-of-conduct #header .hero .wrapper .title:nth-child(even) {
         padding-top: 50px; }
-      .call-for-speakers #header .hero .wrapper .title h1 {
+      .call-for-speakers #header .hero .wrapper .title h1, .code-of-conduct #header .hero .wrapper .title h1 {
         line-height: 100%; }
-        .call-for-speakers #header .hero .wrapper .title h1:before {
+        .call-for-speakers #header .hero .wrapper .title h1:before, .code-of-conduct #header .hero .wrapper .title h1:before {
           content: ''; }
-      .call-for-speakers #header .hero .wrapper .title h2 {
+      .call-for-speakers #header .hero .wrapper .title h2, .code-of-conduct #header .hero .wrapper .title h2 {
         color: #5399fc; }
-      .call-for-speakers #header .hero .wrapper .title p {
-        color: #5399fc; }
-      .call-for-speakers #header .hero .wrapper .title .arrow.register {
+      .call-for-speakers #header .hero .wrapper .title p, .code-of-conduct #header .hero .wrapper .title p {
+        color: #5399fc;
+        padding: 15px 0; }
+      .call-for-speakers #header .hero .wrapper .title .arrow.register, .code-of-conduct #header .hero .wrapper .title .arrow.register {
         background: #5399fc;
         border-radius: 5px;
         color: #fff;
         cursor: pointer;
         display: block;
-        margin-top: 50px;
+        margin-top: 20px;
         padding: 10px;
         text-align: center;
         width: 140px;
         font-size: 16px;
         font-size: 1.6rem; }
         @media only screen and (max-width: 768px) {
-          .call-for-speakers #header .hero .wrapper .title .arrow.register {
+          .call-for-speakers #header .hero .wrapper .title .arrow.register, .code-of-conduct #header .hero .wrapper .title .arrow.register {
             margin: 50px auto 0px auto; } }
-.call-for-speakers #content {
+.call-for-speakers #content, .code-of-conduct #content {
   background: #5399fc;
   padding: 100px 0; }
-  .call-for-speakers #content .wrapper {
+  .call-for-speakers #content .wrapper, .code-of-conduct #content .wrapper {
     color: #fff;
     padding: 0 20px;
     max-width: 700px; }
-    .call-for-speakers #content .wrapper p {
+    .call-for-speakers #content .wrapper p, .code-of-conduct #content .wrapper p {
       line-height: 180%; }
+    .call-for-speakers #content .wrapper h2, .call-for-speakers #content .wrapper h4, .call-for-speakers #content .wrapper h3, .code-of-conduct #content .wrapper h2, .code-of-conduct #content .wrapper h4, .code-of-conduct #content .wrapper h3 {
+      color: #fff;
+      font-weight: normal; }
+    .call-for-speakers #content .wrapper h2, .code-of-conduct #content .wrapper h2 {
+      font-size: 32px;
+      font-size: 3.2rem; }
 @media only screen and (max-width: 768px) {
-  .call-for-speakers #register {
+  .call-for-speakers #register, .code-of-conduct #register {
     padding: 0 30px; } }
 
 /* Social */

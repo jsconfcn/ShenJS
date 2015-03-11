@@ -5,7 +5,7 @@ description: 今年夏天中国主要的JavaScript会议，我们一起在深圳
 
 event:
   title: JS中国开发者大会
-  subtitle: 讲师征集
+  subtitle: 行为准则
   details: 2015年7月11－12日, 中国深圳
 
 register:
@@ -15,7 +15,6 @@ register:
 
 content:
   title: Code of Conduct
-  paragraph: 2014 has been a great year for JavaScript and the JavaScript community. io.js began to steal the attention from Node.js, ES6 has been making huge progress and will publish a standard this year. We saw people start to use ES6 today with tools like babel.js. With Johny Five, Tessel, we saw more possibilities of what JavaScript can do. We want to hear your thoughts on JavaScript, your experiences, and of course your mad science. You are welcome to share any topic that is related(or not) to JavaScript.
   short: 
     title: Short Version
     content: JingJS is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organizers.

@@ -95,13 +95,13 @@ input:not([type=submit]), textarea {
   background: $blue;
   @include clearfix;
   color: #FFF;
-  height: 920px;
+  height: 960px;
   position: relative;
   top: 0px;
   width: 100%;
   z-index: 1;
   @include medium {
-    max-height: 800px;
+    max-height: 740px;
   }
   @include small {
     max-height: 600px;
@@ -517,7 +517,7 @@ input:not([type=submit]), textarea {
 }
 
 /* Call For Speakers */
-.call-for-speakers {
+.call-for-speakers, .code-of-conduct {
   #header {
     .menu {
       a{
@@ -561,7 +561,7 @@ input:not([type=submit]), textarea {
           }
         }
         .title {
-          height: 300px;
+          height: 260px;
           position: absolute;
           padding-top: 0px;
           margin-top: -230px;
@@ -588,6 +588,7 @@ input:not([type=submit]), textarea {
           }
           p {
             color: $blue;
+            padding: 15px 0;
           }
           .arrow {
               &.register{
@@ -596,7 +597,7 @@ input:not([type=submit]), textarea {
               color: #fff;
               cursor: pointer;
               display: block;
-              margin-top: 50px;
+              margin-top: 20px;
               padding: $gutter/2;
               text-align: center;
               width: 140px;
@@ -619,6 +620,13 @@ input:not([type=submit]), textarea {
       max-width: 700px;
       p {
         line-height: 180%;
+      }
+      h2, h4, h3 {
+        color: #fff;
+        font-weight: normal;
+      }
+      h2 {
+        @include font-size($huge);
       }
     } 
   }

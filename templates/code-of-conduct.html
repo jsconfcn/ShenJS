@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang='{{ locale }}'>
 {% include 'partials/_head.html' %}
-<body class='page-{{ path | default("front") }} code-of-conducts'>
+<body class='page-{{ path | default("front") }} code-of-conduct'>
 
   <header id='header'>
     <nav class='menu'>
@@ -13,7 +13,7 @@
         <a class='logo' href='/'></a>
         <div class='title'>
           <h1>{{ event.title }}</h1>
-          <h2>{{ event.subtitle }}</h2>
+          <h1>{{ event.subtitle }}</h1>
           <p>{{ event.details }}</p>
         </div>  
       </div>  
@@ -22,8 +22,6 @@
 
   <section id='content'>
     <div class='wrapper'>
-      <p>{{ content.paragraph }}</p>
-      <h2>{{ content.title }}</h2>
       <p>{{ content.paragraph }}</p>
       <h3>{{ content.short.title }}</h3>
       <p>{{ content.short.content }}</p>
