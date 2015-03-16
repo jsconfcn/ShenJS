@@ -1440,7 +1440,7 @@ input:not([type=submit]), textarea {
 #header {
   background: #5399fc;
   color: #FFF;
-  height: 920px;
+  height: 960px;
   position: relative;
   top: 0px;
   width: 100%;
@@ -1451,7 +1451,7 @@ input:not([type=submit]), textarea {
     clear: both; }
   @media only screen and (min-width: 769px) and (max-width: 1600px) {
     #header {
-      max-height: 800px; } }
+      max-height: 740px; } }
   @media only screen and (max-width: 768px) {
     #header {
       max-height: 600px; } }
@@ -1492,9 +1492,10 @@ input:not([type=submit]), textarea {
       #header .hero .wrapper h1 {
         color: inherit;
         font-weight: normal;
-        font-size: 52px;
-        font-size: 5.2rem;
+        font-size: 48px;
+        font-size: 4.8rem;
         line-height: 110%;
+        letter-spacing: 1px;
         margin-bottom: 20px; }
         #header .hero .wrapper h1:before {
           font-family: 'icons';
@@ -1505,10 +1506,10 @@ input:not([type=submit]), textarea {
           -webkit-font-smoothing: antialiased;
           content: '0';
           display: block;
-          font-size: 80px;
-          font-size: 8rem;
+          font-size: 95px;
+          font-size: 9.5rem;
           line-height: 120%;
-          margin-bottom: 10px; }
+          margin-bottom: 20px; }
         #header .hero .wrapper h1 + p {
           color: #edf4fe;
           font-size: 24px;
@@ -1516,19 +1517,19 @@ input:not([type=submit]), textarea {
           margin: 0; }
         @media only screen and (min-width: 769px) and (max-width: 1600px) {
           #header .hero .wrapper h1 {
-            font-size: 44px;
-            font-size: 4.4rem;
+            font-size: 45px;
+            font-size: 4.5rem;
             margin-bottom: 10px; }
             #header .hero .wrapper h1:before {
-              font-size: 70px;
-              font-size: 7rem; }
+              font-size: 90px;
+              font-size: 9rem; }
             #header .hero .wrapper h1 + p {
               font-size: 18px;
               font-size: 1.8rem; } }
         @media only screen and (max-width: 768px) {
           #header .hero .wrapper h1 {
-            font-size: 42px;
-            font-size: 4.2rem;
+            font-size: 30px;
+            font-size: 3rem;
             margin-bottom: 10px; }
             #header .hero .wrapper h1:before {
               font-size: 60px;
@@ -1681,7 +1682,7 @@ input:not([type=submit]), textarea {
       margin-bottom: 60px; }
       #content .action .wrapper form .button, #content .action .wrapper form input:not([type=submit]) {
         border: 0;
-        line-height: 180%;
+        line-height: 200%;
         font-family: 'Roboto', Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
         font-size: inherit;
         padding: 10px 30px; }
@@ -1788,13 +1789,15 @@ input:not([type=submit]), textarea {
   color: #4d4d4d;
   font-size: 16px;
   font-size: 1.6rem;
-  line-height: 180%; }
+  line-height: 200%; }
 #content .info .map, #content .info .speaker, #content .call .map, #content .call .speaker {
   text-align: center;
   margin: 0px; }
   #content .info .map img, #content .info .speaker img, #content .call .map img, #content .call .speaker img {
     max-width: 500px;
     width: 100%; }
+#content .info .speaker img, #content .call .speaker img {
+  margin-bottom: 20px; }
 #content .call {
   background: #5399fc; }
   #content .call .content h2, #content .call .content p {
@@ -1806,7 +1809,7 @@ input:not([type=submit]), textarea {
     border-radius: 5px;
     color: #5399fc;
     display: block;
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 10px;
     width: 140px;
     font-size: 16px;
@@ -1822,7 +1825,7 @@ input:not([type=submit]), textarea {
   border-top: 1px solid #DBEAFF;
   font-size: 14px;
   font-size: 1.4rem;
-  padding: 30px 0;
+  padding: 40px 0;
   text-align: center; }
   #footer a {
     margin: 0 40px;
@@ -1840,38 +1843,40 @@ input:not([type=submit]), textarea {
       width: 100%; } }
 
 /* Call For Speakers */
-.call-for-speakers #header .menu a:hover {
+.call-for-speakers #header .menu a:hover, .code-of-conduct #header .menu a:hover {
   color: #5399fc;
   border-color: #5399fc; }
-.call-for-speakers #header .hero {
+.call-for-speakers #header .hero, .code-of-conduct #header .hero {
   background: #fff;
   color: #5399fc; }
-  .call-for-speakers #header .hero .wrapper {
+  .call-for-speakers #header .hero .wrapper, .code-of-conduct #header .hero .wrapper {
     height: 100%;
     position: relative; }
-    .call-for-speakers #header .hero .wrapper .logo, .call-for-speakers #header .hero .wrapper .title {
+    .call-for-speakers #header .hero .wrapper .logo, .call-for-speakers #header .hero .wrapper .title, .code-of-conduct #header .hero .wrapper .logo, .code-of-conduct #header .hero .wrapper .title {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
-      width: 50%; }
-      .call-for-speakers #header .hero .wrapper .logo:nth-child(even), .call-for-speakers #header .hero .wrapper .title:nth-child(even) {
+      width: 50%;
+      padding-right: 0px !important;
+      padding-left: 0px !important; }
+      .call-for-speakers #header .hero .wrapper .logo:nth-child(even), .call-for-speakers #header .hero .wrapper .title:nth-child(even), .code-of-conduct #header .hero .wrapper .logo:nth-child(even), .code-of-conduct #header .hero .wrapper .title:nth-child(even) {
         float: right;
         padding: 70px 0 0 40px; }
-      .call-for-speakers #header .hero .wrapper .logo:nth-child(odd), .call-for-speakers #header .hero .wrapper .title:nth-child(odd) {
+      .call-for-speakers #header .hero .wrapper .logo:nth-child(odd), .call-for-speakers #header .hero .wrapper .title:nth-child(odd), .code-of-conduct #header .hero .wrapper .logo:nth-child(odd), .code-of-conduct #header .hero .wrapper .title:nth-child(odd) {
         float: left;
         padding-right: 40px; }
       @media only screen and (max-width: 768px) {
-        .call-for-speakers #header .hero .wrapper .logo, .call-for-speakers #header .hero .wrapper .title {
+        .call-for-speakers #header .hero .wrapper .logo, .call-for-speakers #header .hero .wrapper .title, .code-of-conduct #header .hero .wrapper .logo, .code-of-conduct #header .hero .wrapper .title {
           width: 100%;
           margin: 0px 0px 20px 0px;
           padding: 0px !important; } }
-    .call-for-speakers #header .hero .wrapper .logo {
+    .call-for-speakers #header .hero .wrapper .logo, .code-of-conduct #header .hero .wrapper .logo {
       left: 0px;
       margin-top: -230px;
       position: absolute;
       top: 50%;
       z-index: 1; }
-      .call-for-speakers #header .hero .wrapper .logo:before {
+      .call-for-speakers #header .hero .wrapper .logo:before, .code-of-conduct #header .hero .wrapper .logo:before {
         font-family: 'icons';
         font-variant: normal;
         font-weight: normal;
@@ -1885,12 +1890,12 @@ input:not([type=submit]), textarea {
         line-height: 300px;
         margin-bottom: 10px; }
         @media only screen and (max-width: 768px) {
-          .call-for-speakers #header .hero .wrapper .logo:before {
+          .call-for-speakers #header .hero .wrapper .logo:before, .code-of-conduct #header .hero .wrapper .logo:before {
             font-size: 100px;
             font-size: 10rem;
             line-height: 100px; } }
-    .call-for-speakers #header .hero .wrapper .title {
-      height: 300px;
+    .call-for-speakers #header .hero .wrapper .title, .code-of-conduct #header .hero .wrapper .title {
+      height: 260px;
       position: absolute;
       padding-top: 0px;
       margin-top: -230px;
@@ -1898,52 +1903,71 @@ input:not([type=submit]), textarea {
       top: 50%;
       text-align: left; }
       @media only screen and (max-width: 768px) {
-        .call-for-speakers #header .hero .wrapper .title {
+        .call-for-speakers #header .hero .wrapper .title, .code-of-conduct #header .hero .wrapper .title {
           padding-top: 130px !important; }
-          .call-for-speakers #header .hero .wrapper .title h1, .call-for-speakers #header .hero .wrapper .title p {
+          .call-for-speakers #header .hero .wrapper .title h1, .call-for-speakers #header .hero .wrapper .title p, .code-of-conduct #header .hero .wrapper .title h1, .code-of-conduct #header .hero .wrapper .title p {
             text-align: center; } }
-      .call-for-speakers #header .hero .wrapper .title:nth-child(even) {
+      .call-for-speakers #header .hero .wrapper .title:nth-child(even), .code-of-conduct #header .hero .wrapper .title:nth-child(even) {
         padding-top: 50px; }
-      .call-for-speakers #header .hero .wrapper .title h1 {
+      .call-for-speakers #header .hero .wrapper .title h1, .code-of-conduct #header .hero .wrapper .title h1 {
         line-height: 100%; }
-        .call-for-speakers #header .hero .wrapper .title h1:before {
+        .call-for-speakers #header .hero .wrapper .title h1:before, .code-of-conduct #header .hero .wrapper .title h1:before {
           content: ''; }
-      .call-for-speakers #header .hero .wrapper .title h2 {
+      .call-for-speakers #header .hero .wrapper .title h2, .code-of-conduct #header .hero .wrapper .title h2 {
         color: #5399fc; }
-      .call-for-speakers #header .hero .wrapper .title p {
-        color: #5399fc; }
-      .call-for-speakers #header .hero .wrapper .title .arrow.register {
+      .call-for-speakers #header .hero .wrapper .title p, .code-of-conduct #header .hero .wrapper .title p {
+        color: #5399fc;
+        padding: 15px 0; }
+      .call-for-speakers #header .hero .wrapper .title .arrow.register, .code-of-conduct #header .hero .wrapper .title .arrow.register {
         background: #5399fc;
         border-radius: 5px;
         color: #fff;
         cursor: pointer;
         display: block;
-        margin-top: 50px;
+        margin-top: 20px;
         padding: 10px;
         text-align: center;
         width: 140px;
         font-size: 16px;
         font-size: 1.6rem; }
         @media only screen and (max-width: 768px) {
-          .call-for-speakers #header .hero .wrapper .title .arrow.register {
+          .call-for-speakers #header .hero .wrapper .title .arrow.register, .code-of-conduct #header .hero .wrapper .title .arrow.register {
             margin: 50px auto 0px auto; } }
-.call-for-speakers #content {
+.call-for-speakers #content, .code-of-conduct #content {
   background: #5399fc;
-  padding: 100px 0; }
-  .call-for-speakers #content .wrapper {
+  padding: 60px 0; }
+  .call-for-speakers #content .wrapper, .code-of-conduct #content .wrapper {
     color: #fff;
     padding: 0 20px;
     max-width: 700px; }
-    .call-for-speakers #content .wrapper p {
-      line-height: 180%; }
+    .call-for-speakers #content .wrapper p, .code-of-conduct #content .wrapper p {
+      line-height: 200%;
+      margin-bottom: 60px; }
+    .call-for-speakers #content .wrapper h2, .call-for-speakers #content .wrapper h4, .call-for-speakers #content .wrapper h3, .code-of-conduct #content .wrapper h2, .code-of-conduct #content .wrapper h4, .code-of-conduct #content .wrapper h3 {
+      color: #fff;
+      font-weight: normal;
+      margin-bottom: 40px; }
+    .call-for-speakers #content .wrapper h3, .code-of-conduct #content .wrapper h3 {
+      font-size: 32px;
+      font-size: 3.2rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    .call-for-speakers #content .wrapper h4, .code-of-conduct #content .wrapper h4 {
+      font-size: 20px;
+      font-size: 2rem;
+      margin-bottom: 10px; }
+    .call-for-speakers #content .wrapper a, .code-of-conduct #content .wrapper a {
+      color: #fff;
+      opacity: 0.6; }
+      .call-for-speakers #content .wrapper a:hover, .code-of-conduct #content .wrapper a:hover {
+        opacity: 0.7; }
 @media only screen and (max-width: 768px) {
-  .call-for-speakers #register {
+  .call-for-speakers #register, .code-of-conduct #register {
     padding: 0 30px; } }
 
 /* Social */
 #social {
   background: #DBEAFF;
-  padding: 50px 0; }
+  padding: 60px 0; }
 
 .social:after {
   content: "";
@@ -1952,7 +1976,7 @@ input:not([type=submit]), textarea {
 .social a {
   font-size: 30px;
   font-size: 3rem;
-  padding: 0 10px;
+  padding: 0 15px;
   position: relative;
   -webkit-transition: all, 0.2s, ease;
   -moz-transition: all, 0.2s, ease;
