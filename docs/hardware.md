@@ -1,4 +1,4 @@
-深JS 柴火创客合作建议
+深JS 硬件合作商合作建议
 ==================
 
 #### 关于深JS
@@ -30,17 +30,17 @@ JavaScript社区是目前Github上最活跃的社区之一，同时拥有最广�
 
 ![http://2014.jsconf.us/img/banner/drones.jpg](http://2014.jsconf.us/img/banner/drones.jpg)
 
-#### 深JS与柴火创客空间合作建议
+#### 深JS与硬件合作商空间合作建议
 
 方案一:
-* 柴火创客可派讲师做硬件相关开发分享
-* 柴火创客或Seeedstudio赞助提供50-100套Arduino/tessel/raspberry pi设备作为活动nodebots session的硬件支持
-* 柴火创客将会作为活动唯一硬件赞助商，等同于活动A类赞助商，享有A类赞助商权益(活动会场Banner, 官网logo展示，免费门票等)
+* 硬件合作商可派讲师做硬件相关开发分享
+* 硬件合作商提供30-50套Arduino/tessel/raspberry pi设备作为活动nodebots session的硬件支持
+* 硬件合作商将会作为活动唯一硬件赞助商，等同于活动A类赞助商，享有A类赞助商权益(活动会场Banner, 官网logo展示，免费门票等)
 * 赞助的硬件设备在活动期间或结束后可作为活动礼品赠送至开发者或折价销售
 
 方案二：
-* 柴火创客可派讲师做硬件相关开发分享
-* 柴火创客或Seeedstudio以折扣价格出售50-100套Arduino/tessel/raspberry pi设备作为活动nodebots session的硬件支持
-* 柴火创客将作为活动唯一硬件赞助商
+* 硬件合作商可派讲师做硬件相关开发分享
+* 硬件合作商以折扣价格出售50-100套Arduino/tessel/raspberry pi设备作为活动nodebots session的硬件支持
+* 硬件合作商将作为活动唯一硬件赞助商
 
 以上活动方案可根据实际情况由双方进行协商。
