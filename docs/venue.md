@@ -21,6 +21,7 @@ Things to check about venue
 
 * 158元/位 鸡尾酒会 红酒，点心，红茶，软饮 2小时供应
 * 3W咖啡包场地 (官方可协助点心)
+  负责人 陈先生 18124638509
   no nearby bar
   use the venue's other area, so the venue will provide the afterparty food and other facility
 
