@@ -1,0 +1,99 @@
+/* BASIC */
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.button {
+  color: #fff;
+  display: block;
+  font-size: 1.1rem;
+  letter-spacing: 0.5rem;
+  padding: 8px 6px 8px 10px;
+  text-align: center;
+  text-indent: 0.1rem;
+}
+
+.button.blue {
+  background: #3395FF;
+  border-radius: 20px;
+}
+
+.header .menu ul:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0px;
+  visibility: hidden;
+}
+
+/* HEADER */
+
+.header {
+  background: url('../img/header.png') no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  padding: 6rem 0px;
+  position: relative;
+}
+
+.header p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.header .logo {
+  background: url("../img/logo.png") no-repeat center center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  border-radius: 5px;
+  height: 100px;
+  margin: 0 auto 25px;
+  width: 100px;
+}
+
+.header .main-button {
+  margin: 15px auto;
+  width: 180px;
+}
+
+.header .menu {
+  background: #fff;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  bottom: 0px;
+  color: #333;
+  height: 70px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+}
+
+.header .menu ul {
+  display: block;
+  text-align: center;
+}
+
+.header .menu ul li {
+  display: inline-block;
+}
+
+.header .menu ul li a {
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  width: 150px;
+}
+
+.header .menu ul li .button {
+  padding: 2px 3px;
+  font-size: 1rem;
+}

@@ -1,0 +1,34 @@
+$blue: #3395FF;
+/* BASIC */
+html{
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.button {
+  color: #fff;
+  display: block;
+  font-size: 1.1rem;
+  letter-spacing: 0.5rem;
+  padding: 8px 6px 8px 10px;
+  text-align: center;
+  text-indent: 0.1rem;
+  &.blue {
+    background: $blue;
+    border-radius: 20px;
+  }
+}
+%clearFix {
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0px;
+    visibility: hidden;
+  }
+}

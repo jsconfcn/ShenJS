@@ -14,10 +14,12 @@ var gulp = require('gulp'),
     csslint = require('gulp-csslint'),
     css = require('css'),
     browserSync = require('browser-sync'),
-    browserReload = browserSync.reload;
+    browserReload = browserSync.reload,
+    sass = require("gulp-sass");
 
 gulp.task('css', function() {
-  gulp.src('./src/tachyons.css')
+  gulp.src(['./src/tachyons.css', './src/style.scss'])
+    .pipe(sass({errLogToConsole:true}))
     .pipe(basswork())
     .pipe(size({gzip: false, showFiles: true, title:'basswork css'}))
     .pipe(size({gzip: true, showFiles: true, title:'basswork gzipped css'}))
@@ -60,5 +62,5 @@ gulp.task('bs-reload', function () {
 gulp.task('default', ['css', 'bs-reload', 'browser-sync'], function(){
   gulp.start(['css', 'bs-reload']);
   gulp.watch('src/*', ['css']);
-  gulp.watch(['*.html', './**/*.html'], ['bs-reload']);
+  gulp.watch(['*.html', './**/*.html','./js/*.js'], ['bs-reload']);
 });

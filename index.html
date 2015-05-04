@@ -11,25 +11,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
     <link rel="stylesheet" href="/css/tachyons.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
   </head>
   <body class="wi-100">
-    <div class="dt pvx pvxl-ns">
-      <header class="bg-pulsate tc dtc wi-100 v-mid">
+    <div class="dt pvx pvxl-ns stretch-full header">
+      <header class="bg-pulsate tc dtc wi-100 v-mid ">
         <div class="tc mbm mbn-ns">
+          <div class="logo"></div>
           <h1 class="f3 f2-m mega-ns b db-ns mrs mrn-ns mbn ttu mtn pulse-letters">
             JS中国开发者大会
           </h1>
-          <p class="f5 f3-ns dib db-ns fw1 phs mbn mbx-ns aqua">
-            2015年7月11-12日
-            <small class="ws-nowrap db f5 mts mtm-ns">中国深圳</small>
-          </p>
+          <p class="f5 f3-ns dib db-ns fw1 phs mbn aqua">2015 年 7 月 11 日 - 2015 年 7 月 12 日</p>
+          <p class="f5 f3-ns dib db-ns fw1 phs mbn aqua">12:00 - 15:00</p>
+          <p class="f5 f3-ns dib db-ns fw1 phs mbn mbx-ns aqua">中国深圳</p>
         </div>
         <div class="pvm">
           <a title="Tachyons" href="#"
-             class="small link tc br2 bw1 pas pam-ns btn--animated">
-            报名参加 ▸
+             class="button blue main-button">
+            报名参加
           </a>
         </div>
+        <nav class="menu">
+          <ul>
+            <li>
+              <a>演讲嘉宾</a>
+            </li>
+            <li>
+              <a>活动日程</a>
+            </li>
+            <li>
+              <a>关于我们</a>
+            </li>
+            <li>
+              <a>赞助商</a>
+            </li>
+            <li>
+              <a>活动地点</a>
+            </li>
+            <li>
+              <a class="button blue">报名参加</a>
+            </li>
+          </ul>
+        </nav>
       </header>
     </div>
     <main>
@@ -189,6 +212,7 @@
         Build with tachyons
       </small>
     </footer>
+    <script src="js/index.js"></script>
     <script type='text/javascript'>
       var _gauges = _gauges || [];
       (function() {
