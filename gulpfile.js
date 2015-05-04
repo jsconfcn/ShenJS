@@ -29,7 +29,6 @@ gulp.task('css', function() {
     .pipe(gulp.dest('./css'));
 });
 
-gulp.task('generateDocs', require('./tasks/generateDocs'));
 
 // Initialize browser-sync which starts a static server also allows for
 // browsers to reload on filesave
