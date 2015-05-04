@@ -1,6 +1,7 @@
 .*
 !.gitignore
 !.gitmodules
+*.log
 *~
 
 _site/

@@ -21,6 +21,10 @@ gulp.task('css', function() {
     .pipe(basswork())
     .pipe(size({gzip: false, showFiles: true, title:'basswork css'}))
     .pipe(size({gzip: true, showFiles: true, title:'basswork gzipped css'}))
+    .pipe(prefix({
+            browsers: ['last 2 versions'],
+            cascade: false
+    }))
     .pipe(gulp.dest('./css'))
     .pipe(minifyCSS())
     .pipe(rename({ extname: '.min.css' }))
@@ -58,4 +62,3 @@ gulp.task('default', ['css', 'bs-reload', 'browser-sync'], function(){
   gulp.watch('src/*', ['css']);
   gulp.watch(['*.html', './**/*.html'], ['bs-reload']);
 });
-
