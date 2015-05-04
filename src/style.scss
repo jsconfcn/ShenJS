@@ -1,5 +1,6 @@
 @import "./basic.scss";
 
+$divide-width : 1174px;
 /* HEADER */
 .header {
   background: url('../img/header.png') no-repeat center -70px;
@@ -27,7 +28,7 @@
   .menu {
     $height: 50px;
     background: #fff;
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
     bottom:0px;
     color: #333;
     padding: 10px 0px;
@@ -35,28 +36,119 @@
     left: 0px;
     right: 0px;
     text-align: center;
+    &.fixed {
+      bottom: auto;
+      position: fixed;
+      top: 0px;
+    }
     ul {
       display: block;
       text-align: center;
       @extend %clearFix;
+      @media screen and (min-width: $divide-width) {
+        margin:0 auto;
+        width: $divide-width;
+      }
       li{
         display: inline-block;
         a{
           display: block;
           height: $height;
           font-size: 0.9rem;
-          line-height: $height;
+          line-height: $height + 4px;
           width: 120px;
           &.button {
-            $height: 30px;
+            $button-height: 30px;
             font-size: 1rem;
             padding:2px 3px;
-            height: $height;
-            line-height: $height;
+            height: $button-height;
+            line-height: $button-height;
           }
         }
       }
     }
+    .option {
+      float: right;
+      height: 100%;
+      margin-right: 30px;
+      text-align: center;
+      width: 100%;
+      @media screen and (min-width: $divide-width) {
+        position: absolute;
+        right: 0px;
+        top: 9px;
+        width: auto;
+      }
+      a{
+        display: inline-block;
+        font-size: 1.3rem;
+        height: $height;
+        line-height: $height;
+        margin-left: 25px;
+        &.social {
+          position: relative;
+          &:before {
+            @extend %icon;
+          }
+          &.weibo {
+            &:before {
+              content: 'w'
+            }
+          }
+          &.twitter {
+            &:before {
+              content: 't'
+            }
+          }
+          &.github {
+            &:before {
+              content: 'g'
+            }
+          }
+          span {
+            background: $blue;
+            border-radius: 2px;
+            bottom: 90%;
+            color: #FFF;
+            font-size: 14px;
+            left: 50%;
+            line-height: 140%;
+            opacity: 0;
+            padding: 7.5px 15px;
+            position: absolute;
+            text-align: center;
+            transform: translateX(-50%);
+            transition-property: opacity, margin;
+            transition-duration: 0.1s;
+            visibility: hidden;
+            white-space: nowrap;
+            width: auto;
+            z-index: 999;
+            &:after {
+              content: '';
+              border-right: 5px solid transparent;
+              border-bottom-color: $blue;
+              border-top: 5px solid $blue;
+              border-left: 5px solid transparent;
+              bottom: -5px;
+              left: 50%;
+              position: absolute;
+              transform: translateX(-50%);
+            }
+          }
+          &:hover {
+            color: $blue;
+          }
+          &:hover span {
+            margin-bottom: 8px;
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+        &.language {
 
+        }
+      }
+    }
   }
 }
