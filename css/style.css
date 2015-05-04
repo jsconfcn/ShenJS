@@ -36,7 +36,7 @@ ul {
 /* HEADER */
 
 .header {
-  background: url('../img/header.png') no-repeat center center;
+  background: url('../img/header.png') no-repeat center -70px;
   -webkit-background-size: cover;
   background-size: cover;
   color: #fff;
@@ -70,7 +70,7 @@ ul {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
   bottom: 0px;
   color: #333;
-  height: 70px;
+  padding: 10px 0px;
   position: absolute;
   left: 0px;
   right: 0px;
@@ -88,12 +88,15 @@ ul {
 
 .header .menu ul li a {
   display: block;
-  height: 70px;
-  line-height: 70px;
-  width: 150px;
+  height: 50px;
+  font-size: 0.9rem;
+  line-height: 50px;
+  width: 120px;
 }
 
-.header .menu ul li .button {
-  padding: 2px 3px;
+.header .menu ul li a.button {
   font-size: 1rem;
+  padding: 2px 3px;
+  height: 30px;
+  line-height: 30px;
 }

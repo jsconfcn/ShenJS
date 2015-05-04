@@ -2,7 +2,7 @@
 
 /* HEADER */
 .header {
-  background: url('../img/header.png') no-repeat center center;
+  background: url('../img/header.png') no-repeat center -70px;
   background-size: cover;
   color: #fff;
   padding: 6rem 0px;
@@ -25,12 +25,12 @@
     width: 180px;
   }
   .menu {
-    $height: 70px;
+    $height: 50px;
     background: #fff;
     box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
     bottom:0px;
     color: #333;
-    height: $height;
+    padding: 10px 0px;
     position: absolute;
     left: 0px;
     right: 0px;
@@ -44,12 +44,16 @@
         a{
           display: block;
           height: $height;
+          font-size: 0.9rem;
           line-height: $height;
-          width: 150px;
-        }
-        .button {
-          padding:2px 3px;
-          font-size: 1rem;
+          width: 120px;
+          &.button {
+            $height: 30px;
+            font-size: 1rem;
+            padding:2px 3px;
+            height: $height;
+            line-height: $height;
+          }
         }
       }
     }
