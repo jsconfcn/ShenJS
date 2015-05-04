@@ -1,26 +1,7 @@
-## Shenjs
+**This site is modified on [mrmrs's](https://github.com/mrmrs) [tachyons](https://github.com/mrmrs/tachyons/)**
 
-Shenjs is the biggest JavaScript conference in China, Shenzhen.
+#### Development
 
-## Join us in Slack  
-
-[![shenjs on slack](http://shenjs.herokuapp.com/badge.svg?t=2015)](https://shenjs.herokuapp.com)
-
-## Manual
-
-This website is built using [foundation](http://github.com/Wiredcraft/foundation).
-
-### Install
-
-    npm install
-    bower install
-
-### Run
-
-    gulp development --port 4000
-
-### Build
-
-This will build the static version of the site in `_site/`:
-
-    make build
+```
+npm install && npm start
+```

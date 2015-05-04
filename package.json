@@ -1,52 +1,63 @@
 {
-  "name": "ShenJS",
-  "version": "1.0.0",
-  "description": "Official ShenJS website",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "shenjs",
+  "version": "1.2.0",
+  "description": "Performance-first css framework built ontop of rework",
+  "main": "index.html",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jsconfcn/ShenJS.git"
+    "url": "git://github.com/mrmrs/tachyons.git"
   },
-  "author": "Ronan Berder",
+  "keywords": [
+    "css",
+    "sass",
+    "oocss",
+    "performance"
+  ],
+  "author": "mrmrs",
   "license": "MIT",
   "bugs": {
-    "url": "git://github.com/jsconfcn/ShenJS/issues"
-  },
-  "homepage": "http://2015.jsconf.cn",
-  "dependencies": {
-    "gulp": "3.*.*",
-    "gulp-util": "3.0.1",
-    "metalsmith-drafts": "0.0.1",
-    "metalsmith-markdown": "0.2.1",
-    "metalsmith-templates": "0.5.2",
-    "swig": "1.4.2",
-    "metalsmith": "0.11.0",
-    "metalsmith-ignore": "0.1.2",
-    "metalsmith-assets": "0.0.1",
-    "metalsmith-excerpts": "1.0.0",
-    "metalsmith-include": "0.0.1",
-    "metalsmith-metadata": "0.0.1",
-    "metalsmith-collections": "0.6.0",
-    "metalsmith-permalinks": "0.4.0",
-    "metalsmith-build-date": "0.1.0",
-    "metalsmith-paginate": "0.3.0",
-    "open": "0.0.5",
-    "ncp": "1.0.1",
-    "connect": "2.26.4",
-    "bower": "1.3.12",
-    "gulp-minify-css": "0.3.10",
-    "gulp-concat": "2.4.1",
-    "gulp-clean": "0.3.1",
-    "gulp-sass": "1.0.0",
-    "merge-stream": "0.1.6",
-    "node-bourbon": "1.2.3",
-    "mkdirp": "0.5.0",
-    "consolidate": "0.10.0"
+    "url": "https://github.com/mrmrs/tachyons/issues"
   },
   "devDependencies": {
-    "eggshell": "0.1.19"
+    "browser-sync": "^1.1.1",
+    "css": "^2.1.0",
+    "css-parse": "^2.0.0",
+    "gulp": "^3.8.2",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-basswork": "0.0.11",
+    "gulp-csslint": "^0.1.4",
+    "gulp-file-include": "^0.5.1",
+    "gulp-minify-css": "^0.3.5",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^0.7.2",
+    "gulp-shell": "^0.2.8",
+    "gulp-size": "^0.4.0",
+    "gulp-uncss": "^0.4.4",
+    "gulp-util": "^2.2.18",
+    "gulp-watch": "^0.6.8",
+    "lodash": "^2.4.1",
+    "node-sass": "^0.9"
+  },
+  "contributors": [
+    {
+      "name": "adam morse",
+      "email": "hi@mrmrs.cc"
+    },
+    {
+      "name": "robert forloine",
+      "url": "http://www.sndsgn.com"
+    },
+    {
+      "name": "david potsiadlo",
+      "url": "http://www.davidpots.com/"
+    },
+    {
+      "name": "tyler benziger",
+      "url": "http://tybenz.com"
+    }
+  ],
+  "scripts": {
+    "start": "gulp",
+    "ast": "gulp generateDocs"
   }
 }
