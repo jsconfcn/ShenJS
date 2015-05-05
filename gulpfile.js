@@ -18,7 +18,7 @@ var gulp = require('gulp'),
     sass = require("gulp-sass");
 
 gulp.task('css', function() {
-  gulp.src(['./src/tachyons.css', './src/style.scss'])
+  gulp.src(['./src/style.scss'])
     .pipe(sass({errLogToConsole:true}))
     .pipe(basswork())
     .pipe(size({gzip: false, showFiles: true, title:'basswork css'}))

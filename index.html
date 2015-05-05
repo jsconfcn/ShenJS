@@ -10,8 +10,8 @@
     <meta name="description" content="Simple CSS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="/css/tachyons.min.css">
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="./css/tachyons.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="wi-100">
     <div class="dt pvx pvxl-ns stretch-full header" id="header">
@@ -62,23 +62,31 @@
       </header>
     </div>
     <main>
-      <section class="bg-near-white dt h-100 navy pvx pvxl-ns">
-        <div class="dtc v-mid">
-          <div class="mw7 center phm phl-ns tl tl-ns">
-            <h1 class="f4 ttu book">关于深JS</h1>
+      <section class="bg-near-white dt h-100 navy stretch-full about">
+        <div class="wrap">
+          <div class="mw7 center phm phl-ns tl tl-ns content">
+            <h1 class="f4 ttu book title">关于深JS</h1>
             <p>
               深JS——2015 JS中国开发者大会是一场专注于JavaScript和Node.js技术，为期两天的国际性技术大会。届时，大会会邀请国内外的优秀讲师为大家分享在JavaScript和Node.js技术方面的经验。继上海，北京和杭州之后，JS中国开发者大会将于2015年7月11－12日在深圳召开。
             </p>
-            <ul class="f4 f4-ns list pln lh-copy">
-              <li class="pvs di">沪JS - 2012</li>
-              <li class="pvs di">京JS - 2013</li>
-              <li class="pvs di">杭JS - 2014</li>
-              <li class="pvs di">深JS - 2015</li>
-            </ul>
-            <p>
-              想参与讨论？<a title="Tachyons" href="https://github.com/jsconfcn/ShenJS/issues"
-             class="link small b">在GitHub上加入我们！</a>
-            </p>
+          </div>
+        </div>
+        <div class="time-line">
+          <ul class="chart">
+            <li class="pvs di"><a><span>沪JS</span><span>2012</span></a></li>
+            <li class="pvs di"><a><span>京JS</span><span>2013</span></a></li>
+            <li class="pvs di"><a><span>杭JS</span><span>2014</span></a></li>
+            <li class="pvs di"><a><span>深JS</span><span>2015</span></a></li>
+            <li class="pvs di"></li>
+          </ul>
+          <span class="pointer">|</span>
+        </div>
+        <div class="banner" >
+          <div class="left">
+            <a><strong>了解更多关于JS中国开发者大会</strong></a>
+          </div>
+          <div class="right">
+            <a href="https://github.com/jsconfcn/ShenJS/issues"><strong>想参与讨论?</strong> 在Github上加入我们</a>
           </div>
         </div>
       </section>
@@ -219,18 +227,18 @@
       </small>
     </footer>
     <script src="js/index.js"></script>
-    <script type='text/javascript'>
-      var _gauges = _gauges || [];
-      (function() {
-        var t   = document.createElement('script');
-        t.type  = 'text/javascript';
-        t.async = true;
-        t.id    = 'gauges-tracker';
-        t.setAttribute('data-site-id', '54ee7d005dd053560400c9bd');
-        t.src = '//secure.gaug.es/track.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(t, s);
-      })();
-    </script>
+    // <script type='text/javascript'>
+    //   var _gauges = _gauges || [];
+    //   (function() {
+    //     var t   = document.createElement('script');
+    //     t.type  = 'text/javascript';
+    //     t.async = true;
+    //     t.id    = 'gauges-tracker';
+    //     t.setAttribute('data-site-id', '54ee7d005dd053560400c9bd');
+    //     t.src = '//secure.gaug.es/track.js';
+    //     var s = document.getElementsByTagName('script')[0];
+    //     s.parentNode.insertBefore(t, s);
+    //   })();
+    // </script>
   </body>
 </html>

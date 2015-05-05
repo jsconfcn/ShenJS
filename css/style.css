@@ -55,6 +55,18 @@ ul {
   visibility: hidden;
 }
 
+/* Section */
+
+.stretch-full .wrap {
+  padding: 6.5rem 0px;
+}
+
+.stretch-full .wrap .title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
 /* HEADER */
 
 .header {
@@ -97,6 +109,7 @@ ul {
   left: 0px;
   right: 0px;
   text-align: center;
+  z-index: 999;
 }
 
 .header .menu.fixed {
@@ -224,4 +237,75 @@ ul {
   margin-bottom: 8px;
   opacity: 1;
   visibility: visible;
+}
+
+/* About */
+
+.about {
+  position: relative;
+}
+
+.about .content {
+  margin-top: 5rem;
+}
+
+.about .time-line {
+  bottom: 90px;
+  height: 100px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+}
+
+.about .time-line ul.chart {
+  display: block;
+  font-size: 0px;
+  width: 100%;
+}
+
+.about .time-line ul.chart li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 1rem;
+  width: 20%;
+  background: yellow;
+}
+
+.about .banner {
+  bottom: 0px;
+  height: 90px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+}
+
+.about .banner > div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  height: 100%;
+  text-align: center;
+}
+
+.about .banner > div a {
+  display: block;
+  font-size: 1.4rem;
+  height: 90px;
+  line-height: 90px;
+  width: 100%;
+}
+
+.about .banner .left {
+  background: #2770E7;
+  float: left;
+  width: 35%;
+}
+
+.about .banner .right {
+  background: #3395FF;
+  float: right;
+  width: 65%;
 }

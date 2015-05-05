@@ -1,6 +1,19 @@
 @import "./basic.scss";
 
 $divide-width : 1174px;
+
+/* Section */
+.stretch-full {
+  .wrap {
+    padding: 6.5rem 0px;
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+}
+
 /* HEADER */
 .header {
   background: url('../img/header.png') no-repeat center -70px;
@@ -36,6 +49,7 @@ $divide-width : 1174px;
     left: 0px;
     right: 0px;
     text-align: center;
+    z-index: 999;
     &.fixed {
       bottom: auto;
       position: fixed;
@@ -149,6 +163,64 @@ $divide-width : 1174px;
 
         }
       }
+    }
+  }
+}
+
+/* About */
+.about {
+  position: relative;
+  $banner-height: 90px;
+  .content {
+    margin-top: 5rem;
+  }
+  .time-line {
+    bottom: $banner-height;
+    height: 100px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    ul.chart {
+      display: block;
+      font-size: 0px;
+      width: 100%;
+      li{
+        box-sizing: border-box;
+        display: inline-block;
+        font-size: 1rem;
+        width:20%;
+        background:yellow;
+      }
+    }
+  }
+  .banner {
+    bottom: 0px;
+    height: $banner-height;
+    left:0px;
+    position: absolute;
+    width: 100%;
+    & > div {
+      box-sizing: border-box;
+      color: #fff;
+      height: 100%;
+      text-align: center;
+      a {
+        display: block;
+        font-size: 1.4rem;
+        height: $banner-height;
+        line-height: $banner-height;
+        width: 100%;
+      }
+    }
+    .left {
+      background: #2770E7;
+      float: left;
+      width: 35%;
+    }
+    .right {
+      background: #3395FF;
+      float: right;
+      width: 65%;
     }
   }
 }
