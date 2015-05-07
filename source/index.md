@@ -6,28 +6,45 @@ description: 今年夏天中国主要的JavaScript会议，我们一起在深圳
 event:
   title: JS中国开发者大会
   details: 2015年7月11－12日, 中国深圳
+  date: 2015年7月11日 － 2015年7月12日
+  time: 12:00 - 15:00
+  venue: 中国深圳
 
-subscribe:
-  title: 留下你的邮箱，我们会及时向大家发布
+menu:
+  item1: 关于我们
+  item2: 演讲嘉宾
+  item3: 活动日程
+  item4: 赞助商
+  item5: 合作媒体
+  item6: 会场地址
+
+button:
+  content: 报名参加
 
 about:
   title: 关于深JS
   content: |
-    <p>深JS——2015 JS中国开发者大会是一场专注于JavaScript和Node.js技术，为期两天的国际性技术大会。届时，大会会邀请国内外的优秀讲师为大家分享在JavaScript和Node.js技术方面的经验。继上海，北京和杭州之后，JS中国开发者大会将于2015年7月11－12日在深圳召开。</p>
-    <p>想参与讨论？<a href='https://github.com/JSConfcn/ShenJS/issues' target="new">在GitHub上加入我们</a>！</p>
-    <p><small><a href='http://JSConf.cn/' target="new">了解更多关于JS中国开发者大会</a></small></p>
+    深JS——2015 JS中国开发者大会是一场专注于JavaScript和Node.js技术，为期两天的国际性技术大会。届时，大会会邀请国内外的优秀讲师为大家分享在JavaScript和Node.js技术方面的经验。继上海，北京和杭州之后，JS中国开发者大会将于2015年7月11－12日在深圳召开。
 
-call:
-  title: 讲师征集
-  content: |
-    <p>2014年对于JavaScript和JavaScript开发者来说又是成功的一年，io.js的出现动摇了Node.js的地位，ES6有了更大的进展并有可能在今年发布正式规范，babel.js等预编译成为项目的一部分，React.js，Angular.js等前端框架的爆发，Johny Five，Tessel等项目的出现，JavaScript进入到了更多新的领域。我们期望听到更多你跟JavaScript的故事，你的实际项目经验，你使用JavaScript做的黑科技。我们欢迎你与我们分享任何与JavaScript相关的话题！</p>
-  button: 提交申请
+banner:
+  left: 了解更多关于JS中国开发者大会
+  right: | 
+    想参与讨论？<strong>在Github上加入我们！</strong>
 
-time:
-  days: 天
-  hours: 小时
-  minutes: 分钟
-  seconds: 秒
+speakers:
+  speaker1:
+   name: 胡痴儿
+   title: 用户体验设计师
+   description: |
+     Paul is obsessed with UI and enamoured by the evolution of front end development. If left unattended, he'll beautiful mind that code all over your windows. In his spare time, Paul can be found performing in musicals, folding origami dinosaurs, drawing comic books or singing karaoke.
+
+venue:
+  address: | 
+    <a href='http://qh.vanke.com/' target='new'>深圳前海万科企业公馆</a>
+  detail: 深圳市东滨路与临海路交汇处前海深港现代服务业合作区内
+
+footer:
+  qrcode: 扫二维码加入JSConf微信群
 
 collection: page
 template: index.html

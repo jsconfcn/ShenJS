@@ -15,6 +15,9 @@ content:
   title: Call for speakers
   paragraph: 2014 has been a great year for JavaScript and the JavaScript community. io.js began to steal the attention from Node.js, ES6 has been making huge progress and will publish a standard this year. We saw people start to use ES6 today with tools like babel.js. With Johny Five, Tessel, we saw more possibilities of what JavaScript can do. We want to hear your thoughts on JavaScript, your experiences, and of course your mad science. You are welcome to share any topic that is related(or not) to JavaScript.
 
+footer:
+  qrcode: Follow our WeChat
+
 collection: page
 template: call-for-speakers.html
 ---

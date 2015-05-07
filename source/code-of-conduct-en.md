@@ -41,6 +41,8 @@ content:
     title: License
     content: This Code of Conduct was forked from the example policy from the Geek Feminism wiki, created by the Ada Initiative and other volunteers, which is under a Creative Commons Zero license.
 
+footer:
+  qrcode: Follow our WeChat
 
 collection: page
 template: code-of-conduct.html

@@ -1,38 +1,406 @@
+<!doctype html>
+<html lang='{{ locale }}'>
+{% include 'partials/_head.html' %}
 
-
-{% extends 'default.html' %}
-{% block content %}
-{% parent %}
-
-
-<section class='section action'>
-  <div class='wrapper'>
-<!--     <div class='countdown'>
-      <span class='days'><strong>50</strong> {{ time.days }}</span>
-      <span class='hours'><strong>5</strong> {{ time.hours }}</span>
-      <span class='minutes'><strong>23</strong> {{ time.minutes }}</span>
-      <span class='seconds'><strong>43</strong> {{ time.seconds }}</span>
-    </div> -->
-    <!-- <img src='/images/line.png' class='line'> -->
-    <h2>{{ subscribe.title }}</h2>
-    {% include 'partials/_subscribe.html' %}
-    {% include 'partials/_social.html' %}
-  </div>
-</section>
-<section class='section info'>
-  <div class='wrapper'>
-    <div class='about'>
-      <h2>{{ about.title }}</h2>
+<body class='page-{{ path | default(' front ') }} index-launch'>
+  <header id='header-new' class='stretch-full'>
+    <header class='hero'>
+      <div class='wrapper'>
+        <h1>{{ event.title }}</h1>
+        <p>{{ event.date }}</p>
+        <p>{{ event.time }}</p>
+        <p>{{ event.venue }}</p>
+        <a class='button' href='#'>{{ button.content }}</a>
+      </div>
+    </header>
+    <div class='menu'>
+      <nav class='wrapper'>
+        <a href='#item1'>{{ menu.item1 }}</a>
+        <a href='#item2'>{{ menu.item2 }}</a>
+        <a href='#item3'>{{ menu.item3 }}</a>
+        <a href='#item4'>{{ menu.item4 }}</a>
+        <a href='#item5'>{{ menu.item5 }}</a>
+        <a href='#item6'>{{ menu.item6 }}</a>
+        <a class='button' href='#'>{{ button.content }}</a>
+        <div class='right'>
+          {% if locale == 'zh' %}<a href='/en'>EN</a>{% endif %} {% if locale == 'en' %}<a href='/'>中文</a>{% endif %} {% include 'partials/_social.html' %}
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- About -->
+  <section class='section about' id='item1'>
+    <div class='title'>
+      <h1>{{ about.title }}</h1>
+    </div>
+    <div class='wrapper'>
       <p>{{ about.content | raw }}</p>
     </div>
-    <div class='map'>
-      <img src='/images/map.png'>
+  </section>
+  <!-- Banner -->
+  <section class='banner first'>
+    <div class='left'>
+      <a href='https://jsconf.cn' target='new'>{{ banner.left }}</a>
     </div>
-  </div>
-</section>
+    <div class='right'>
+      <a href='https://github.com/jsconfcn/ShenJS/issues' target='new'>{{ banner.right | raw }}</a>
+    </div>
+  </section>
+  <!-- Speakers -->
+  <section class='section speakers' id='item2'>
+    <div class='title'>
+      <h1>{{ menu.item2 }}</h1>
+    </div>
+    <ul>
+      <li>
+        <img src='/images/speaker1.jpg' />
+        <div class='cover'>
+          <div class='info'>
+            <h4>{{ speakers.speaker1.name }}</h4>
+            <p>{{ speakers.speaker1.title }}</p>
+            <a href='#' class='icon github'></a>
+            <a href='#' class='icon weibo'></a>
+          </div>
+        </div>
+        </a>
+      </li>
+      <li>
+        <img src='/images/speaker1.jpg' />
+        <div class='cover'>
+          <div class='info'>
+            <h4>{{ speakers.speaker1.name }}</h4>
+            <p>{{ speakers.speaker1.title }}</p>
+            <a href='#' class='icon github'></a>
+            <a href='#' class='icon twitter'></a>
+          </div>
+        </div>
+        </a>
+      </li>
+      <li>
+        <img src='/images/speaker1.jpg' />
+        <div class='cover'>
+          <div class='info'>
+            <h4>{{ speakers.speaker1.name }}</h4>
+            <p>{{ speakers.speaker1.title }}</p>
+            <a href='#' class='icon github'></a>
+            <a href='#' class='icon weibo'></a>
+          </div>
+        </div>
+        </a>
+      </li>
+      <li>
+        <img src='/images/speaker1.jpg' />
+        <div class='cover'>
+          <div class='info'>
+            <h4>{{ speakers.speaker1.name }}</h4>
+            <p>{{ speakers.speaker1.title }}</p>
+            <a href='#' class='icon github'></a>
+            <a href='#' class='icon twitter'></a>
+          </div>
+        </div>
+        </a>
+      </li>
+      <li>
+        <img src='/images/speaker1.jpg' />
+        <div class='cover'>
+          <div class='info'>
+            <h4>{{ speakers.speaker1.name }}</h4>
+            <p>{{ speakers.speaker1.title }}</p>
+            <a href='#' class='icon github'></a>
+            <a href='#' class='icon twitter'></a>
+          </div>
+        </div>
+        </a>
+      </li>
+      <li>
+        <img src='/images/speaker1.jpg' />
+        <div class='cover'>
+          <div class='info'>
+            <h4>{{ speakers.speaker1.name }}</h4>
+            <p>{{ speakers.speaker1.title }}</p>
+            <a href='#' class='icon github'></a>
+            <a href='#' class='icon twitter'></a>
+          </div>
+        </div>
+        </a>
+      </li>
+      <li>
+        <img src='/images/speaker1.jpg' />
+        <div class='cover'>
+          <div class='info'>
+            <h4>{{ speakers.speaker1.name }}</h4>
+            <p>{{ speakers.speaker1.title }}</p>
+            <a href='#' class='icon github'></a>
+            <a href='#' class='icon twitter'></a>
+          </div>
+        </div>
+        </a>
+      </li>
+      <li>
+        <img src='/images/speaker1.jpg' />
+        <div class='cover'>
+          <div class='info'>
+            <h4>{{ speakers.speaker1.name }}</h4>
+            <p>{{ speakers.speaker1.title }}</p>
+            <a href='#' class='icon github'></a>
+            <a href='#' class='icon twitter'></a>
+          </div>
+        </div>
+        </a>
+      </li>
+      <li>
+        <img src='/images/speaker1.jpg' />
+        <div class='cover'>
+          <div class='info'>
+            <h4>{{ speakers.speaker1.name }}</h4>
+            <p>{{ speakers.speaker1.title }}</p>
+            <a href='#' class='icon github'></a>
+            <a href='#' class='icon twitter'></a>
+          </div>
+        </div>
+        </a>
+      </li>
+      <li>
+        <img src='/images/speaker1.jpg' />
+        <div class='cover'>
+          <div class='info'>
+            <h4>{{ speakers.speaker1.name }}</h4>
+            <p>{{ speakers.speaker1.title }}</p>
+            <a href='#' class='icon github'></a>
+            <a href='#' class='icon twitter'></a>
+          </div>
+        </div>
+        </a>
+      </li>
+      <li>
+        <img src='/images/speaker1.jpg' />
+        <div class='cover'>
+          <div class='info'>
+            <h4>{{ speakers.speaker1.name }}</h4>
+            <p>{{ speakers.speaker1.title }}</p>
+            <a href='#' class='icon github'></a>
+            <a href='#' class='icon twitter'></a>
+          </div>
+        </div>
+        </a>
+      </li>
+      <li>
+        <img src='/images/speaker1.jpg' />
+        <div class='cover'>
+          <div class='info'>
+            <h4>{{ speakers.speaker1.name }}</h4>
+            <p>{{ speakers.speaker1.title }}</p>
+            <a href='#' class='icon github'></a>
+            <a href='#' class='icon twitter'></a>
+          </div>
+        </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <!-- Schedule -->
+  <section class='section schedule' id='item3'>
+    <div class='title'>
+      <h1>{{ menu.item3 }}</h1>
+    </div>
+    <div class='wrapper'>
+      <div class='list day1'>
+        <h2>7/11</h2>
+        <ul>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+              <a>演示文稿</a>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>JS中国开发者大会介绍</h4>
+              <p>John Doe</p>
+              <a>演示文稿</a>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>Then.js 异步库的实现原理及优缺点</h4>
+              <p>John Doe</p>
+              <a>演示文稿</a>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+              <a>演示文稿</a>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>Patrisika - Theoretical and Practical Code Generation</h4>
+              <p>John Doe</p>
+              <a>演示文稿</a>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+              <a>演示文稿</a>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+              <a>演示文稿</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class='list day2'>
+        <h2>7/12</h2>
+        <ul>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+              <a>演示文稿</a>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>JS中国开发者大会介绍</h4>
+              <p>John Doe</p>
+              <a>演示文稿</a>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+              <a>演示文稿</a>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+              <a>演示文稿</a>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+              <a>演示文稿</a>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+              <a>演示文稿</a>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+              <a>演示文稿</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Banner -->
+  <section class='banner second'>
+    <div class='wrapper'>
+        <h1>{{ event.title }}</h1>
+        <p>{{ event.venue }}</p>
+        <a class='button' href='#'>{{ button.content }}</a>
+    </div>
+  </section>
+  <!-- sponsers-->
+  <section class='section sponsers' id='item4'>
+    <div class='title'>
+      <h1>{{ menu.item4 }}</h1>
+    </div>
+    <div class='wrapper'>
+    <ul>
+      <li><a href='#' target='new'><img src='/images/logo1.png' /></a></li>
+      <li><a href='#' target='new'><img src='/images/logo2.png' /></a></li>
+      <li><a href='#' target='new'><img src='/images/logo3.png' /></a></li>
+      <li><a href='#' target='new'><img src='/images/logo2.png' /></a></li>
+      <li><a href='#' target='new'><img src='/images/logo3.png' /></a></li>
+      <li><a href='#' target='new'><img src='/images/logo2.png' /></a></li>
+      <li><a href='#' target='new'><img src='/images/logo1.png' /></a></li>
+    </ul>
+    </div>
+  </section>
+   <!-- media parter-->
+  <section class='section mediaparter' id='item5'>
+    <div class='title'>
+      <h1>{{ menu.item5 }}</h1>
+    </div>
+    <div class='wrapper'>
+    <ul>
+      <li><a href='#' target='new'><img src='/images/logo1.png' /></a></li>
+      <li><a href='#' target='new'><img src='/images/logo2.png' /></a></li>
+      <li><a href='#' target='new'><img src='/images/logo1.png' /></a></li>
+      <li><a href='#' target='new'><img src='/images/logo3.png' /></a></li>
+      <li><a href='#' target='new'><img src='/images/logo1.png' /></a></li>
+      <li><a href='#' target='new'><img src='/images/logo2.png' /></a></li>
+      <li><a href='#' target='new'><img src='/images/logo3.png' /></a></li>
+    </ul>
+    </div>
+  </section>
+  <!-- Venue -->
+  <section class='section venue' id='item6'>
+    <div class='wrapper'>
+      <div class='left'>
+        <h1>{{ menu.item6 }}</h1>
+        <h4>{{ venue.address | raw }}</h4>
+        <p>{{ venue.detail }}</p>
+      </div>
+      <div class='right'>
+        <img src='/images/venue.jpg' />
+      </div>
+    </div>
+  </section>
+  <!-- Banner -->
 
-<section class='section call'>
-{% include 'partials/_call.html' %}
-</section>
+  <section class='banner third'>
+    <div class='wrapper'>
+        <h1>{{ event.title }}</h1>
+        <p>{{ event.venue }}</p>
+        <a class='button' href='#'>{{ button.content }}</a>
+    </div>
+  </section>
 
-{% endblock %}
+  <!-- Footer -->
+  <footer id='footer'>
+    {% include 'partials/_footer.html' %}
+  </footer>
+  <!-- JS -->
+  <script src='/assets/scripts.js' type='text/javascript'></script>
+  <!--[if lt IE 9]><script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script><![endif]-->
+  {% if site.gauges %}{% include 'partials/_gauges.html' %}{% endif %} {% if site.ga %}{% include 'partials/_ga.html' %}{% endif %}
+</body>
+
+</html>

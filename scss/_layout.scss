@@ -1,10 +1,6 @@
 $small-width: 768px;
-$large-width: 1600px;
-$small-height: 600px;
-$medium-height: 800px;
-$large-height: 900px;
-
-/* responsive */
+$large-width: 1350px;
+/* responsive of device*/
 
 @mixin tablet {
   @media only screen and (max-width: $small-width) {
@@ -12,13 +8,14 @@ $large-height: 900px;
   }
 }
 
-@mixin destop {
+@mixin desktop {
   @media only screen and (min-width: $small-width+1px) {
     @content;
   }
 }
 
-/* responsive with height*/
+
+/* responsive of window width */
 
 @mixin small {
   @media only screen and (max-width: $small-width)  {

@@ -42,6 +42,9 @@ content:
     title: 许可证
     content: 这份行为准则借鉴自Ada Initiative和其他志愿者创建的Geek Feminism wiki示例政策，遵守Creative Commons Zero许可证。
 
+footer:
+  qrcode: 扫二维码加入JSConf微信群
+
 
 collection: page
 template: code-of-conduct.html
