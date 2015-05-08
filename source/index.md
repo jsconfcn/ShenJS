@@ -26,6 +26,12 @@ about:
   content: |
     深JS——2015 JS中国开发者大会是一场专注于JavaScript和Node.js技术，为期两天的国际性技术大会。届时，大会会邀请国内外的优秀讲师为大家分享在JavaScript和Node.js技术方面的经验。继上海，北京和杭州之后，JS中国开发者大会将于2015年7月11－12日在深圳召开。
 
+timeline:
+   item1: 沪JS
+   item2: 京JS
+   item3: 杭JS
+   item4: 深JS
+
 banner:
   left: 了解更多关于JS中国开发者大会
   right: | 

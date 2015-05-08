@@ -184,322 +184,6 @@ input:not([type=submit]), textarea {
         }
       }
     }
-    .parallax {
-      bottom: 0px;
-      height: 100%;
-      position: absolute;
-      width: 100%;
-      .scene {
-        height: 100%;
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
-        .layer {
-          bottom: 0px;
-          width: 100%;
-          height: 100%;
-          .city {
-            bottom: 0px;
-            background-position: center bottom;
-            background-repeat: no-repeat;
-            height: 100%;
-            left: 50%;
-            position: absolute;
-            margin-left: -$width*0.9;
-            width: $width*1.8;
-            @include medium {
-              margin-left: -$width*0.65;
-              width: $width*1.3;
-            }
-            @include small {
-              margin-left: -$width/2;
-              width: $width;
-            }
-          }
-          .cloud {
-            background-repeat: no-repeat;
-            background-size: contain;
-            height: 100px;
-            position: absolute;
-            -webkit-animation: cloud 3s 0.1s infinite alternate cubic-bezier(0.455, 0.33, 0.515, 0.955);
-            -moz-animation: cloud 3s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.415, 0.955);
-            animation: cloud 3s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-            @include medium {
-              width: 100px!important;
-            }
-            @include small {
-              width: 70px!important;
-            }
-          }
-          &:nth-child(1) {
-            div {
-              background-image: url('/images/parallax/layer2.png');
-              background-size: contain;
-            }
-          }
-          &:nth-child(2) {
-            div {
-              background-image: url('/images/parallax/layer3.png');
-              background-size: contain;
-            }
-          }
-          &:nth-child(3) {
-            div {
-              background-image: url('/images/parallax/layer1.png');
-              background-size: contain;
-            }
-          }
-          &:nth-child(4) {
-            div {
-              background-image: url('/images/parallax/cloud1.png');
-              width: 148px;
-              left: 10%;
-              opacity: 0.6;
-              top: 30%;
-              -webkit-animation-duration: 2s;
-              animation-duration: 2s;
-              -moz-animation-duration: 2s;
-            }
-          }
-          &:nth-child(5) {
-            div {
-              background-image: url('/images/parallax/cloud2.png');
-              width: 147px;
-              left: 20%;
-              opacity: 0.4;
-              top: 20%;
-              -webkit-animation-duration: 3s;
-              animation-duration: 3s;
-              -moz-animation-duration: 3s;
-            }
-          }
-          &:nth-child(6) {
-            div {
-              background-image: url('/images/parallax/cloud3.png');
-              width: 162px;
-              left: 80%;
-              opacity: 0.5;
-              top: 40%;
-              -webkit-animation-duration: 4s;
-              animation-duration: 4s;
-              -moz-animation-duration: 4s;
-            }
-          }
-        }
-      }
-    }
-    .arrow {
-      &.down {
-        background: #fff;
-        border-radius: 50%;
-        bottom: $gutter*3.5;
-        cursor: pointer;
-        height: $gutter*2.5;
-        position: absolute;
-        left: 50%;
-        margin-left: -$gutter;
-        opacity: 0.8;
-        width: $gutter*2.5;
-        @include transition(all, 0.5s, ease);
-        &:after {
-          @include icon;
-          content: 'd';
-          color: $blue;
-          @include font-size(20);
-          left: $gutter*0.75;
-          position: absolute;
-          text-align: center;
-          top: $gutter*0.75;
-          width: $gutter;
-          -webkit-animation: arrow 1s 0.1s infinite alternate cubic-bezier(0.455, 0.33, 0.515, 0.955);
-          -moz-animation: arrow 1s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.415, 0.955);
-          animation: arrow 1s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        }
-        &:hover {
-          bottom: $gutter*3;
-          box-shadow: rgba(0, 0, 0, 0.2) 0 3px $gutter/4 0;
-          opacity: 0.9;
-        }
-        &:active {
-          bottom: $gutter*3.5;
-        }
-      }
-    }
-
-  }
-}
-
-/* Content */
-
-#content {
-  .section {
-    padding: 5*$gutter 0;
-    @include tablet {
-      padding: 3*$gutter 5%;
-    }
-  }
-  .action {
-    background: $light;
-    .wrapper {
-      color: $blue;
-      text-align: center;
-      h2 {
-        color: $blue;
-        font-weight: normal;
-        @include font-size($large);
-      }
-      form * {
-        display: inline-block;
-        vertical-align: middle;
-      }
-      form {
-        height: $gigantic*1px;
-        margin-bottom: $gutter*3;
-        .button, input:not([type=submit]) {
-          border: 0;
-          line-height: 200%;
-          font-family: $font;
-          font-size: inherit;
-          padding: $gutter/2 1.5*$gutter;
-        }
-        .button {
-          border-radius: 0 2*$gutter 2*$gutter 0;
-          margin-left: -$gutter/4;
-          @include tablet {
-            @include font-size($small);
-            padding: $gutter/2 $gutter/2;
-            width: $gutter*4.5;
-          }
-        }
-        input:not([type=submit]) {
-          background: #FFF;
-          border-radius: 2*$gutter 0 0 2*$gutter;
-          color: $black;
-          padding: $gutter/2 $gutter+5;
-          width: $gutter*10;
-          @include tablet {
-            @include font-size($small);
-            padding: $gutter/2 $gutter*0.75;
-            width: $gutter*6.9;
-          }
-        }
-        ::-webkit-input-placeholder {
-          -webkit-backface-visibility: hidden;
-          -webkit-transform-style: preserve-3d;
-          -webkit-transform: translate3d(0, 0, 0);
-        }
-        [placeholder]:focus::-webkit-input-placeholder {
-          @include transition(all, 0.2s, ease);
-          @include transform(translate(5%, 0));
-          opacity: 0;
-        }
-      }
-    }
-    .countdown {
-      @include clearfix;
-      text-transform: uppercase;
-      span {
-        display: inline-block;
-        @include font-size($smaller);
-        margin: 0 $gutter*2 $gutter/2 $gutter*2;
-        text-align: center;
-        width: $gutter*3.5;
-        strong {
-          color: $blue;
-          display: block;
-          font-weight: normal;
-          @include font-size(46);
-          line-height: 100%;
-          margin: 0 auto $gutter/4;
-        }
-      }
-      @include tablet {
-        span {
-          margin: 0 $gutter+5 $gutter/2 $gutter+5;
-          width: $gutter*3;
-          strong {
-            @include font-size(36);
-          }
-        }
-      }
-    }
-    .line {
-      margin: $gutter*2 0 $gutter*2.5 0;
-      width: $gutter*15;
-      @include tablet{
-        width: $gutter*13;
-      }
-    }
-  }
-  .info, .call {
-    @include clearfix;
-    .about, .map, .content, .speaker {
-      @include halves;
-      @include tablet {
-        width: 100%;
-        margin: 0px 0px $gutter 0px;
-        padding: 0px!important;
-      }
-    }
-    .about, .content {
-      h2 {
-        color: $blue;
-        @include font-size($large+10);
-        font-weight: normal;
-        margin-bottom: $gutter*0.75;
-        @include tablet {
-          margin-bottom: $gutter/2;
-          text-align: center;
-        }
-      }
-      p {
-        color: $black;
-        @include font-size($normal);
-        line-height: 200%;
-      }
-    }
-    .map, .speaker {
-      text-align: center;
-      margin: 0px;
-      img {
-        max-width: $gutter*25;
-        width: 100%;
-      }
-    }
-    .speaker {
-      img {
-        margin-bottom: 20px
-      }
-    }
-  }
-  .call {
-    background: $blue;
-    .content {
-      h2, p {
-        color: $white;
-      }
-      &:nth-child(even) {
-        padding-top:0px;
-      }
-      a{
-        &.button{
-          background: #fff;
-          border-radius: 5px;
-          color: $blue;
-          display: block;
-          margin-top: $gutter*1.5;
-          padding: $gutter/2;
-          width: 140px;
-          @include font-size($normal);
-          @include tablet{
-            margin: 0 auto;
-          }
-          &:hover{
-            background: #EFEFEF;
-          }
-        }
-      }
-    }
   }
 }
 
@@ -948,7 +632,7 @@ input:not([type=submit]), textarea {
         @include font-size($larger);
         height: $gutter*2;
         line-height: $gutter*2;
-        margin: ($gutter + 5px) 0;
+        margin: $gutter*1.5 0;
         padding: 0px $gutter*2;
       }
       @include tablet {
@@ -989,11 +673,11 @@ input:not([type=submit]), textarea {
   
   .section {
     float: left;
-    padding: $gutter*5 0;
+    padding: $gutter*7 0;
     width: 100%;
     .title {
       float: left;
-      padding: 0 0 $gutter*2 0;
+      padding: 0 0 $gutter*2.5 0;
       width: 100%;
       h1 {
         color: #333;
@@ -1012,7 +696,83 @@ input:not([type=submit]), textarea {
         text-align: center;
       }
       p {
+        float: left;
         line-height: $gutter*1.5;
+        width: 100%;
+        letter-spacing: 1px;
+      }
+      .timeline {
+        float: left;
+        margin: $gutter*5 0 0;
+        position: relative;
+        width: 100%;
+        .wrapper {
+          @include clearfix;
+          ul{
+            float: left;
+            list-style: none;
+            position:relative;
+            margin: 0px;
+            width: 100%;
+            li {
+            background: url('/images/dot.jpg') repeat-x -3px center;
+              float: left;
+              width: 25%;
+              //padding: 0 10%;
+              padding: 0px;
+              text-align: center;
+              a {
+                float: left;
+                position: relative;
+                width: 100%;
+                h4 {
+                  margin-bottom: 50px;
+                  @include font-size($larger);
+                  white-space: nowrap;
+                  @include transition(all, 0.3s, ease);
+                  &:after {
+                    @include icon;
+                    @include font-size($small);
+                    content: "\e600";
+                    position: absolute;
+                    left: 50%;
+                    margin-top: -12px;
+                    margin-left: -5px;
+                    top: 50%;
+                  }
+                }
+                em {
+                  font-style: normal;
+                  white-space: nowrap;
+                }
+                &:hover {
+                  h4{
+                   color: $blue;
+                  }
+                }
+              }
+              &:first-child {
+                padding-left: 0px;
+              }
+              &:last-child {
+                padding-right: 0px;
+              }
+              &.active {
+                h4{
+                   color: $blue;
+                 }
+              }
+            }
+          }
+        }
+        .line {
+          border-left: 2px solid $blue;
+              bottom: -100px;
+              content: '';
+              display: none;
+              height: 25px;
+              position: absolute;
+        }
       }
     }
     /* Speakers */
@@ -1187,12 +947,12 @@ input:not([type=submit]), textarea {
                 }
               }
               &:hover {
-                background: $blue;
+                background: lighten($blue,25%);
                 p {
-                  color: #000;
+                  //color: #000;
                 }
                 a {
-                  color: #fff;
+                 // color: #fff;
                 }
               }
             }
@@ -1216,6 +976,7 @@ input:not([type=submit]), textarea {
           height: 100px;
           position: relative;
           padding: $gutter/2 8px;
+          margin-bottom: $gutter*2;
           width: 300px;
           a {
             float: left;
@@ -1227,8 +988,11 @@ input:not([type=submit]), textarea {
               margin: auto;
               right: 0px;
               top: 0px;
+              @include transition(all, 0.2s, ease);
+             // @include filter(grayscale(100%));
               &:hover {
-                opacity: 0.9
+                opacity: 0.9;
+                @include filter(grayscale(0));
               }
             }
           }
@@ -1252,6 +1016,7 @@ input:not([type=submit]), textarea {
             font-weight: normal;
             @include font-size($huge + 4);
             letter-spacing: 3px;
+            margin-bottom: $gutter*2.5;
             text-transform: uppercase;
             word-spacing: 8px;
           }
@@ -1279,195 +1044,4 @@ input:not([type=submit]), textarea {
       }
     }
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-// .header {
-//   background: url('../img/header.png') no-repeat center -70px;
-//   background-size: cover;
-//   color: #fff;
-//   padding: 6rem 0px;
-//   position: relative;
-//   p {
-//     margin-top: 10px;
-//     margin-bottom: 0px;
-//   }
-//   .logo {
-//     $width: 100px;
-//     background: url("../img/logo.png") no-repeat center center;
-//     background-size: contain;
-//     border-radius: 5px;
-//     height: $width;
-//     margin: 0 auto 25px;
-//     width: $width;
-//   }
-//   .main-button {
-//     margin: 15px auto;
-//     width: 180px;
-//   }
-//   .menu {
-//     $height: 50px;
-//     background: #fff;
-//     box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
-//     bottom:0px;
-//     color: #333;
-//     padding: 10px 0px;
-//     position: absolute;
-//     left: 0px;
-//     right: 0px;
-//     text-align: center;
-//     z-index: 999;
-//     &.fixed {
-//       bottom: auto;
-//       position: fixed;
-//       top: 0px;
-//     }
-//     ul {
-//       display: block;
-//       text-align: center;
-//       @extend %clearFix;
-//       @media screen and (min-width: $divide-width) {
-//         margin:0 auto;
-//         width: $divide-width;
-//       }
-//       li{
-//         display: inline-block;
-//         a{
-//           display: block;
-//           height: $height;
-//           font-size: 0.9rem;
-//           line-height: $height + 4px;
-//           width: 120px;
-//           &.button {
-//             $button-height: 30px;
-//             font-size: 1rem;
-//             padding:2px 3px;
-//             height: $button-height;
-//             line-height: $button-height;
-//           }
-//         }
-//       }
-//     }
-//     .option {
-//       float: right;
-//       height: 100%;
-//       margin-right: 30px;
-//       text-align: center;
-//       width: 100%;
-//       @media screen and (min-width: $divide-width) {
-//         position: absolute;
-//         right: 0px;
-//         top: 9px;
-//         width: auto;
-//       }
-//       a{
-//         display: inline-block;
-//         font-size: 1.3rem;
-//         height: $height;
-//         line-height: $height;
-//         margin-left: 25px;
-//         &.social {
-//           position: relative;
-//           &:before {
-//             @extend %icon;
-//           }
-//           &.weibo {
-//             &:before {
-//               content: 'w'
-//             }
-//           }
-//           &.twitter {
-//             &:before {
-//               content: 't'
-//             }
-//           }
-//           &.github {
-//             &:before {
-//               content: 'g'
-//             }
-//           }
-//           span {
-//             background: $blue;
-//             border-radius: 2px;
-//             bottom: 90%;
-//             color: #FFF;
-//             font-size: 14px;
-//             left: 50%;
-//             line-height: 140%;
-//             opacity: 0;
-//             padding: 7.5px 15px;
-//             position: absolute;
-//             text-align: center;
-//             transform: translateX(-50%);
-//             transition-property: opacity, margin;
-//             transition-duration: 0.1s;
-//             visibility: hidden;
-//             white-space: nowrap;
-//             width: auto;
-//             z-index: 999;
-//             &:after {
-//               content: '';
-//               border-right: 5px solid transparent;
-//               border-bottom-color: $blue;
-//               border-top: 5px solid $blue;
-//               border-left: 5px solid transparent;
-//               bottom: -5px;
-//               left: 50%;
-//               position: absolute;
-//               transform: translateX(-50%);
-//             }
-//           }
-//           &:hover {
-//             color: $blue;
-//           }
-//           &:hover span {
-//             margin-bottom: 8px;
-//             opacity: 1;
-//             visibility: visible;
-//           }
-//         }
-//         &.language {
-
-//         }
-//       }
-//     }
-//   }
-// }
-
-// /* About */
-// .about {
-//   position: relative;
-//   $banner-height: 90px;
-//   .content {
-//     margin-top: 5rem;
-//   }
-//   .time-line {
-//     bottom: $banner-height;
-//     height: 100px;
-//     left: 0px;
-//     position: absolute;
-//     width: 100%;
-//     ul.chart {
-//       display: block;
-//       font-size: 0px;
-//       width: 100%;
-//       li{
-//         box-sizing: border-box;
-//         display: inline-block;
-//         font-size: 1rem;
-//         width:20%;
-//         background:yellow;
-//       }
-//     }
-//   }
-// }
-

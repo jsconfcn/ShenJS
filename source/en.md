@@ -29,6 +29,12 @@ about:
   content: |
     JSConf China is a two day conference focused on JavaScript and Node.js technologies. This developer driven event brings together notable figures from both the Chinese and international JavaScript communities to share their knowledge and passion for JavaScript. After Shanghai, Beijing and Hangzhou, JSConf China is going to Shenzhen from July 11-12 in 2015.
 
+timeline:
+   item1: HUJS
+   item2: JINGJS
+   item3: HANGJS
+   item4: JS
+
 banner:
   left: Learn more about JSConf China
   right: | 
