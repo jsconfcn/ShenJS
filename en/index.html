@@ -12,7 +12,7 @@
   
   
   <!-- Favicons -->
-  <link rel='shortcut icon' href='/assets/favicons/favicon.ico'>
+  <!-- <link rel='shortcut icon' href='/assets/favicons/favicon.ico'>
 <link rel='apple-touch-icon' sizes='57x57' href='/assets/favicons/apple-touch-icon-57x57.png'>
 <link rel='apple-touch-icon' sizes='114x114' href='/assets/favicons/apple-touch-icon-114x114.png'>
 <link rel='apple-touch-icon' sizes='72x72' href='/assets/favicons/apple-touch-icon-72x72.png'>
@@ -28,54 +28,171 @@
 <link rel='icon' type='image/png' href='/assets/favicons/favicon-32x32.png' sizes='32x32'>
 <meta name='msapplication-TileColor' content='#da532c'>
 <meta name='msapplication-TileImage' content='/assets/favicons/mstile-144x144.png'>
-<meta name='msapplication-config' content='/assets/favicons/browserconfig.xml'>
+<meta name='msapplication-config' content='/assets/favicons/browserconfig.xml'> -->
 
   <!-- CSS -->
   <link href='/assets/styles.css' rel='stylesheet' type='text/css'/>
 </head>
 
-<body class='page-en'>
 
-  <header id='header'>
-    <nav class='menu'>
-      
-      <a href='/'>中文</a>
-    </nav> 
+<body class='page-en index-launch'>
+  <header id='header-new'>
     <header class='hero'>
       <div class='wrapper'>
         <h1>JSConf China</h1>
-        <p>11th-12th July, 2015, Shenzhen, China</p>
+        <p>11th-12th July, 2015</p>
+<!--         <p>12:00 - 15:00</p> -->
+        <p>Shenzhen, China</p>
+        <a class='button'>Buy Ticket<span>Coming soon</span></a>
       </div>
-      <div id='parallax' class='parallax'>
-        <ul id='scene' class='scene'>
-          <li class='layer' data-depth='1.00'><div class='city'></div></li>
-          <li class='layer' data-depth='0.80'><div class='city'></div></li>
-          <li class='layer' data-depth='0.60'><div class='city'></div></li>
-          <li class='layer' data-depth='0.40'><div class='cloud'></div></li>
-          <li class='layer' data-depth='0.20'><div class='cloud'></div></li>
-          <li class='layer' data-depth='0.30'><div class='cloud'></div></li>
+    </header>
+    <div class='menu'>
+      <nav class='wrapper'>
+        <a href='#item1'>about us</a>
+        <a href='#item2'>speakers</a>
+<!--         <a href='#item3'></a> -->
+        <a href='#item4'>sponsers</a>
+        <a href='#item5'>media partner</a>
+        <a href='#item6'>venue</a>
+        <a class='button buyticket'>Buy Ticket<span>Coming soon</span></a>
+        <div class='right'>
+           <a href='/'>中文</a>     <nav class='social'>
+      <a class='weibo' href='http://weibo.com/JSConfChina' target='_blank'><span>Weibo</span></a>
+      <a class='twitter' href='http://twitter.com/jsconfcn' target='_blank'><span>Twitter</span></a>
+      <a class='github' href='http://github.com/jsconfcn/ShenJS' target='_blank'><span>GitHub</span></a>
+      <a class='slack' href='https://shenjs.herokuapp.com/' target='_blank'><span>Slack</span></a>
+    </nav>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- About -->
+  <section class='section about' id='item1'>
+    <div class='title'>
+      <h1>About ShenJS</h1>
+    </div>
+    <div class='wrapper'>
+      <p>JSConf China is a two day conference focused on JavaScript and Node.js technologies. This developer driven event brings together notable figures from both the Chinese and international JavaScript communities to share their knowledge and passion for JavaScript. After Shanghai, Beijing and Hangzhou, JSConf China is going to Shenzhen from July 11-12 in 2015.
+</p>
+    </div>
+    <div class='timeline'>
+      <div class='wrapper'>
+        <ul>
+          <li><a href='http://2012.jsconf.cn' target='new'><h4>HUJS</h4><em>2012</em></a></li>
+          <li><a href='http://2013.jsconf.cn' target='new'><h4>JINGJS</h4><em>2013</em></a></li>
+          <li><a href='http://2014.jsconf.cn' target='new'><h4>HANGJS</h4><em>2014</em></a></li>
+          <li class='active'><a href='http://2015.jsconf.cn' target='new'><h4>SHENJS</h4><em>2015</em></a></li>
         </ul>
       </div>
-      <div class='arrow down'></div>
-    </header>
-  </header>
+      <div class='line'></div>
+    </div>
+  </section>
+  <!-- Banner -->
+  <section class='banner first'>
+    <div class='left'>
+      <a href='https://jsconf.cn' target='new'>Learn more about JSConf China</a>
+    </div>
+    <div class='right'>
+      <a href='https://github.com/jsconfcn/ShenJS/issues' target='new'>Wanna help out? <strong>Join us on GitHub!</strong>
+</a>
+    </div>
+  </section>
+  <!-- Speakers -->
+  <section class='section speakers' id='item2'>
+    <div class='title'>
+      <h1>speakers</h1>
+    </div>
+    <a href='https://jinshuju.net/f/Dfys92' target='new' class='button'>Speaker vote</a>
+    <p>Please vote for you favourite speaker and topics</p>
+  </section>
 
-  <section id='content'>
-    
-
-
-
-<section class='section action'>
-  <div class='wrapper'>
-<!--     <div class='countdown'>
-      <span class='days'><strong>50</strong> days</span>
-      <span class='hours'><strong>5</strong> hours</span>
-      <span class='minutes'><strong>23</strong> minutes</span>
-      <span class='seconds'><strong>43</strong> seconds</span>
-    </div> -->
-    <!-- <img src='/images/line.png' class='line'> -->
-    <h2>Leave us your email, we&#39;ll keep you posted</h2>
-    
+  <!-- Banner -->
+  <section class='banner second'>
+    <div class='wrapper'>
+      <h1>Buy your ticket</h1>
+      <a class='button buyticket'>Buy Ticket<span>Coming soon</span></a>
+    </div>
+  </section>
+  <!-- sponsers-->
+  <section class='section sponsers' id='item4'>
+    <div class='title'>
+      <h1>sponsers</h1>
+    </div>
+    <div class='wrapper'>
+      <ul>
+        <li>
+          <a href='http://wiredcraft.com/' target='new'><img src='/images/wiredcraft.png' width='250' /></a>
+        </li>
+        <li>
+          <a href='http://www.qiniu.com/' target='new'><img src='/images/qiniu.png' width='250' /></a>
+        </li>
+        <li>
+          <a href='http://bearyinnovative.com/' target='new'><img src='/images/bearyinnovative.png' height='130' /></a>
+        </li>
+        <li>
+          <a href='https://coding.net/' target='new'><img src='/images/coding.png' width='250' /></a>
+        </li>
+        <li>
+          <a href='http://careers.ef.com/categories/technology/learning-labs/' target='new'><img src='/images/ef.png' width='130' /></a>
+        </li>
+        <li>
+          <a href='https://www.teambition.com/' target='new'><img src='/images/teambition.png' width='250' /></a>
+        </li>
+        <li>
+          <a href='http://makeblock.cc' target='new'><img src='/images/makeblock.jpg' width='250' /></a>
+        </li>
+        <li>
+          <a href='http://www.upyun.com/' target='new'><img src='/images/upyun.png' width='250' /></a>
+        </li>
+        <li>
+          <a href='http://www.jinshuju.com/' target='new'><img src='/images/jinshuju.png' width='170' /></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- media parter-->
+  <section class='section mediaparter' id='item5'>
+    <div class='title'>
+      <h1>media partner</h1>
+    </div>
+    <div class='wrapper'>
+      <ul>
+        <li>
+          <a href='http://segmentfault.com/' target='new'><img src='/images/sf.png' width='250' /></a>
+        </li>
+        <li>
+          <a href='https://knewone.com/' target='new'><img src='/images/knewone.png' width='250' /></a>
+        </li>
+        <li>
+          <a href='http://www.ituring.com.cn/' target='new'><img src='/images/turing.jpg' width='250' /></a>
+        </li>
+        <li>
+          <a href='http://www.broadview.com.cn/' target='new'><img src='/images/broadview.png' width='250' /></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- Venue -->
+  <section class='section venue' id='item6'>
+  <div class='tip'>Coming soon</div>
+    <div class='wrapper'>
+      <div class='left'>
+        <h1>venue</h1>
+        <h4><a href='http://qh.vanke.com/' target='new'>Qianhai Vanke Enterprise Dream Park (Special Zone Mansion)</a>
+</h4>
+        <p>Inside of Shenzhen Qianhai Deep Harbor Modern Service Industry Hezuoqu, Yuexing 2nd Road, Shenzhen</p>
+        <a target='new' href='http://qh.vanke.com/'>http://qh.vanke.com/</a>
+      </div>
+      <div class='right'>
+        <img src='/images/venue.jpg' />
+      </div>
+    </div>
+  </section>
+  <!-- Banner -->
+  <section class='banner third'>
+    <div class='wrapper'>
+      <h1>Keep up to date</h1>
+      
 
 
 
@@ -89,62 +206,24 @@
     <input type='submit' value='Subscribe' name='subscribe' class='button'/>
   </div>
 </form>
-        <nav class='social'>
-      <a class='weibo' href='http://weibo.com/JSConfChina' target='_blank'><span>Weibo</span></a>
-      <a class='twitter' href='http://twitter.com/jsconfcn' target='_blank'><span>Twitter</span></a>
-      <a class='github' href='http://github.com/jsconfcn/ShenJS' target='_blank'><span>GitHub</span></a>
-      <a class='slack' href='https://shenjs.herokuapp.com/' target='_blank'><span>Slack</span></a>
-    </nav>
-  </div>
-</section>
-<section class='section info'>
-  <div class='wrapper'>
-    <div class='about'>
-      <h2>About ShenJS</h2>
-      <p><p>JSConf China is a two day conference focused on JavaScript and Node.js technologies. This developer driven event brings together notable figures from both the Chinese and international JavaScript communities to share their knowledge and passion for JavaScript. After Shanghai, Beijing and Hangzhou, JSConf China is going to Shenzhen from July 11-12 in 2015.</p>
-<p>Wanna help out? <a href='https://github.com/JSConfcn/ShenJS/issues'>Join us on GitHub</a>!</p>
-<p><small><a href='http://JSConf.cn/'>Learn more about JSConf China</a></small>.</p>
-</p>
+      <!-- <a class='button buyticket'>Buy Ticket<span>Coming soon</span></a> -->
     </div>
-    <div class='map'>
-      <img src='/images/map.png'>
-    </div>
-  </div>
-</section>
-
-<section class='section call'>
-
-
-
-
-
-<div class='wrapper'>
-    <div class='speaker'>
-      <img src='/images/speaker.png'>
-    </div>
-    <div class='content'>
-      <h2>Call for Speakers</h2>
-      <p><p>2014 has been a great year for JavaScript and the JavaScript community. io.js began to steal the attention from Node.js, ES6 has been making huge progress and will publish a standard this year. We saw people start to use ES6 today with tools like babel.js. With Johny Five, Tessel, we saw more possibilities of what JavaScript can do. We want to hear your thoughts on JavaScript, your experiences, and of course your mad science. You are welcome to share any topic that is related(or not) to JavaScript.</p>
-</p>
-      <a class='button' href='/call-for-speakers-en' target='_self'>Submit</a>
-    </div>
-  </div>
-</section>
-
-
   </section>
-
+  <!-- Footer -->
   <footer id='footer'>
-    
+       
+<div class='wrapper'>
+  <a href='/code-of-conduct-en' target="_self">Code Of Conduct</a>
+  <a href='http://jsconf.cn' target="new">JSConf.cn</a>
+  <a href='https://creativecommons.org/licenses/by/3.0/' target="new">CCA 3.0 License</a>
+  <a href='http://wiredcraft.com' target="new">Built by Wiredcraft</a>
+  <div class='right'>
+    <span>Follow our WeChat</span>
+    <div class='qrcode'><img src='/images/qrcode.jpg' class='img' width='50' /><img src='/images/qrcode.jpg' class='tooltip' /></div>
+  </div>
+</div>
 
-
-
-<a href='/code-of-conduct-en' target="_self">Code Of Conduct</a>
-<a href='http://jsconf.cn' target="new">JSConf.cn</a>
-<a href='https://creativecommons.org/licenses/by/3.0/' target="new">CCA 3.0 License</a>
-<a href='http://wiredcraft.com' target="new">Built by Wiredcraft</a>
   </footer>
-
   <!-- JS -->
   <script src='/assets/scripts.js' type='text/javascript'></script>
   <!--[if lt IE 9]><script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script><![endif]-->
@@ -160,7 +239,7 @@
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(t, s);
   })();
-</script>
-	
+</script> 
 </body>
+
 </html>
