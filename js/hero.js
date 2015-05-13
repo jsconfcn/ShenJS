@@ -33,7 +33,7 @@ $(function() {
       menu = $('#header-new div.menu'),
       scrollTop = $('body').scrollTop(),
       w_width = $(window).width();
-    if (w_width >= 768) {
+    if (w_width >= 800) {
       if (scrollTop >= header) {
         menu.addClass('sticky');
       } else {

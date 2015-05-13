@@ -18,7 +18,8 @@ menu:
   item6: venue
 
 button:
-  content: Coming soon
+  content: Buy Ticket
+  placeholder: Coming soon
 
 subscribe:
   title: Leave us your email, we'll keep you posted
@@ -32,12 +33,14 @@ timeline:
    item1: HUJS
    item2: JINGJS
    item3: HANGJS
-   item4: JS
+   item4: SHENJS
 
 banner:
   left: Learn more about JSConf China
   right: | 
     Wanna help out? <strong>Join us on GitHub!</strong>
+  second: Buy your ticket
+  third: Keep up to date
 
 speakers:
   vote:

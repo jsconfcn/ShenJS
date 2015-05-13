@@ -1300,6 +1300,56 @@ code {
     border-color: #64a3fc; }
   .button:active, .button.active, a.button:active, a.button.active {
     border-color: #4a89e2; }
+  .button.buyticket, a.button.buyticket {
+    position: relative; }
+    .button.buyticket span, a.button.buyticket span {
+      background: #4d4d4d;
+      border-radius: 2px;
+      color: #FFF;
+      font-size: 12px;
+      font-size: 1.2rem;
+      line-height: 140%;
+      opacity: 0;
+      padding: 7.5px 15px;
+      position: absolute;
+      text-align: center;
+      visibility: hidden;
+      white-space: nowrap;
+      width: auto;
+      z-index: 999; }
+    .button.buyticket:hover span, a.button.buyticket:hover span {
+      opacity: 1;
+      -webkit-transition-property: opacity, margin;
+      -moz-transition-property: opacity, margin;
+      transition-property: opacity, margin;
+      -webkit-transition-duration: 0.1s;
+      -moz-transition-duration: 0.1s;
+      transition-duration: 0.1s;
+      visibility: visible; }
+    .button.buyticket span, a.button.buyticket span {
+      bottom: 100%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
+      .button.buyticket span:after, a.button.buyticket span:after {
+        content: '';
+        position: absolute;
+        border-right: 5px solid transparent;
+        border-bottom-color: #4d4d4d;
+        border-top: 5px solid #4d4d4d;
+        border-left: 5px solid transparent;
+        bottom: -5px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%); }
+    .button.buyticket:hover span, a.button.buyticket:hover span {
+      margin-bottom: 8px; }
 
 input {
   letter-spacing: 0.4px; }
@@ -1747,7 +1797,7 @@ input:not([type=submit]), textarea {
       width: 100%; }
       .index-launch #header-new .hero .wrapper {
         margin-top: 30px;
-        max-width: 768px;
+        max-width: 668px;
         letter-spacing: 5px; }
         .index-launch #header-new .hero .wrapper h1 {
           font-size: 50px;
@@ -1776,11 +1826,65 @@ input:not([type=submit]), textarea {
         .index-launch #header-new .hero .wrapper a {
           font-size: 16px;
           font-size: 1.6rem;
-          margin: 10px 0; }
+          margin: 10px 0;
+          position: relative; }
+          .index-launch #header-new .hero .wrapper a em {
+            font-style: normal;
+            font-size: 12px;
+            font-size: 1.2rem;
+            line-height: 12px; }
+          .index-launch #header-new .hero .wrapper a span {
+            background: #4d4d4d;
+            border-radius: 2px;
+            color: #FFF;
+            font-size: 12px;
+            font-size: 1.2rem;
+            line-height: 140%;
+            opacity: 0;
+            padding: 7.5px 15px;
+            position: absolute;
+            text-align: center;
+            visibility: hidden;
+            white-space: nowrap;
+            width: auto;
+            z-index: 999; }
+          .index-launch #header-new .hero .wrapper a:hover span {
+            opacity: 1;
+            -webkit-transition-property: opacity, margin;
+            -moz-transition-property: opacity, margin;
+            transition-property: opacity, margin;
+            -webkit-transition-duration: 0.1s;
+            -moz-transition-duration: 0.1s;
+            transition-duration: 0.1s;
+            visibility: visible; }
+          .index-launch #header-new .hero .wrapper a span {
+            top: 100%;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%); }
+            .index-launch #header-new .hero .wrapper a span:after {
+              content: '';
+              position: absolute;
+              border-left: 5px solid transparent;
+              border-top-color: #4d4d4d;
+              border-bottom: 5px solid #4d4d4d;
+              border-right: 5px solid transparent;
+              left: 50%;
+              top: -5px;
+              -webkit-transform: translateX(-50%);
+              -moz-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+              -o-transform: translateX(-50%);
+              transform: translateX(-50%); }
+          .index-launch #header-new .hero .wrapper a:hover span {
+            margin-top: 8px; }
         @media only screen and (min-width: 769px) {
           .index-launch #header-new .hero .wrapper {
             left: 50%;
-            margin-left: -384px;
+            margin-left: -334px;
             margin-top: -260px;
             position: absolute;
             top: 50%; }
@@ -1974,6 +2078,7 @@ input:not([type=submit]), textarea {
         left: 0px;
         position: fixed;
         top: -110px;
+        z-index: 10000;
         -webkit-transform: translateY(110px);
         -moz-transform: translateY(110px);
         -ms-transform: translateY(110px);
@@ -1992,6 +2097,7 @@ input:not([type=submit]), textarea {
     float: left;
     min-height: 90px;
     position: relative;
+    text-transform: uppercase;
     width: 100%; }
     .index-launch .banner.first {
       background: #2770E7; }
@@ -2041,9 +2147,11 @@ input:not([type=submit]), textarea {
         padding: 20px 20px 20px 0; }
       .index-launch .banner.second h1, .index-launch .banner.third h1 {
         color: #fff;
+        height: 60px;
+        line-height: 60px;
         font-weight: normal;
-        font-size: 38px;
-        font-size: 3.8rem;
+        font-size: 32px;
+        font-size: 3.2rem;
         letter-spacing: 5px; }
       .index-launch .banner.second a, .index-launch .banner.third a {
         border: 0px;
@@ -2052,6 +2160,7 @@ input:not([type=submit]), textarea {
         font-size: 1.8rem;
         height: 40px;
         line-height: 40px;
+        letter-spacing: 2px;
         margin: 30px 0;
         padding: 0px 40px; }
       @media only screen and (max-width: 768px) {
@@ -2061,7 +2170,7 @@ input:not([type=submit]), textarea {
             text-align: center;
             float: none; }
           .index-launch .banner.second h1, .index-launch .banner.third h1 {
-            padding: 20px 0 0; }
+            padding: 20px 0; }
           .index-launch .banner.second p, .index-launch .banner.third p {
             padding: 0px; }
           .index-launch .banner.second a, .index-launch .banner.third a {
@@ -2083,8 +2192,8 @@ input:not([type=submit]), textarea {
         vertical-align: middle; }
       .index-launch .banner.third form {
         float: right;
-        margin-top: 25px;
-        height: 52px;
+        margin-top: 29px;
+        height: 46px;
         width: 380px; }
         .index-launch .banner.third form .button, .index-launch .banner.third form input:not([type=submit]) {
           border: 0;
@@ -2098,16 +2207,16 @@ input:not([type=submit]), textarea {
           padding: 5px 30px; }
           @media only screen and (max-width: 768px) {
             .index-launch .banner.third form .button {
-              font-size: 12px;
-              font-size: 1.2rem;
+              font-size: 13px;
+              font-size: 1.3rem;
               padding: 10px 10px;
-              width: 90px; } }
+              width: 100px; } }
           @media only screen and (min-width: 769px) and (max-width: 1350px) {
             .index-launch .banner.third form .button {
-              font-size: 12px;
-              font-size: 1.2rem;
+              font-size: 13px;
+              font-size: 1.3rem;
               padding: 10px 10px;
-              width: 90px; } }
+              width: 100px; } }
         .index-launch .banner.third form input:not([type=submit]) {
           background: #FFF;
           border-radius: 40px 0 0 40px;
@@ -2117,16 +2226,16 @@ input:not([type=submit]), textarea {
           width: 180px; }
           @media only screen and (max-width: 768px) {
             .index-launch .banner.third form input:not([type=submit]) {
-              font-size: 12px;
-              font-size: 1.2rem;
+              font-size: 13px;
+              font-size: 1.3rem;
               padding: 10px 15px;
-              width: 180px; } }
+              width: 170px; } }
           @media only screen and (min-width: 769px) and (max-width: 1350px) {
             .index-launch .banner.third form input:not([type=submit]) {
-              font-size: 12px;
-              font-size: 1.2rem;
+              font-size: 13px;
+              font-size: 1.3rem;
               padding: 10px 15px;
-              width: 100px; } }
+              width: 180px; } }
         .index-launch .banner.third form ::-webkit-input-placeholder {
           -webkit-backface-visibility: hidden;
           -webkit-transform-style: preserve-3d;
@@ -2489,6 +2598,9 @@ input:not([type=submit]), textarea {
             font-size: 2rem; }
             .index-launch .section.venue .wrapper .left h4 a {
               color: #4d4d4d; }
+          @media only screen and (max-width: 768px) {
+            .index-launch .section.venue .wrapper .left {
+              margin-bottom: 20px; } }
         .index-launch .section.venue .wrapper .right {
           float: right; }
           .index-launch .section.venue .wrapper .right img {

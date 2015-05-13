@@ -18,7 +18,8 @@ menu:
   item6: 会场地址
 
 button:
-  content: 敬请期待
+  content: 购票参会
+  placeholder: 敬请期待
 
 about:
   title: 关于深JS
@@ -35,6 +36,8 @@ banner:
   left: 了解更多关于JS中国开发者大会
   right: | 
     想参与讨论？<strong>在Github上加入我们！</strong>
+  second: 2015JS中国开发者大会
+  third: 订阅最新信息
 
 speakers:
   vote:

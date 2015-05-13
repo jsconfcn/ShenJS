@@ -54,6 +54,9 @@ code {
   &:active, &.active {
     border-color: shade($blue, 10%);
   }
+  &.buyticket {
+    @include tooltip(top);
+  }
 }
 input {
   letter-spacing: 0.4px;
@@ -442,7 +445,7 @@ input:not([type=submit]), textarea {
       width: 100%;
       .wrapper {
         margin-top: 30px;
-        max-width: 768px;
+        max-width: 668px;
         letter-spacing: 5px;
         h1 {
           @include font-size(50);
@@ -469,10 +472,16 @@ input:not([type=submit]), textarea {
         a {
           @include font-size($normal);
           margin: $gutter/2 0;
+          em {
+            font-style: normal;
+            @include font-size($smaller - 2);
+            line-height: 12px;
+          }
+          @include tooltip(bottom);
         }
         @include desktop {
           left: 50%;
-          margin-left: -384px;
+          margin-left: -334px;
           margin-top: -260px;
           position: absolute;
           top: 50%;
@@ -574,6 +583,7 @@ input:not([type=submit]), textarea {
         left: 0px;
         position: fixed;
         top: -110px;
+        z-index: 10000;
         @include transform(translateY(110px));
         // @include transition(all, 0.4s, ease);
         @include large{
@@ -581,6 +591,9 @@ input:not([type=submit]), textarea {
         top: -70px;
         @include transform(translateY(70px));
         }
+        // .buyticket {
+        //   @include tooltip(bottom);
+        // }
       }
     }
   }
@@ -590,6 +603,7 @@ input:not([type=submit]), textarea {
     float: left;
     min-height: $banner-height;
     position: relative;
+    text-transform: uppercase;
     width: 100%;
     &.first {
       background: #2770E7;
@@ -644,8 +658,10 @@ input:not([type=submit]), textarea {
       }
       h1 {
         color: #fff;
+        height: $gutter*3;
+        line-height: $gutter*3;
         font-weight: normal;
-        @include font-size($huge+6);
+        @include font-size($huge);
         letter-spacing: 5px;
       }
       a {
@@ -654,6 +670,7 @@ input:not([type=submit]), textarea {
         @include font-size($larger);
         height: $gutter*2;
         line-height: $gutter*2;
+        letter-spacing: 2px;
         margin: $gutter*1.5 0;
         padding: 0px $gutter*2;
       }
@@ -664,7 +681,7 @@ input:not([type=submit]), textarea {
           float: none;
         }
         h1 {
-          padding: $gutter 0 0;
+          padding: $gutter 0;
         }
         p {
           padding: 0px;
@@ -695,8 +712,8 @@ input:not([type=submit]), textarea {
       }
       form {
         float: right;
-        margin-top: 25px;
-        height: 52px;
+        margin-top: 29px;
+        height: 46px;
         width: 380px;
         .button, input:not([type=submit]) {
           border: 0;
@@ -710,14 +727,14 @@ input:not([type=submit]), textarea {
           margin-left: -$gutter/4;
           padding: 5px 30px;
           @include tablet {
-            @include font-size($small);
+            @include font-size($smaller - 1);
             padding: $gutter/2 $gutter/2;
-            width: $gutter*4.5;
+            width: $gutter*5;
           }
           @include medium {
-            @include font-size($small);
+            @include font-size($smaller - 1);
             padding: $gutter/2 $gutter/2;
-            width: $gutter*4.5;
+            width: $gutter*5;
           }
         }
         input:not([type=submit]) {
@@ -728,14 +745,14 @@ input:not([type=submit]), textarea {
           padding: $gutter/4 $gutter+5;
           width: $gutter*9;
           @include tablet {
-            @include font-size($small);
+            @include font-size($smaller - 1);
             padding: $gutter/2 $gutter*0.75;
-            width: $gutter*9;
+            width: $gutter*8.5;
           }
           @include medium {
-            @include font-size($small);
+            @include font-size($smaller - 1);
             padding: $gutter/2 $gutter*0.75;
-            width: $gutter*5;
+            width: $gutter*9;
           }
         }
         ::-webkit-input-placeholder {
@@ -1147,6 +1164,9 @@ input:not([type=submit]), textarea {
             a {
             color: $black;
             }
+          }
+          @include tablet {
+            margin-bottom: $gutter;
           }
         }
         .right {

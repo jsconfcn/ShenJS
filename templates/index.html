@@ -8,9 +8,9 @@
       <div class='wrapper'>
         <h1>{{ event.title }}</h1>
         <p>{{ event.date }}</p>
-        <p>{{ event.time }}</p>
+<!--         <p>{{ event.time }}</p> -->
         <p>{{ event.venue }}</p>
-        <a class='button' href='#'>{{ button.content }}</a>
+        <a class='button' href='javescript:;'>{{ button.content }}<span>{{ button.placeholder }}</span></a>
       </div>
     </header>
     <div class='menu'>
@@ -21,7 +21,7 @@
         <a href='#item4'>{{ menu.item4 }}</a>
         <a href='#item5'>{{ menu.item5 }}</a>
         <a href='#item6'>{{ menu.item6 }}</a>
-        <a class='button' href='#'>{{ button.content }}</a>
+        <a class='button buyticket' href='javescript:;'>{{ button.content }}<span>{{ button.placeholder }}</span></a>
         <div class='right'>
           {% if locale == 'zh' %}<a href='/en'>EN</a>{% endif %} {% if locale == 'en' %}<a href='/'>中文</a>{% endif %} {% include 'partials/_social.html' %}
         </div>
@@ -69,9 +69,8 @@
   <!-- Banner -->
   <section class='banner second'>
     <div class='wrapper'>
-      <h1>{{ event.title }}</h1>
-      <p>{{ event.venue }}</p>
-      <a class='button' href='#'>{{ button.content }}</a>
+      <h1>{{ banner.second }}</h1>
+      <a class='button buyticket' href='javescript:;'>{{ button.content }}<span>{{ button.placeholder }}</span></a>
     </div>
   </section>
   <!-- sponsers-->
@@ -97,13 +96,16 @@
           <a href='http://careers.ef.com/categories/technology/learning-labs/' target='new'><img src='/images/ef.png' width='130' /></a>
         </li>
         <li>
-          <a href='https://coding.net/' target='new'><img src='/images/teambition.png' width='250' /></a>
+          <a href='https://www.teambition.com/' target='new'><img src='/images/teambition.png' width='250' /></a>
         </li>
         <li>
           <a href='http://makeblock.cc' target='new'><img src='/images/makeblock.jpg' width='250' /></a>
         </li>
         <li>
           <a href='http://www.upyun.com/' target='new'><img src='/images/upyun.png' width='250' /></a>
+        </li>
+        <li>
+          <a href='http://www.jinshuju.com/' target='new'><img src='/images/jinshuju.png' width='170' /></a>
         </li>
       </ul>
     </div>
@@ -132,7 +134,7 @@
   </section>
   <!-- Venue -->
   <section class='section venue' id='item6'>
-  <div class='tip'>{{ button.content }}</div>
+  <div class='tip'>{{ button.placeholder }}</div>
     <div class='wrapper'>
       <div class='left'>
         <h1>{{ menu.item6 }}</h1>
@@ -148,10 +150,9 @@
   <!-- Banner -->
   <section class='banner third'>
     <div class='wrapper'>
-      <h1>{{ event.title }}</h1>
-      <p>{{ event.venue }}</p>
+      <h1>{{ banner.third }}</h1>
       {% include 'partials/_subscribe.html' %}
-      <!-- <a class='button' href='#'>{{ button.content }}</a> -->
+      <!-- <a class='button buyticket' href='javescript:;'>{{ button.content }}<span>{{ button.placeholder }}</span></a> -->
     </div>
   </section>
   <!-- Footer -->
