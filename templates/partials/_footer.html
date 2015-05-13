@@ -1,13 +1,11 @@
-{% if locale == 'en' %}
-{% set codeofconduct = '/code-of-conduct-en' %}
-{% endif %}
-{% if locale == 'zh' %}
-{% set codeofconduct = '/code-of-conduct' %}
-{% endif %}
+{% if locale == 'en' %} {% set codeofconduct = '/code-of-conduct-en' %} {% endif %} {% if locale == 'zh' %} {% set codeofconduct = '/code-of-conduct' %} {% endif %}
 <div class='wrapper'>
-<a href='{{ codeofconduct }}' target="_self">Code Of Conduct</a>
-<a href='http://jsconf.cn' target="new">JSConf.cn</a>
-<a href='https://creativecommons.org/licenses/by/3.0/' target="new">CCA 3.0 License</a>
-<a href='http://wiredcraft.com' target="new">Built by Wiredcraft</a>
-<p><span>{{ footer.qrcode }}</span><img src='/images/qrcode.png'/></p>
+  <a href='{{ codeofconduct }}' target="_self">Code Of Conduct</a>
+  <a href='http://jsconf.cn' target="new">JSConf.cn</a>
+  <a href='https://creativecommons.org/licenses/by/3.0/' target="new">CCA 3.0 License</a>
+  <a href='http://wiredcraft.com' target="new">Built by Wiredcraft</a>
+  <div class='right'>
+    <span>{{ footer.qrcode }}</span>
+    <div class='qrcode'><img src='/images/qrcode.jpg' class='img' width='50' /><img src='/images/qrcode.jpg' class='tooltip' /></div>
+  </div>
 </div>

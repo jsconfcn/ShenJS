@@ -13,13 +13,12 @@ event:
 menu:
   item1: about us
   item2: speakers
-  item3: schedule
   item4: sponsers
   item5: media partner
   item6: venue
 
 button:
-  content: Buy Ticket
+  content: Coming soon
 
 subscribe:
   title: Leave us your email, we'll keep you posted
@@ -41,6 +40,9 @@ banner:
     Wanna help out? <strong>Join us on GitHub!</strong>
 
 speakers:
+  vote:
+    button: Speaker vote
+    content: Please vote for you favourite speaker and topics
   speaker1:
    name: John Doe
    title: User experience designer
@@ -49,8 +51,8 @@ speakers:
 
 venue:
   address: | 
-    <a href='http://qh.vanke.com/' target='new'>Enterprise Dream Park</a>
-  detail: 深圳市东滨路与临海路交汇处前海深港现代服务业合作区内
+    <a href='http://qh.vanke.com/' target='new'>Qianhai Vanke Enterprise Dream Park (Special Zone Mansion)</a>
+  detail: Inside of Shenzhen Qianhai Deep Harbor Modern Service Industry Hezuoqu, Yuexing 2nd Road, Shenzhen
 
 footer:
   qrcode: Follow our WeChat

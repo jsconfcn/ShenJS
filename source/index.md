@@ -13,13 +13,12 @@ event:
 menu:
   item1: 关于我们
   item2: 演讲嘉宾
-  item3: 活动日程
   item4: 赞助商
   item5: 合作媒体
   item6: 会场地址
 
 button:
-  content: 报名参加
+  content: 敬请期待
 
 about:
   title: 关于深JS
@@ -38,6 +37,9 @@ banner:
     想参与讨论？<strong>在Github上加入我们！</strong>
 
 speakers:
+  vote:
+    button: 讲师投票
+    content: 请为你喜爱的演讲嘉宾和话题投票
   speaker1:
    name: 胡痴儿
    title: 用户体验设计师
@@ -46,7 +48,7 @@ speakers:
 
 venue:
   address: | 
-    <a href='http://qh.vanke.com/' target='new'>深圳前海万科企业公馆</a>
+    <a href='http://qh.vanke.com/' target='new'>深圳前海万科企业公馆 (特区馆)</a>
   detail: 深圳市东滨路与临海路交汇处前海深港现代服务业合作区内
 
 footer:
