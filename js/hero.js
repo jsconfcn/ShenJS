@@ -31,10 +31,18 @@ $(function() {
   function sticky() {
     var header = $('#header-new').height() - $('#header-new div.menu').height(),
       menu = $('#header-new div.menu'),
-      scrollTop = $('body').scrollTop(),
-      w_width = $(window).width();
+      w_width = $(window).width(),
+      scrollPos;
+    if (typeof window.pageYOffset != 'undefined') {
+      scrollPos = window.pageYOffset; //Netscape
+    } else if (typeof document.compatMode != 'undefined' &&
+      document.compatMode != 'BackCompat') {
+      scrollPos = document.documentElement.scrollTop; //FirefoxéŠ†ä¸†hrome
+    } else if (typeof document.body != 'undefined') {
+      scrollPos = document.body.scrollTop; //IE
+    }
     if (w_width >= 800) {
-      if (scrollTop >= header) {
+      if (scrollPos >= header) {
         menu.addClass('sticky');
       } else {
         menu.removeClass('sticky');
@@ -50,7 +58,6 @@ $(function() {
   //       active_time = $('.timeline li.active'),
   //       line = $('.timeline .line'),
   //       b_width = $('.timeline .wrapper').width();
-  //       console.log(b_width);
   //     line.css({
   //       left: active_time.offset().left + (b_width * 0.125)
   //     }, 300).show();
@@ -64,7 +71,7 @@ $(function() {
   //       line.hide();
   //     })
   //   }
-    /* arrow */
+  /* arrow */
 
   $('.arrow').click(function() {
     if ($(this).hasClass('register')) {

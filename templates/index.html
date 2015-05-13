@@ -3,14 +3,14 @@
 {% include 'partials/_head.html' %}
 
 <body class='page-{{ path | default(' front ') }} index-launch'>
-  <header id='header-new' class='stretch-full'>
+  <header id='header-new'>
     <header class='hero'>
       <div class='wrapper'>
         <h1>{{ event.title }}</h1>
         <p>{{ event.date }}</p>
 <!--         <p>{{ event.time }}</p> -->
         <p>{{ event.venue }}</p>
-        <a class='button' href='javescript:;'>{{ button.content }}<span>{{ button.placeholder }}</span></a>
+        <a class='button'>{{ button.content }}<span>{{ button.placeholder }}</span></a>
       </div>
     </header>
     <div class='menu'>
@@ -21,7 +21,7 @@
         <a href='#item4'>{{ menu.item4 }}</a>
         <a href='#item5'>{{ menu.item5 }}</a>
         <a href='#item6'>{{ menu.item6 }}</a>
-        <a class='button buyticket' href='javescript:;'>{{ button.content }}<span>{{ button.placeholder }}</span></a>
+        <a class='button buyticket'>{{ button.content }}<span>{{ button.placeholder }}</span></a>
         <div class='right'>
           {% if locale == 'zh' %}<a href='/en'>EN</a>{% endif %} {% if locale == 'en' %}<a href='/'>中文</a>{% endif %} {% include 'partials/_social.html' %}
         </div>
@@ -70,7 +70,7 @@
   <section class='banner second'>
     <div class='wrapper'>
       <h1>{{ banner.second }}</h1>
-      <a class='button buyticket' href='javescript:;'>{{ button.content }}<span>{{ button.placeholder }}</span></a>
+      <a class='button buyticket'>{{ button.content }}<span>{{ button.placeholder }}</span></a>
     </div>
   </section>
   <!-- sponsers-->
@@ -152,7 +152,7 @@
     <div class='wrapper'>
       <h1>{{ banner.third }}</h1>
       {% include 'partials/_subscribe.html' %}
-      <!-- <a class='button buyticket' href='javescript:;'>{{ button.content }}<span>{{ button.placeholder }}</span></a> -->
+      <!-- <a class='button buyticket'>{{ button.content }}<span>{{ button.placeholder }}</span></a> -->
     </div>
   </section>
   <!-- Footer -->
