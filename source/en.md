@@ -13,8 +13,8 @@ event:
 menu:
   item1: about us
   item2: speakers
-  item4: sponsers
-  item5: media partner
+  item4: sponsors
+  item5: media partners
   item6: venue
 
 button:
