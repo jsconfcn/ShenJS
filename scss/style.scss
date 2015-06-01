@@ -272,8 +272,8 @@ input:not([type=submit]), textarea {
 
 
 
-/* Call For Speakers */
-.call-for-speakers, .code-of-conduct {
+/* code-of-conduct */
+.code-of-conduct {
   #header {
     .menu {
       a{
@@ -897,6 +897,21 @@ input:not([type=submit]), textarea {
       p {
         margin-top: $gutter/2;
       }
+      .title {
+        padding-bottom: 0;
+      }
+      .tip {
+        color: $black;
+        @include font-size($large);
+        height: 50px;
+        line-height: 50px;
+        letter-spacing: $gutter/4;
+        top: 50%;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+        z-index: 1;
+      }
       // padding-bottom: 0px;
       ul {
         padding: 0px;
@@ -1127,7 +1142,7 @@ input:not([type=submit]), textarea {
       margin-bottom:$gutter*7;
       .tip {
         color: $black;
-        @include font-size($large+4);
+        @include font-size($large);
         height: 50px;
         line-height: 50px;
         letter-spacing: $gutter/4;
