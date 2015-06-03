@@ -46,11 +46,112 @@ speakers:
   vote:
     button: Speaker vote
     content: Please vote for you favourite speaker and topics
+
   speaker1:
-   name: John Doe
-   title: User experience designer
-   description:  |
-     Paul is obsessed with UI and enamoured by the evolution of front end development. If left unattended, he'll beautiful mind that code all over your windows. In his spare time, Paul can be found performing in musicals, folding origami dinosaurs, drawing comic books or singing karaoke.
+   name: Evan You
+   company: Meteor
+   url: https://github.com/yyx990803
+
+  speaker2:
+   name: Jackson Tian
+   company: Aliyun
+   url: https://github.com/JacksonTian
+
+  speaker3:
+   name: Hermen
+   company: Alibaba
+   url: https://github.com/threeday0905
+
+  speaker4:
+   name: Mathias Buus
+   company:
+   url: https://github.com/mafintosh
+
+  speaker5:
+   name: Yi Shen
+   company: Baidu
+   url: https://github.com/pissang
+
+  speaker6:
+   name: Martin Naumann
+   company: Archilogic
+   url: http://github.com/mgonto
+
+  speaker7:
+   name: Hax
+   company: Baixin.com
+   url: https://github.com/hax
+
+  speaker8:
+   name: Tim Pietrusky
+   company: Synoa GmbH
+   url: https://twitter.com/TimPietrusky
+
+  speaker9:
+   name: Hengfei Zhuang
+   company: baoz.me
+   url: https://github.com/ngot
+
+  speaker10:
+   name: Hui Liu
+   company: Coding Net
+   url: http://github.com/hulufei
+
+  speaker11:
+   name: Yiyu He
+   company: alibaba
+   url: https://github.com/dead-horse
+
+  speaker12:
+   name: Brian Holt
+   company: Netflix
+   url: https://twitter.com/holtbt
+
+  speaker13:
+   name: Alexandre Strzelewicz
+   company: Keymetrics
+   url: https://github.com/Unitech
+
+  speaker14:
+   name: Qing Yan
+   company: Teambition
+   url: https://github.com/zensh
+
+
+  speaker15:
+   name: Zongmin Lei
+   company: SuperID
+   url: https://github.com/leizongmin
+
+  speaker16:
+   name: Eyal Arubas
+   company: EF
+   url: https://github.com/EyalAr/
+
+  speaker17:
+   name: Lloyd Watkin
+   company: Amazon
+   url: https://github.com/lloydwatkin
+
+  speaker18:
+   name: Andrew Fisher
+   company: JBA
+   url: https://github.com/ajfisher
+
+  speaker19:
+   name: Tianle Wen
+   company: Ucloud
+   url: http://www.zhihu.com/people/wen-tian-le
+
+  speaker20:
+   name: 
+   company: Qiniu
+   url: 
+
+  speaker21:
+   name: Bohan li
+   company: BearyInnovative
+   url: https://github.com/loddit
 
 venue:
   address: | 

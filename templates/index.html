@@ -8,7 +8,7 @@
       <div class='wrapper'>
         <h1>{{ event.title }}</h1>
         <p>{{ event.date }}</p>
-<!--         <p>{{ event.time }}</p> -->
+        <!--         <p>{{ event.time }}</p> -->
         <p>{{ event.venue }}</p>
         <a class='button'>{{ button.content }}<span>{{ button.placeholder }}</span></a>
       </div>
@@ -17,7 +17,7 @@
       <nav class='wrapper'>
         <a href='#item1'>{{ menu.item1 }}</a>
         <a href='#item2'>{{ menu.item2 }}</a>
-<!--         <a href='#item3'>{{ menu.item3 }}</a> -->
+        <!--         <a href='#item3'>{{ menu.item3 }}</a> -->
         <a href='#item4'>{{ menu.item4 }}</a>
         <a href='#item5'>{{ menu.item5 }}</a>
         <a href='#item6'>{{ menu.item6 }}</a>
@@ -58,159 +58,244 @@
     </div>
   </section>
   <!-- Speakers -->
-    <section class='section speakers' id='item2'>
+  <section class='section speakers' id='item2'>
     <div class='title'>
       <h1>{{ menu.item2 }}</h1>
     </div>
-      <div class='tip'>{{ button.placeholder }}</div>
-<!--     <ul>
+    <ul>
       <li>
-        <img src='/images/speaker1.jpg' />
-        <div class='cover'>
-          <div class='info'>
-            <h4>{{ speakers.speaker1.name }}</h4>
-            <p>{{ speakers.speaker1.title }}</p>
-            <a href='#' class='icon github'></a>
-            <a href='#' class='icon weibo'></a>
-          </div>
-        </div>
+        <a href='{{ speakers.speaker1.url }}' target='new'>
+          <img src='/images/speakers/1.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker1.name }}</h4>
+              <p>{{ speakers.speaker1.company }}</p>
+            </div>
         </a>
+        </div>
       </li>
       <li>
-        <img src='/images/speaker1.jpg' />
-        <div class='cover'>
-          <div class='info'>
-            <h4>{{ speakers.speaker1.name }}</h4>
-            <p>{{ speakers.speaker1.title }}</p>
-            <a href='#' class='icon github'></a>
-            <a href='#' class='icon twitter'></a>
-          </div>
-        </div>
+        <a href='{{ speakers.speaker2.url }}' target='new'>
+          <img src='/images/speakers/2.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker2.name }}</h4>
+              <p>{{ speakers.speaker2.company }}</p>
+            </div>
         </a>
+        </div>
       </li>
       <li>
-        <img src='/images/speaker1.jpg' />
-        <div class='cover'>
-          <div class='info'>
-            <h4>{{ speakers.speaker1.name }}</h4>
-            <p>{{ speakers.speaker1.title }}</p>
-            <a href='#' class='icon github'></a>
-            <a href='#' class='icon weibo'></a>
-          </div>
-        </div>
+        <a href='{{ speakers.speaker3.url }}' target='new'>
+          <img src='/images/speakers/3.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker3.name }}</h4>
+              <p>{{ speakers.speaker3.company }}</p>
+            </div>
         </a>
+        </div>
       </li>
       <li>
-        <img src='/images/speaker1.jpg' />
-        <div class='cover'>
-          <div class='info'>
-            <h4>{{ speakers.speaker1.name }}</h4>
-            <p>{{ speakers.speaker1.title }}</p>
-            <a href='#' class='icon github'></a>
-            <a href='#' class='icon twitter'></a>
-          </div>
-        </div>
+        <a href='{{ speakers.speaker4.url }}' target='new'>
+          <img src='/images/speakers/4.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker4.name }}</h4>
+              <p>{{ speakers.speaker4.company }}</p>
+            </div>
         </a>
+        </div>
       </li>
       <li>
-        <img src='/images/speaker1.jpg' />
-        <div class='cover'>
-          <div class='info'>
-            <h4>{{ speakers.speaker1.name }}</h4>
-            <p>{{ speakers.speaker1.title }}</p>
-            <a href='#' class='icon github'></a>
-            <a href='#' class='icon twitter'></a>
-          </div>
-        </div>
+        <a href='{{ speakers.speaker5.url }}' target='new'>
+          <img src='/images/speakers/5.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker5.name }}</h4>
+              <p>{{ speakers.speaker5.company }}</p>
+            </div>
         </a>
+        </div>
       </li>
       <li>
-        <img src='/images/speaker1.jpg' />
-        <div class='cover'>
-          <div class='info'>
-            <h4>{{ speakers.speaker1.name }}</h4>
-            <p>{{ speakers.speaker1.title }}</p>
-            <a href='#' class='icon github'></a>
-            <a href='#' class='icon twitter'></a>
-          </div>
-        </div>
+        <a href='{{ speakers.speaker6.url }}' target='new'>
+          <img src='/images/speakers/6.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker6.name }}</h4>
+              <p>{{ speakers.speaker6.company }}</p>
+            </div>
         </a>
+        </div>
       </li>
       <li>
-        <img src='/images/speaker1.jpg' />
-        <div class='cover'>
-          <div class='info'>
-            <h4>{{ speakers.speaker1.name }}</h4>
-            <p>{{ speakers.speaker1.title }}</p>
-            <a href='#' class='icon github'></a>
-            <a href='#' class='icon twitter'></a>
-          </div>
-        </div>
+        <a href='{{ speakers.speaker7.url }}' target='new'>
+          <img src='/images/speakers/7.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker7.name }}</h4>
+              <p>{{ speakers.speaker7.company }}</p>
+            </div>
         </a>
+        </div>
       </li>
       <li>
-        <img src='/images/speaker1.jpg' />
-        <div class='cover'>
-          <div class='info'>
-            <h4>{{ speakers.speaker1.name }}</h4>
-            <p>{{ speakers.speaker1.title }}</p>
-            <a href='#' class='icon github'></a>
-            <a href='#' class='icon twitter'></a>
-          </div>
-        </div>
+        <a href='{{ speakers.speaker8.url }}' target='new'>
+          <img src='/images/speakers/8.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker8.name }}</h4>
+              <p>{{ speakers.speaker8.company }}</p>
+            </div>
         </a>
+        </div>
+      </li>
+<!--       <li>
+        <a href='{{ speakers.speaker9.url }}' target='new'>
+          <img src='/images/speakers/0.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker9.name }}</h4>
+              <p>{{ speakers.speaker9.company }}</p>
+            </div>
+        </a>
+        </div>
+      </li> -->
+      <li>
+        <a href='{{ speakers.speaker10.url }}' target='new'>
+          <img src='/images/speakers/10.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker10.name }}</h4>
+              <p>{{ speakers.speaker10.company }}</p>
+            </div>
+        </a>
+        </div>
       </li>
       <li>
-        <img src='/images/speaker1.jpg' />
-        <div class='cover'>
-          <div class='info'>
-            <h4>{{ speakers.speaker1.name }}</h4>
-            <p>{{ speakers.speaker1.title }}</p>
-            <a href='#' class='icon github'></a>
-            <a href='#' class='icon twitter'></a>
-          </div>
-        </div>
+        <a href='{{ speakers.speaker11.url }}' target='new'>
+          <img src='/images/speakers/11.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker11.name }}</h4>
+              <p>{{ speakers.speaker11.company }}</p>
+            </div>
         </a>
+        </div>
       </li>
       <li>
-        <img src='/images/speaker1.jpg' />
-        <div class='cover'>
-          <div class='info'>
-            <h4>{{ speakers.speaker1.name }}</h4>
-            <p>{{ speakers.speaker1.title }}</p>
-            <a href='#' class='icon github'></a>
-            <a href='#' class='icon twitter'></a>
-          </div>
-        </div>
+        <a href='{{ speakers.speaker12.url }}' target='new'>
+          <img src='/images/speakers/12.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker12.name }}</h4>
+              <p>{{ speakers.speaker12.company }}</p>
+            </div>
         </a>
+        </div>
       </li>
       <li>
-        <img src='/images/speaker1.jpg' />
-        <div class='cover'>
-          <div class='info'>
-            <h4>{{ speakers.speaker1.name }}</h4>
-            <p>{{ speakers.speaker1.title }}</p>
-            <a href='#' class='icon github'></a>
-            <a href='#' class='icon twitter'></a>
-          </div>
-        </div>
+        <a href='{{ speakers.speaker13.url }}' target='new'>
+          <img src='/images/speakers/13.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker13.name }}</h4>
+              <p>{{ speakers.speaker13.company }}</p>
+            </div>
         </a>
+        </div>
       </li>
       <li>
-        <img src='/images/speaker1.jpg' />
-        <div class='cover'>
-          <div class='info'>
-            <h4>{{ speakers.speaker1.name }}</h4>
-            <p>{{ speakers.speaker1.title }}</p>
-            <a href='#' class='icon github'></a>
-            <a href='#' class='icon twitter'></a>
-          </div>
-        </div>
+        <a href='{{ speakers.speaker14.url }}' target='new'>
+          <img src='/images/speakers/14.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker14.name }}</h4>
+              <p>{{ speakers.speaker14.company }}</p>
+            </div>
         </a>
+        </div>
       </li>
-    </ul> -->
+      <li>
+        <a href='{{ speakers.speaker15.url }}' target='new'>
+          <img src='/images/speakers/15.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker15.name }}</h4>
+              <p>{{ speakers.speaker15.company }}</p>
+            </div>
+        </a>
+        </div>
+      </li>
+      <li>
+        <a href='{{ speakers.speaker16.url }}' target='new'>
+          <img src='/images/speakers/16.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker16.name }}</h4>
+              <p>{{ speakers.speaker16.company }}</p>
+            </div>
+        </a>
+        </div>
+      </li>
+      <li>
+        <a href='{{ speakers.speaker17.url }}' target='new'>
+          <img src='/images/speakers/17.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker17.name }}</h4>
+              <p>{{ speakers.speaker17.company }}</p>
+            </div>
+        </a>
+        </div>
+      </li>
+      <li>
+        <a href='{{ speakers.speaker18.url }}' target='new'>
+          <img src='/images/speakers/18.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker18.name }}</h4>
+              <p>{{ speakers.speaker18.company }}</p>
+            </div>
+        </a>
+        </div>
+      </li>
+      <li>
+        <a href='{{ speakers.speaker19.url }}' target='new'>
+          <img src='/images/speakers/19.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker19.name }}</h4>
+              <p>{{ speakers.speaker19.company }}</p>
+            </div>
+        </a>
+        </div>
+      </li>
+<!--       <li>
+        <a href='{{ speakers.speaker20.url }}' target='new'>
+          <img src='/images/speakers/0.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker20.name }}</h4>
+              <p>{{ speakers.speaker20.company }}</p>
+            </div>
+        </a>
+        </div>
+      </li> -->
+      <li>
+        <a href='{{ speakers.speaker21.url }}' target='new'>
+          <img src='/images/speakers/21.jpg' />
+          <div class='cover'>
+            <div class='info'>
+              <h4>{{ speakers.speaker21.name }}</h4>
+              <p>{{ speakers.speaker21.company }}</p>
+            </div>
+        </a>
+        </div>
+      </li>
+    </ul>
   </section>
-
   <!-- Banner -->
   <section class='banner second'>
     <div class='wrapper'>
@@ -279,7 +364,7 @@
   </section>
   <!-- Venue -->
   <section class='section venue' id='item6'>
-  <div class='tip'>{{ button.placeholder }}</div>
+    <div class='tip'>{{ button.placeholder }}</div>
     <div class='wrapper'>
       <div class='left'>
         <h1>{{ menu.item6 }}</h1>
@@ -295,8 +380,7 @@
   <!-- Banner -->
   <section class='banner third'>
     <div class='wrapper'>
-      <h1>{{ banner.third }}</h1>
-      {% include 'partials/_subscribe.html' %}
+      <h1>{{ banner.third }}</h1> {% include 'partials/_subscribe.html' %}
       <!-- <a class='button buyticket'>{{ button.content }}<span>{{ button.placeholder }}</span></a> -->
     </div>
   </section>

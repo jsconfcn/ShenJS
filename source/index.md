@@ -43,11 +43,112 @@ speakers:
   vote:
     button: 讲师投票
     content: 请为你喜爱的演讲嘉宾和话题投票
+
   speaker1:
-   name: 胡痴儿
-   title: 用户体验设计师
-   description: |
-     Paul is obsessed with UI and enamoured by the evolution of front end development. If left unattended, he'll beautiful mind that code all over your windows. In his spare time, Paul can be found performing in musicals, folding origami dinosaurs, drawing comic books or singing karaoke.
+   name: 尤雨溪
+   company: Meteor
+   url: https://github.com/yyx990803
+
+  speaker2:
+   name: 朴灵
+   company: 阿里云
+   url: https://github.com/JacksonTian
+
+  speaker3:
+   name: 赫门
+   company: Alibaba
+   url: https://github.com/threeday0905
+
+  speaker4:
+   name: Mathias Buus
+   company:
+   url: https://github.com/mafintosh
+
+  speaker5:
+   name: 沈毅
+   company: 百度
+   url: https://github.com/pissang
+
+  speaker6:
+   name: Martin Naumann
+   company: Archilogic
+   url: http://github.com/mgonto
+
+
+  speaker7:
+   name: Hax
+   company: 百姓网
+   url: https://github.com/hax
+
+  speaker8:
+   name: Tim Pietrusky
+   company: Synoa GmbH
+   url: https://twitter.com/TimPietrusky
+
+  speaker9:
+   name: 庄恒飞
+   company: 孢子社区
+   url: https://github.com/ngot
+
+  speaker10:
+   name: 刘辉
+   company: Coding Net
+   url: http://github.com/hulufei
+
+  speaker11:
+   name: 何翊宇
+   company: 阿里巴巴
+   url: https://github.com/dead-horse
+
+  speaker12:
+   name: Brian Holt
+   company: Netflix
+   url: https://twitter.com/holtbt
+
+  speaker13:
+   name: Alexandre Strzelewicz
+   company: Keymetrics
+   url: https://github.com/Unitech
+
+  speaker14:
+   name: 严清
+   company: Teambition
+   url: https://github.com/zensh
+
+  speaker15:
+   name: 雷宗民
+   company: 一登
+   url: https://github.com/leizongmin
+
+  speaker16:
+   name: Eyal Arubas
+   company: EF
+   url: https://github.com/EyalAr/
+
+  speaker17:
+   name: Lloyd Watkin
+   company: Amazon
+   url: https://github.com/lloydwatkin
+
+  speaker18:
+   name: Andrew Fisher
+   company: JBA
+   url: https://github.com/ajfisher
+
+  speaker19:
+   name: 文天乐
+   company: Ucloud
+   url: http://www.zhihu.com/people/wen-tian-le
+
+  speaker20:
+   name: 
+   company: 七牛
+   url: 
+
+  speaker21:
+   name: 李博涵
+   company: 一熊科技
+   url: https://github.com/loddit
 
 venue:
   address: | 

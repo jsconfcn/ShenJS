@@ -897,9 +897,9 @@ input:not([type=submit]), textarea {
       p {
         margin-top: $gutter/2;
       }
-      .title {
-        padding-bottom: 0;
-      }
+      // .title {
+      //   padding-bottom: 0;
+      // }
       .tip {
         color: $black;
         @include font-size($large);
@@ -930,7 +930,7 @@ input:not([type=submit]), textarea {
           div.cover {
             box-sizing: border-box;
             bottom: -20px;
-            background: rgba(255, 255, 255, 0.75);
+            background: rgba(255, 255, 255, 0.7);
             left: 0px;
             opacity: 0;
             padding: 0 $gutter;
@@ -1005,7 +1005,7 @@ input:not([type=submit]), textarea {
               @include transform(translateY(-20px));
               .info {
                 opacity: 1;
-                @include transform(translateY(-18px));
+                @include transform(translateY(-13px));
               }
             }
           }

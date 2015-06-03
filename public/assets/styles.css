@@ -2489,8 +2489,6 @@ input:not([type=submit]), textarea {
       margin: 0 auto; }
     .index-launch .section.speakers p {
       margin-top: 10px; }
-    .index-launch .section.speakers .title {
-      padding-bottom: 0; }
     .index-launch .section.speakers .tip {
       color: #4d4d4d;
       font-size: 24px;
@@ -2520,7 +2518,7 @@ input:not([type=submit]), textarea {
         .index-launch .section.speakers ul li div.cover {
           box-sizing: border-box;
           bottom: -20px;
-          background: rgba(255, 255, 255, 0.75);
+          background: rgba(255, 255, 255, 0.7);
           left: 0px;
           opacity: 0;
           padding: 0 20px;
@@ -2593,11 +2591,11 @@ input:not([type=submit]), textarea {
           transform: translateY(-20px); }
           .index-launch .section.speakers ul li:hover .cover .info {
             opacity: 1;
-            -webkit-transform: translateY(-18px);
-            -moz-transform: translateY(-18px);
-            -ms-transform: translateY(-18px);
-            -o-transform: translateY(-18px);
-            transform: translateY(-18px); }
+            -webkit-transform: translateY(-13px);
+            -moz-transform: translateY(-13px);
+            -ms-transform: translateY(-13px);
+            -o-transform: translateY(-13px);
+            transform: translateY(-13px); }
         @media only screen and (min-width: 1351px) {
           .index-launch .section.speakers ul li {
             width: 16.66%; } }
