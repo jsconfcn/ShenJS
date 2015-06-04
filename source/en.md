@@ -89,7 +89,7 @@ speakers:
 
   speaker9:
    name: Hengfei Zhuang
-   company: baoz.me
+   company: baoz.cn
    url: https://github.com/ngot
 
   speaker10:

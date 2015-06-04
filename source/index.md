@@ -56,7 +56,7 @@ speakers:
 
   speaker3:
    name: 赫门
-   company: Alibaba
+   company: 阿里巴巴
    url: https://github.com/threeday0905
 
   speaker4:
