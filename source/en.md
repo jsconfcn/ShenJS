@@ -75,7 +75,7 @@ speakers:
   speaker6:
    name: Martin Naumann
    company: Archilogic
-   url: http://github.com/mgonto
+   url: http://geekonaut.de
 
   speaker7:
    name: Hax
