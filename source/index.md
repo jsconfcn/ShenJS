@@ -91,7 +91,7 @@ speakers:
 
   speaker10:
    name: 刘辉
-   company: Coding Net
+   company: Coding.net
    url: http://github.com/hulufei
 
   speaker11:

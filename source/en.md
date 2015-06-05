@@ -94,7 +94,7 @@ speakers:
 
   speaker10:
    name: Hui Liu
-   company: Coding Net
+   company: Coding.net
    url: http://github.com/hulufei
 
   speaker11:

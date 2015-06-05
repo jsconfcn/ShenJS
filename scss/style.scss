@@ -96,7 +96,8 @@ input:not([type=submit]), textarea {
 
 /* Header */
 
-#header,#header-new {
+#header,
+#header-new {
   background: $blue;
   @include clearfix;
   color: #FFF;
@@ -165,7 +166,7 @@ input:not([type=submit]), textarea {
           @include font-size($large);
           margin: 0;
         }
-        @include medium{
+        @include medium {
           @include font-size(45);
           margin-bottom: $gutter/2;
           &:before {
@@ -189,7 +190,6 @@ input:not([type=submit]), textarea {
     }
   }
 }
-
 /* Footer */
 
 #footer {
@@ -229,27 +229,27 @@ input:not([type=submit]), textarea {
         position: relative;
         float: right;
         img.img {
-        height: 50px;
-        float: left;
-       }
-       img.tooltip {
-        bottom: 50px;
-        border: 1px solid $line;
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-        right: 0px;
-        opacity: 0;
-        position: absolute;
-        @include transition(all, 0.4s, ease);
-        visibility: hidden;
-        width: 250px;
-       }
-       &:hover {
-        img.tooltip {
-          opacity: 1;
-          visibility: visible;
-          @include transform(translateY(-10px));
+          height: 50px;
+          float: left;
         }
-       }
+        img.tooltip {
+          bottom: 50px;
+          border: 1px solid $line;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+          right: 0px;
+          opacity: 0;
+          position: absolute;
+          @include transition(all, 0.4s, ease);
+          visibility: hidden;
+          width: 250px;
+        }
+        &:hover {
+          img.tooltip {
+            opacity: 1;
+            visibility: visible;
+            @include transform(translateY(-10px));
+          }
+        }
       }
     }
   }
@@ -269,15 +269,13 @@ input:not([type=submit]), textarea {
     }
   }
 }
-
-
-
 /* code-of-conduct */
+
 .code-of-conduct {
   #header {
     .menu {
-      a{
-        &:hover{
+      a {
+        &:hover {
           color: $blue;
           border-color: $blue;
         }
@@ -285,7 +283,7 @@ input:not([type=submit]), textarea {
     }
     .hero {
       background: #fff;
-      color: $blue;    
+      color: $blue;
       .wrapper {
         height: 100%;
         position: relative;
@@ -313,8 +311,8 @@ input:not([type=submit]), textarea {
             line-height: 300px;
             margin-bottom: $gutter/2;
             @include tablet {
-             @include font-size(100);
-             line-height: 100px;
+              @include font-size(100);
+              line-height: 100px;
             }
           }
         }
@@ -328,7 +326,7 @@ input:not([type=submit]), textarea {
           text-align: left;
           @include tablet {
             padding-top: 130px!important;
-            h1,p {
+            h1, p {
               text-align: center;
             }
           }
@@ -349,7 +347,7 @@ input:not([type=submit]), textarea {
             padding: 15px 0;
           }
           .arrow {
-              &.register{
+            &.register {
               background: $blue;
               border-radius: 5px;
               color: #fff;
@@ -361,7 +359,7 @@ input:not([type=submit]), textarea {
               width: 140px;
               @include font-size($normal);
               @include tablet {
-                 margin: 50px auto 0px auto;
+                margin: 50px auto 0px auto;
               }
             }
           }
@@ -372,7 +370,7 @@ input:not([type=submit]), textarea {
   #content {
     background: $blue;
     padding: $gutter*3 0;
-    .wrapper{
+    .wrapper {
       color: #fff;
       padding: 0 $gutter;
       max-width: 700px;
@@ -380,7 +378,9 @@ input:not([type=submit]), textarea {
         line-height: 200%;
         margin-bottom: $gutter*3;
       }
-      h2, h4, h3 {
+      h2,
+      h4,
+      h3 {
         color: #fff;
         font-weight: normal;
         margin-bottom: $gutter*2;
@@ -400,7 +400,7 @@ input:not([type=submit]), textarea {
           opacity: 0.7;
         }
       }
-    } 
+    }
   }
   #register {
     @include tablet {
@@ -408,26 +408,24 @@ input:not([type=submit]), textarea {
     }
   }
 }
-
-
 /* Social */
+
 #social {
   background: #DBEAFF;
   padding: $gutter*3 0;
 }
+
 .social {
   @include clearfix;
   @import '_social.scss';
 }
-
 /* Register Form */
-.entry-container{
-  .banner{
+
+.entry-container {
+  .banner {
     display: none!important;
   }
 }
-
-
 /* New Design */
 
 .index-launch {
@@ -436,7 +434,7 @@ input:not([type=submit]), textarea {
   #header-new {
     min-height: 550px;
     .hero {
-      background: url('../images/header.jpg') no-repeat 0 0 !important;
+      background: url('../images/header.jpg?') no-repeat 0 0 !important;
       -webkit-background-size: cover!important;
       -moz-background-size: cover!important;
       -o-background-size: cover!important;
@@ -449,8 +447,9 @@ input:not([type=submit]), textarea {
         letter-spacing: 5px;
         h1 {
           @include font-size(50);
-          letter-spacing: 15px!important;
           font-weight: 700;
+          letter-spacing: 15px!important;
+          text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
           &:before {
             @include font-size(130);
             @include tablet {
@@ -528,7 +527,8 @@ input:not([type=submit]), textarea {
           &:last-child {
             margin-right: 0px;
           }
-          &:hover, &.active {
+          &:hover,
+          &.active {
             color: $blue;
           }
           &.button {
@@ -586,10 +586,10 @@ input:not([type=submit]), textarea {
         z-index: 10000;
         @include transform(translateY(110px));
         // @include transition(all, 0.4s, ease);
-        @include large{
-        height: 70px;
-        top: -70px;
-        @include transform(translateY(70px));
+        @include large {
+          height: 70px;
+          top: -70px;
+          @include transform(translateY(70px));
         }
         // .buyticket {
         //   @include tooltip(bottom);
@@ -676,7 +676,7 @@ input:not([type=submit]), textarea {
       }
       @include tablet {
         text-align: center;
-        h1,p,a{
+        h1, p, a {
           text-align: center;
           float: none;
         }
@@ -790,7 +790,7 @@ input:not([type=submit]), textarea {
       width: 100%;
       h1 {
         color: #333;
-        font-weight: normal;
+        // font-weight: normal;
         @include font-size($huge + 4);
         letter-spacing: 3px;
         margin: 0px;
@@ -817,14 +817,14 @@ input:not([type=submit]), textarea {
         width: 100%;
         .wrapper {
           @include clearfix;
-          ul{
+          ul {
             float: left;
             list-style: none;
-            position:relative;
+            position: relative;
             margin: 0px;
             width: 100%;
             li {
-            background: url('/images/dot.jpg') repeat-x -3px center;
+              background: url('/images/dot.jpg') repeat-x -3px center;
               float: left;
               width: 25%;
               //padding: 0 10%;
@@ -855,8 +855,8 @@ input:not([type=submit]), textarea {
                   white-space: nowrap;
                 }
                 &:hover {
-                  h4{
-                   color: $blue;
+                  h4 {
+                    color: $blue;
                   }
                 }
               }
@@ -867,20 +867,20 @@ input:not([type=submit]), textarea {
                 padding-right: 0px;
               }
               &.active {
-                h4{
-                   color: $blue;
-                 }
+                h4 {
+                  color: $blue;
+                }
               }
             }
           }
         }
         .line {
           border-left: 2px solid $blue;
-              bottom: -100px;
-              content: '';
-              display: none;
-              height: 25px;
-              position: absolute;
+          bottom: -100px;
+          content: '';
+          display: none;
+          height: 25px;
+          position: absolute;
         }
       }
     }
@@ -1080,12 +1080,12 @@ input:not([type=submit]), textarea {
                 }
               }
               &:hover {
-                background: lighten($blue,25%);
+                background: lighten($blue, 25%);
                 p {
                   //color: #000;
                 }
                 a {
-                 // color: #fff;
+                  // color: #fff;
                 }
               }
             }
@@ -1096,9 +1096,9 @@ input:not([type=submit]), textarea {
         }
       }
     }
-    /* Sponsers & Mediaparter */
+    /* Sponsors & Mediaparter */
     
-    &.sponsers,
+    &.sponsors,
     &.mediaparter {
       ul {
         margin: 0px;
@@ -1122,7 +1122,7 @@ input:not([type=submit]), textarea {
               right: 0px;
               top: 0px;
               @include transition(all, 0.2s, ease);
-             // @include filter(grayscale(100%));
+              // @include filter(grayscale(100%));
               &:hover {
                 opacity: 0.9;
                 @include filter(grayscale(0));
@@ -1132,14 +1132,15 @@ input:not([type=submit]), textarea {
         }
       }
     }
-    &.sponsers {
+    &.sponsors {
       padding-bottom: 0px;
     }
     /* venue */
+    
     &.venue {
       position: relative;
       padding: 0px;
-      margin-bottom:$gutter*7;
+      margin-bottom: $gutter*7;
       .tip {
         color: $black;
         @include font-size($large);
@@ -1147,20 +1148,20 @@ input:not([type=submit]), textarea {
         line-height: 50px;
         letter-spacing: $gutter/4;
         margin-top: -25px;
-        position: absolute;  
+        position: absolute;
         top: 50%;
         text-align: center;
         text-transform: uppercase;
         width: 100%;
         z-index: 1;
       }
-      .wrapper{
+      .wrapper {
         @include filter(grayscale(100%));
         opacity: 0.25;
-        .left,.right {
+        .left, .right {
           width: 50%;
         }
-        .left{
+        .left {
           float: left;
           padding-right: 30px;
           box-sizing: border-box;
@@ -1177,7 +1178,7 @@ input:not([type=submit]), textarea {
             font-weight: normal;
             @include font-size($larger + 2);
             a {
-            color: $black;
+              color: $black;
             }
           }
           @include tablet {
@@ -1192,7 +1193,7 @@ input:not([type=submit]), textarea {
           }
         }
         @include tablet {
-          .left,.right {
+          .left, .right {
             width: 100%;
             text-align: center;
           }
