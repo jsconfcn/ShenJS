@@ -95,7 +95,7 @@ speakers:
    url: http://github.com/hulufei
 
   speaker11:
-   name: 何翊宇
+   name: 死马
    company: 阿里巴巴
    url: https://github.com/dead-horse
 

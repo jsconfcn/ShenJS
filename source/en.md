@@ -98,8 +98,8 @@ speakers:
    url: http://github.com/hulufei
 
   speaker11:
-   name: Yiyu He
-   company: alibaba
+   name: dead-horse
+   company: Alibaba
    url: https://github.com/dead-horse
 
   speaker12:
