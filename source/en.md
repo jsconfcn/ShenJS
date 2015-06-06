@@ -37,7 +37,7 @@ timeline:
 
 banner:
   left: Learn more about JSConf China
-  right: | 
+  right: |
     Wanna help out? <strong>Join us on GitHub!</strong>
   second: Buy your ticket
   third: Keep up to date
@@ -126,7 +126,7 @@ speakers:
   speaker16:
    name: Eyal Arubas
    company: EF
-   url: https://github.com/EyalAr/
+   url: http://careers.ef.com/cn/categories/technology/
 
   speaker17:
    name: Lloyd Watkin
@@ -144,9 +144,9 @@ speakers:
    url: http://www.zhihu.com/people/wen-tian-le
 
   speaker20:
-   name: 
+   name:
    company: Qiniu
-   url: 
+   url:
 
   speaker21:
    name: Bohan li
@@ -154,7 +154,7 @@ speakers:
    url: https://github.com/loddit
 
 venue:
-  address: | 
+  address: |
     <a href='http://qh.vanke.com/' target='new'>Qianhai Vanke Enterprise Dream Park (Special Zone Mansion)</a>
   detail: Inside of Shenzhen Qianhai Deep Harbor Modern Service Industry Hezuoqu, Yuexing 2nd Road, Shenzhen
 

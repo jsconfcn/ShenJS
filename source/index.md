@@ -34,7 +34,7 @@ timeline:
 
 banner:
   left: 了解更多关于JS中国开发者大会
-  right: | 
+  right: |
     想参与讨论？<strong>在Github上加入我们！</strong>
   second: 2015JS中国开发者大会
   third: 订阅最新信息
@@ -122,7 +122,7 @@ speakers:
   speaker16:
    name: Eyal Arubas
    company: EF
-   url: https://github.com/EyalAr/
+   url: http://careers.ef.com/cn/categories/technology/
 
   speaker17:
    name: Lloyd Watkin
@@ -140,9 +140,9 @@ speakers:
    url: http://www.zhihu.com/people/wen-tian-le
 
   speaker20:
-   name: 
+   name:
    company: 七牛
-   url: 
+   url:
 
   speaker21:
    name: 李博涵
@@ -150,7 +150,7 @@ speakers:
    url: https://github.com/loddit
 
 venue:
-  address: | 
+  address: |
     <a href='http://qh.vanke.com/' target='new'>深圳前海万科企业公馆 (特区馆)</a>
   detail: 深圳市东滨路与临海路交汇处前海深港现代服务业合作区内
 
