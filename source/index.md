@@ -7,12 +7,13 @@ event:
   title: JS中国开发者大会
   details: 2015年7月11－12日, 中国深圳
   date: 2015年7月11日 － 2015年7月12日
-  time: 12:00 - 15:00
+  time: 09:15 - 19:00
   venue: 中国深圳
 
 menu:
   item1: 关于我们
   item2: 演讲嘉宾
+  item3: 日程安排
   item4: 赞助商
   item5: 合作媒体
   item6: 会场地址
@@ -152,7 +153,7 @@ speakers:
 venue:
   address: | 
     <a href='http://qh.vanke.com/' target='new'>深圳前海万科企业公馆 (特区馆)</a>
-  detail: 深圳市东滨路与临海路交汇处前海深港现代服务业合作区内
+  detail: 广东省深圳市东滨路与临海路交汇处前海深港现代服务业合作区内
 
 footer:
   qrcode: 扫二维码加入JSConf微信群

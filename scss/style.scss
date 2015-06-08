@@ -481,7 +481,7 @@ input:not([type=submit]), textarea {
         @include desktop {
           left: 50%;
           margin-left: -334px;
-          margin-top: -260px;
+          margin-top: -250px;
           position: absolute;
           top: 50%;
           h1 {
@@ -1156,8 +1156,8 @@ input:not([type=submit]), textarea {
         z-index: 1;
       }
       .wrapper {
-        @include filter(grayscale(100%));
-        opacity: 0.25;
+        // @include filter(grayscale(100%));
+        // opacity: 0.25;
         .left, .right {
           width: 50%;
         }
@@ -1167,7 +1167,6 @@ input:not([type=submit]), textarea {
           box-sizing: border-box;
           h1 {
             color: #333;
-            font-weight: normal;
             @include font-size($huge + 4);
             letter-spacing: 3px;
             margin-bottom: $gutter*2.5;

@@ -8,20 +8,20 @@
       <div class='wrapper'>
         <h1>{{ event.title }}</h1>
         <p>{{ event.date }}</p>
-        <!--         <p>{{ event.time }}</p> -->
+        <p>{{ event.time }}</p>
         <p>{{ event.venue }}</p>
-        <a class='button'>{{ button.content }}<span>{{ button.placeholder }}</span></a>
+        <a class='button' href='http://shenjs2015.eventdove.com/' target='new'>{{ button.content }}</a>
       </div>
     </header>
     <div class='menu'>
       <nav class='wrapper'>
         <a href='#item1'>{{ menu.item1 }}</a>
         <a href='#item2'>{{ menu.item2 }}</a>
-        <!--         <a href='#item3'>{{ menu.item3 }}</a> -->
+<!--         <a href='#item3'>{{ menu.item3 }}</a> -->
         <a href='#item4'>{{ menu.item4 }}</a>
         <a href='#item5'>{{ menu.item5 }}</a>
         <a href='#item6'>{{ menu.item6 }}</a>
-        <a class='button buyticket'>{{ button.content }}<span>{{ button.placeholder }}</span></a>
+        <a class='button buyticket' href='http://shenjs2015.eventdove.com/' target='new'>{{ button.content }}</a>
         <div class='right'>
           {% if locale == 'zh' %}<a href='/en'>EN</a>{% endif %} {% if locale == 'en' %}<a href='/'>中文</a>{% endif %} {% include 'partials/_social.html' %}
         </div>
@@ -296,11 +296,127 @@
       </li>
     </ul>
   </section>
+   <!-- Schedule -->
+<!--   <section class='section schedule' id='item3'>
+    <div class='title'>
+      <h1>{{ menu.item3 }}</h1>
+    </div>
+    <div class='wrapper'>
+      <div class='list day1'>
+        <h2>7/11</h2>
+        <ul>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>JS中国开发者大会介绍</h4>
+              <p>John Doe</p>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>Then.js 异步库的实现原理及优缺点</h4>
+              <p>John Doe</p>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>Patrisika - Theoretical and Practical Code Generation</h4>
+              <p>John Doe</p>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class='list day2'>
+        <h2>7/12</h2>
+        <ul>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>JS中国开发者大会介绍</h4>
+              <p>John Doe</p>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+            </div>
+          </li>
+          <li>
+            <time>08:15</time>
+            <div>
+              <h4>签到</h4>
+              <p>John Doe</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section> -->
   <!-- Banner -->
   <section class='banner second'>
     <div class='wrapper'>
       <h1>{{ banner.second }}</h1>
-      <a class='button buyticket'>{{ button.content }}<span>{{ button.placeholder }}</span></a>
+      <a class='button buyticket' href='http://shenjs2015.eventdove.com/' target='new'>{{ button.content }}</a>
     </div>
   </section>
   <!-- sponsors-->
@@ -370,7 +486,6 @@
   </section>
   <!-- Venue -->
   <section class='section venue' id='item6'>
-    <div class='tip'>{{ button.placeholder }}</div>
     <div class='wrapper'>
       <div class='left'>
         <h1>{{ menu.item6 }}</h1>

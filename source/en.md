@@ -7,12 +7,13 @@ event:
   title: JSConf China
   details: 11th-12th July, 2015, Shenzhen, China
   date: 11th-12th July, 2015
-  time: 12:00 - 15:00
+  time: 09:15 - 19:00
   venue: Shenzhen, China
 
 menu:
   item1: about us
   item2: speakers
+  item3: schedule
   item4: sponsors
   item5: media partners
   item6: venue
@@ -156,7 +157,7 @@ speakers:
 venue:
   address: | 
     <a href='http://qh.vanke.com/' target='new'>Qianhai Vanke Enterprise Dream Park (Special Zone Mansion)</a>
-  detail: Inside of Shenzhen Qianhai Deep Harbor Modern Service Industry Hezuoqu, Yuexing 2nd Road, Shenzhen
+  detail: Inside of Shenzhen Qianhai Deep Harbor Modern Service Industry Hezuoqu, Yuexing 2nd Road, Shenzhen, Guangdong
 
 footer:
   qrcode: Follow our WeChat
