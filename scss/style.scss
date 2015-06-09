@@ -1048,7 +1048,7 @@ input:not([type=submit]), textarea {
               display: table;
               min-height: 120px;
               margin: 0px;
-              padding: $gutter/2 $gutter*2;
+              padding: $gutter/4 $gutter*2;
               width: 100%;
               @include transition(all, 0.1s, ease);
               time {
@@ -1069,6 +1069,11 @@ input:not([type=submit]), textarea {
                   color: #111;
                   font-weight: normal;
                   @include font-size($larger);
+                  line-height: $larger*1px + 2;
+                }
+                p {
+                  color: #999;
+                  @include font-size($smaller);
                 }
                 h4,
                 p {
@@ -1077,15 +1082,6 @@ input:not([type=submit]), textarea {
                 a {
                   @include font-size($smaller);
                   text-decoration: underline;
-                }
-              }
-              &:hover {
-                background: lighten($blue, 25%);
-                p {
-                  //color: #000;
-                }
-                a {
-                  // color: #fff;
                 }
               }
             }
