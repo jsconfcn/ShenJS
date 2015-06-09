@@ -2628,7 +2628,7 @@ input:not([type=submit]), textarea {
             display: table;
             min-height: 120px;
             margin: 0px;
-            padding: 10px 40px;
+            padding: 5px 40px;
             width: 100%;
             -webkit-transition: all, 0.1s, ease;
             -moz-transition: all, 0.1s, ease;
@@ -2651,15 +2651,18 @@ input:not([type=submit]), textarea {
                 color: #111;
                 font-weight: normal;
                 font-size: 18px;
-                font-size: 1.8rem; }
+                font-size: 1.8rem;
+                line-height: 20px; }
+              .index-launch .section.schedule .wrapper .list ul li div p {
+                color: #999;
+                font-size: 14px;
+                font-size: 1.4rem; }
               .index-launch .section.schedule .wrapper .list ul li div h4, .index-launch .section.schedule .wrapper .list ul li div p {
                 margin: 0px; }
               .index-launch .section.schedule .wrapper .list ul li div a {
                 font-size: 14px;
                 font-size: 1.4rem;
                 text-decoration: underline; }
-            .index-launch .section.schedule .wrapper .list ul li:hover {
-              background: #d0e3fe; }
         @media only screen and (max-width: 768px) {
           .index-launch .section.schedule .wrapper .list {
             width: 100%; } }
