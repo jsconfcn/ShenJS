@@ -2320,8 +2320,7 @@ input:not([type=submit]), textarea {
       .index-launch .banner.third form {
         float: right;
         margin-top: 29px;
-        height: 46px;
-        width: 380px; }
+        height: 46px; }
         .index-launch .banner.third form .button, .index-launch .banner.third form input:not([type=submit]) {
           border: 0;
           line-height: 200%;
