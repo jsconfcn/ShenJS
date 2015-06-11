@@ -142,7 +142,7 @@ speakers:
   speaker16:
    name: Eyal Arubas
    company: EF
-   url: http://careers.ef.com/cn/categories/technology/
+   url: https://github.com/EyalAr
    topic: The Rise and Fall of JS Frameworks
 
   speaker17:

@@ -110,7 +110,7 @@ speakers:
    name: Hui Liu
    company: Coding.net
    url: http://github.com/hulufei
-   topic: How to build an online IDE with React 
+   topic: How to build an online IDE with React
 
   speaker11:
    name: dead-horse
@@ -146,7 +146,7 @@ speakers:
   speaker16:
    name: Eyal Arubas
    company: EF
-   url: http://careers.ef.com/cn/categories/technology/
+   url: https://github.com/EyalAr
    topic: The Rise and Fall of JS Frameworks
 
   speaker17:
