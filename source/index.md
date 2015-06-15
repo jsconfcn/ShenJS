@@ -146,10 +146,10 @@ speakers:
    topic: The Rise and Fall of JS Frameworks
 
   speaker17:
-   name: Lloyd Watkin
-   company: Amazon
-   url: https://github.com/lloydwatkin
-   topic: Why you should be using XMPP in your next project
+   name: 
+   company: 
+   url: 
+   topic: 待定
 
   speaker18:
    name: Andrew Fisher
@@ -164,10 +164,10 @@ speakers:
    topic: 如何构建配置集中管理且自动调度的应用集群
 
   speaker20:
-   name:
+   name: 马逸清
    company: 七牛
-   url:
-   topic: 待定
+   url: https://plus.google.com/u/0/+%E9%A9%AC%E9%80%B8%E6%B8%85
+   topic: 七牛前端测试实践
 
   speaker21:
    name: 李博涵
@@ -183,6 +183,7 @@ schedule:
    section4: 休息
    section5: Lighting Talk
    section6: Afterparty
+   section7: 午餐
 
 venue:
   address: |

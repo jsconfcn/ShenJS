@@ -150,10 +150,10 @@ speakers:
    topic: The Rise and Fall of JS Frameworks
 
   speaker17:
-   name: Lloyd Watkin
-   company: Amazon
-   url: https://github.com/lloydwatkin
-   topic: Why you should be using XMPP in your next project
+   name: 
+   company: 
+   url: 
+   topic: To be confirm
 
   speaker18:
    name: Andrew Fisher
@@ -168,10 +168,10 @@ speakers:
    topic: How to build a distributed system with Node.js
 
   speaker20:
-   name:
+   name: Yiqing Ma
    company: Qiniu
-   url:
-   topic: To be confirm
+   url: https://plus.google.com/u/0/+%E9%A9%AC%E9%80%B8%E6%B8%85
+   topic: Frontend test in Qiniu
 
   speaker21:
    name: Bohan li
@@ -187,6 +187,7 @@ schedule:
    section4: Break
    section5: Lighting Talk
    section6: Afterparty
+   section7: Lunch
 
 venue:
   address: |
