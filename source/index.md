@@ -62,7 +62,7 @@ speakers:
   speaker3:
    name: 赫门
    company: 阿里巴巴
-   url: https://github.com/threeday0905
+   url: http://weibo.com/threeday0905
    topic: 前端服务化之路
 
   speaker4:

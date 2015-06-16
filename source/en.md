@@ -65,7 +65,7 @@ speakers:
   speaker3:
    name: Hermen
    company: Alibaba
-   url: https://github.com/threeday0905
+   url: http://weibo.com/threeday0905
    topic: The road to isomorphic web development
 
   speaker4:
