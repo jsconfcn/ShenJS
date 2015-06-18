@@ -157,7 +157,7 @@ speakers:
 
   speaker18:
    name: Andrew Fisher
-   company: JBA
+   company: NodeBots
    url: https://github.com/ajfisher
    topic: Nodebot Session
 
