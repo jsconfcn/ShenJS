@@ -146,10 +146,11 @@ speakers:
    topic: The Rise and Fall of JS Frameworks
 
   speaker17:
-   name: 
-   company: 
-   url: 
-   topic: 待定
+   name: 倪跃
+   company: Splunk
+   url: https://github.com/niyue
+   topic: |
+     Persistent data structure in JS land: implementing immutable frontend using react.js
 
   speaker18:
    name: Andrew Fisher

@@ -2654,9 +2654,10 @@ input:not([type=submit]), textarea {
                 line-height: 20px; }
               .index-launch .section.schedule .wrapper .list ul li div p {
                 color: #999;
-                font-size: 14px;
-                font-size: 1.4rem; }
-              .index-launch .section.schedule .wrapper .list ul li div h4, .index-launch .section.schedule .wrapper .list ul li div p {
+                font-size: 16px;
+                font-size: 1.6rem;
+                margin: 5px 0 0; }
+              .index-launch .section.schedule .wrapper .list ul li div h4 {
                 margin: 0px; }
               .index-launch .section.schedule .wrapper .list ul li div a {
                 font-size: 14px;

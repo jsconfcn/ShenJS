@@ -150,10 +150,11 @@ speakers:
    topic: The Rise and Fall of JS Frameworks
 
   speaker17:
-   name: 
-   company: 
-   url: 
-   topic: To be confirm
+   name: Yue Ni
+   company: Splunk
+   url: https://github.com/niyue
+   topic: |
+     Persistent data structure in JS land: implementing immutable frontend using react.js
 
   speaker18:
    name: Andrew Fisher
