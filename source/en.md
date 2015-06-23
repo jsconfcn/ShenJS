@@ -183,7 +183,7 @@ speakers:
 schedule:
    host: Goddy Zhao
    section1: Sign In
-   section2: Openning
+   section2: Opening
    section3: Lucky Draw
    section4: Break
    section5: Lighting Talk
