@@ -534,7 +534,7 @@ textarea {
           @include font-size($smaller + 2);
           height: 30px;
           line-height: 30px;
-          margin: $gutter/4 ($gutter/2 + 3px);
+          margin: $gutter/4 ($gutter + 5px);
           text-transform: uppercase;
           &:first-child {
             margin-left: 0px;
