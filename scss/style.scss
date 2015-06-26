@@ -31,19 +31,29 @@ body {
   min-width: $gutter*16;
   text-align: center;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
 }
+
 .wrapper {
   margin: 0 auto;
   max-width: $width;
   text-align: left;
   width: 90%;
 }
+
 code {
   font-family: $code;
 }
-.button, a.button {
+
+.button,
+a.button {
   border-radius: 2*$gutter;
   border: 0px;
   @include transition-property(background, border);
@@ -51,17 +61,21 @@ code {
   &:hover, &:focus {
     border-color: tint($blue, 10%);
   }
-  &:active, &.active {
+  &:active,
+  &.active {
     border-color: shade($blue, 10%);
   }
   &.buyticket {
     @include tooltip(top);
   }
 }
+
 input {
   letter-spacing: 0.4px;
 }
-input:not([type=submit]), textarea {
+
+input:not([type=submit]),
+textarea {
   border-color: $light;
   border-radius: 2*$gutter;
   &:hover, &:focus {
@@ -69,6 +83,7 @@ input:not([type=submit]), textarea {
     border-color: $light;
   }
 }
+
 @mixin halves($reverse: false) {
   @include box-sizing(border-box);
   width: 50%;
@@ -93,7 +108,6 @@ input:not([type=submit]), textarea {
     }
   }
 }
-
 /* Header */
 
 #header,
@@ -372,6 +386,7 @@ input:not([type=submit]), textarea {
     padding: $gutter*3 0;
     .wrapper {
       color: #fff;
+      display: inline-block;
       padding: 0 $gutter;
       max-width: 700px;
       p {
@@ -1075,8 +1090,7 @@ input:not([type=submit]), textarea {
                   @include font-size($normal);
                   margin: $gutter/4 0 0;
                 }
-                h4
-                {
+                h4 {
                   margin: 0px;
                 }
                 a {
@@ -1092,44 +1106,61 @@ input:not([type=submit]), textarea {
         }
       }
     }
-    /* Sponsors & Mediaparter */
+    /* Sponsors */
     
-    &.sponsors,
-    &.mediaparter {
-      ul {
-        margin: 0px;
+    &.sponsors {
+      div {
         text-align: center;
         width: 100%;
-        li {
+        a {
           display: inline-block;
-          height: 100px;
+          height: 120px;
           position: relative;
           padding: $gutter/2 8px;
-          margin-bottom: $gutter*2;
+          // margin-bottom: $gutter/2;
           width: 300px;
-          a {
-            float: left;
-            width: 100%;
-            img {
-              bottom: 0px;
-              position: absolute;
-              left: 0px;
-              margin: auto;
-              right: 0px;
-              top: 0px;
-              @include transition(all, 0.2s, ease);
-              // @include filter(grayscale(100%));
-              &:hover {
-                opacity: 0.9;
-                @include filter(grayscale(0));
-              }
+          img {
+            bottom: 0px;
+            position: absolute;
+            left: 0px;
+            margin: auto;
+            right: 0px;
+            top: 0px;
+            @include transition(all, 0.2s, ease);
+            // @include filter(grayscale(100%));
+            &:hover {
+              opacity: 0.9;
+              @include filter(grayscale(0));
             }
+          }
+          &.c-type {
+            width: 170px;
+          }
+        }
+        &.boss{
+          a {
+            width: 400px;
+          }
+        }
+        &.mediapartner {
+          a {
+            width: 170px;
+          }
+        }
+        &.supporter {
+          a {
+            width: 170px;
           }
         }
       }
-    }
-    &.sponsors {
-      padding-bottom: 0px;
+      h3 {
+        color: #797979;
+        font-weight: normal;
+        @include font-size($larger+2);
+        text-align: center;
+        text-transform: uppercase;
+        margin: $gutter*4 $gutter $gutter/2;
+      }
     }
     /* venue */
     

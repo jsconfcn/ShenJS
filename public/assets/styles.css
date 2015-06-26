@@ -1761,6 +1761,7 @@ input:not([type=submit]), textarea {
   padding: 60px 0; }
   .code-of-conduct #content .wrapper {
     color: #fff;
+    display: inline-block;
     padding: 0 20px;
     max-width: 700px; }
     .code-of-conduct #content .wrapper p {
@@ -2393,7 +2394,7 @@ input:not([type=submit]), textarea {
     /* About */
     /* Speakers */
     /* Schedule */
-    /* Sponsors & Mediaparter */
+    /* Sponsors */
     /* venue */ }
     .index-launch .section .title {
       float: left;
@@ -2666,36 +2667,45 @@ input:not([type=submit]), textarea {
         @media only screen and (max-width: 768px) {
           .index-launch .section.schedule .wrapper .list {
             width: 100%; } }
-    .index-launch .section.sponsors ul, .index-launch .section.mediaparter ul {
-      margin: 0px;
+    .index-launch .section.sponsors div {
       text-align: center;
       width: 100%; }
-      .index-launch .section.sponsors ul li, .index-launch .section.mediaparter ul li {
+      .index-launch .section.sponsors div a {
         display: inline-block;
-        height: 100px;
+        height: 120px;
         position: relative;
         padding: 10px 8px;
-        margin-bottom: 40px;
         width: 300px; }
-        .index-launch .section.sponsors ul li a, .index-launch .section.mediaparter ul li a {
-          float: left;
-          width: 100%; }
-          .index-launch .section.sponsors ul li a img, .index-launch .section.mediaparter ul li a img {
-            bottom: 0px;
-            position: absolute;
-            left: 0px;
-            margin: auto;
-            right: 0px;
-            top: 0px;
-            -webkit-transition: all, 0.2s, ease;
-            -moz-transition: all, 0.2s, ease;
-            transition: all, 0.2s, ease; }
-            .index-launch .section.sponsors ul li a img:hover, .index-launch .section.mediaparter ul li a img:hover {
-              opacity: 0.9;
-              -webkit-filter: grayscale(0);
-              filter: grayscale(0); }
-    .index-launch .section.sponsors {
-      padding-bottom: 0px; }
+        .index-launch .section.sponsors div a img {
+          bottom: 0px;
+          position: absolute;
+          left: 0px;
+          margin: auto;
+          right: 0px;
+          top: 0px;
+          -webkit-transition: all, 0.2s, ease;
+          -moz-transition: all, 0.2s, ease;
+          transition: all, 0.2s, ease; }
+          .index-launch .section.sponsors div a img:hover {
+            opacity: 0.9;
+            -webkit-filter: grayscale(0);
+            filter: grayscale(0); }
+        .index-launch .section.sponsors div a.c-type {
+          width: 170px; }
+      .index-launch .section.sponsors div.boss a {
+        width: 400px; }
+      .index-launch .section.sponsors div.mediapartner a {
+        width: 170px; }
+      .index-launch .section.sponsors div.supporter a {
+        width: 170px; }
+    .index-launch .section.sponsors h3 {
+      color: #797979;
+      font-weight: normal;
+      font-size: 20px;
+      font-size: 2rem;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 80px 20px 10px; }
     .index-launch .section.venue {
       position: relative;
       padding: 0px;

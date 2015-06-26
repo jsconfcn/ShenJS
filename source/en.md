@@ -11,12 +11,20 @@ event:
   venue: Shenzhen, China
 
 menu:
-  item1: about us
-  item2: speakers
-  item3: schedule
-  item4: sponsors
-  item5: media partners
-  item6: venue
+  item1: 
+   title: About us
+  item2: 
+   title: Speakers
+  item3:
+   title: Schedule
+  item4: 
+   title: Sponsors
+   section1: The Boss
+   section2: The Sponsors
+   section3: Media partners
+   section4: The Supporters
+  item5: 
+   title: Venue
 
 button:
   content: Buy Ticket

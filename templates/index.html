@@ -1,673 +1,649 @@
 <!doctype html>
 <html lang='{{ locale }}'>
-{% include 'partials/_head.html' %}
+  {% include 'partials/_head.html' %}
 
-<body class='page-{{ path | default(' front ') }} index-launch'>
-  <header id='header-new'>
-    <header class='hero'>
-      <div class='wrapper'>
-        <h1>{{ event.title }}</h1>
-        <p>{{ event.date }}</p>
-        <p>{{ event.time }}</p>
-        <p>{{ event.venue }}</p>
-        <a class='button' href='http://shenjs2015.eventdove.com/' target='new'>{{ button.content }}</a>
+  <body class='page-{{ path | default(' front ') }} index-launch'>
+    <header id='header-new'>
+      <header class='hero'>
+        <div class='wrapper'>
+          <h1>{{ event.title }}</h1>
+          <p>{{ event.date }}</p>
+          <p>{{ event.time }}</p>
+          <p>{{ event.venue }}</p>
+          <a class='button' href='http://shenjs2015.eventdove.com/' target='new'>{{ button.content }}</a>
+        </div>
+      </header>
+      <div class='menu'>
+        <nav class='wrapper'>
+          <a href='#item1'>{{ menu.item1.title }}</a>
+          <a href='#item2'>{{ menu.item2.title }}</a>
+          <a href='#item3'>{{ menu.item3.title }}</a>
+          <a href='#item4'>{{ menu.item4.title }}</a>
+          <a href='#item5'>{{ menu.item5.title }}</a>
+          <a class='button buyticket' href='http://shenjs2015.eventdove.com/' target='new'>{{ button.content }}</a>
+          <div class='right'>
+            {% if locale == 'zh' %}<a href='/en'>EN</a>{% endif %} {% if locale == 'en' %}<a href='/'>中文</a>{% endif %} {% include 'partials/_social.html' %}
+          </div>
+        </nav>
       </div>
     </header>
-    <div class='menu'>
-      <nav class='wrapper'>
-        <a href='#item1'>{{ menu.item1 }}</a>
-        <a href='#item2'>{{ menu.item2 }}</a>
-        <a href='#item3'>{{ menu.item3 }}</a>
-        <a href='#item4'>{{ menu.item4 }}</a>
-        <a href='#item5'>{{ menu.item5 }}</a>
-        <a href='#item6'>{{ menu.item6 }}</a>
-        <a class='button buyticket' href='http://shenjs2015.eventdove.com/' target='new'>{{ button.content }}</a>
-        <div class='right'>
-          {% if locale == 'zh' %}<a href='/en'>EN</a>{% endif %} {% if locale == 'en' %}<a href='/'>中文</a>{% endif %} {% include 'partials/_social.html' %}
-        </div>
-      </nav>
-    </div>
-  </header>
-  <!-- About -->
-  <section class='section about' id='item1'>
-    <div class='title'>
-      <h1>{{ about.title }}</h1>
-    </div>
-    <div class='wrapper'>
-      <p>{{ about.content | raw }}</p>
-    </div>
-    <div class='timeline'>
+    <!-- About -->
+    <section class='section about' id='item1'>
+      <div class='title'>
+        <h1>{{ about.title }}</h1>
+      </div>
       <div class='wrapper'>
-        <ul>
-          <li><a href='http://2012.jsconf.cn' target='new'><h4>{{ timeline.item1 }}</h4><em>2012</em></a></li>
-          <li><a href='http://2013.jsconf.cn' target='new'><h4>{{ timeline.item2 }}</h4><em>2013</em></a></li>
-          <li><a href='http://2014.jsconf.cn' target='new'><h4>{{ timeline.item3 }}</h4><em>2014</em></a></li>
-          <li class='active'><a href='http://2015.jsconf.cn' target='new'><h4>{{ timeline.item4 }}</h4><em>2015</em></a></li>
-        </ul>
+        <p>{{ about.content | raw }}</p>
       </div>
-      <div class='line'></div>
-    </div>
-  </section>
-  <!-- Banner -->
-  <section class='banner first'>
-    <div class='left'>
-      <a href='https://jsconf.cn' target='new'>{{ banner.left }}</a>
-    </div>
-    <div class='right'>
-      <a href='https://github.com/jsconfcn/ShenJS/issues' target='new'>{{ banner.right | raw }}</a>
-    </div>
-  </section>
-  <!-- Speakers -->
-  <section class='section speakers' id='item2'>
-    <div class='title'>
-      <h1>{{ menu.item2 }}</h1>
-    </div>
-    <ul>
-      <li>
-        <a href='{{ speakers.speaker1.url }}' target='new'>
-          <img src='/images/speakers/1.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker1.name }}</h4>
-              <p>{{ speakers.speaker1.company }}</p>
-            </div>
-        </a>
+      <div class='timeline'>
+        <div class='wrapper'>
+          <ul>
+            <li><a href='http://2012.jsconf.cn' target='new'><h4>{{ timeline.item1 }}</h4><em>2012</em></a></li>
+            <li><a href='http://2013.jsconf.cn' target='new'><h4>{{ timeline.item2 }}</h4><em>2013</em></a></li>
+            <li><a href='http://2014.jsconf.cn' target='new'><h4>{{ timeline.item3 }}</h4><em>2014</em></a></li>
+            <li class='active'><a href='http://2015.jsconf.cn' target='new'><h4>{{ timeline.item4 }}</h4><em>2015</em></a></li>
+          </ul>
         </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker2.url }}' target='new'>
-          <img src='/images/speakers/2.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker2.name }}</h4>
-              <p>{{ speakers.speaker2.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker3.url }}' target='new'>
-          <img src='/images/speakers/3.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker3.name }}</h4>
-              <p>{{ speakers.speaker3.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker4.url }}' target='new'>
-          <img src='/images/speakers/4.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker4.name }}</h4>
-              <p>{{ speakers.speaker4.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker5.url }}' target='new'>
-          <img src='/images/speakers/5.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker5.name }}</h4>
-              <p>{{ speakers.speaker5.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker6.url }}' target='new'>
-          <img src='/images/speakers/6.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker6.name }}</h4>
-              <p>{{ speakers.speaker6.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker7.url }}' target='new'>
-          <img src='/images/speakers/7.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker7.name }}</h4>
-              <p>{{ speakers.speaker7.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker8.url }}' target='new'>
-          <img src='/images/speakers/8.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker8.name }}</h4>
-              <p>{{ speakers.speaker8.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker9.url }}' target='new'>
-          <img src='/images/speakers/9.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker9.name }}</h4>
-              <p>{{ speakers.speaker9.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker10.url }}' target='new'>
-          <img src='/images/speakers/10.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker10.name }}</h4>
-              <p>{{ speakers.speaker10.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker11.url }}' target='new'>
-          <img src='/images/speakers/11.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker11.name }}</h4>
-              <p>{{ speakers.speaker11.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker12.url }}' target='new'>
-          <img src='/images/speakers/12.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker12.name }}</h4>
-              <p>{{ speakers.speaker12.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker13.url }}' target='new'>
-          <img src='/images/speakers/13.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker13.name }}</h4>
-              <p>{{ speakers.speaker13.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker14.url }}' target='new'>
-          <img src='/images/speakers/14.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker14.name }}</h4>
-              <p>{{ speakers.speaker14.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker15.url }}' target='new'>
-          <img src='/images/speakers/15.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker15.name }}</h4>
-              <p>{{ speakers.speaker15.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker16.url }}' target='new'>
-          <img src='/images/speakers/16.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker16.name }}</h4>
-              <p>{{ speakers.speaker16.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker17.url }}' target='new'>
-          <img src='/images/speakers/17.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker17.name }}</h4>
-              <p>{{ speakers.speaker17.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker18.url }}' target='new'>
-          <img src='/images/speakers/18.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker18.name }}</h4>
-              <p>{{ speakers.speaker18.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker19.url }}' target='new'>
-          <img src='/images/speakers/19.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker19.name }}</h4>
-              <p>{{ speakers.speaker19.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker20.url }}' target='new'>
-          <img src='/images/speakers/20.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker20.name }}</h4>
-              <p>{{ speakers.speaker20.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-      <li>
-        <a href='{{ speakers.speaker21.url }}' target='new'>
-          <img src='/images/speakers/21.jpg' />
-          <div class='cover'>
-            <div class='info'>
-              <h4>{{ speakers.speaker21.name }}</h4>
-              <p>{{ speakers.speaker21.company }}</p>
-            </div>
-        </a>
-        </div>
-      </li>
-    </ul>
-  </section>
-  <!-- Schedule -->
-  <section class='section schedule' id='item3'>
-    <div class='title'>
-      <h1>{{ menu.item3 }}</h1>
-    </div>
-    <div class='wrapper'>
-      <div class='list day1'>
-        <h2>7/11</h2>
-        <ul>
-          <li>
-            <time>08:15</time>
-            <div>
-              <h4>{{ schedule.section1 }}</h4>
-            </div>
-          </li>
-          <li>
-            <time>09:15</time>
-            <div>
-              <h4>{{ schedule.section2 }}</h4>
-              <p>{{ schedule.host }}</p>
-            </div>
-          </li>
-          <li>
-            <time>09:45</time>
-            <div>
-              <h4>{{ speakers.speaker1.topic }}</h4>
-              <p>{{ speakers.speaker1.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>10:15</time>
-            <div>
-              <h4>{{ speakers.speaker12.topic }}</h4>
-              <p>{{ speakers.speaker12.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>10:45</time>
-            <div>
-              <h4>{{ schedule.section3 }} + {{ schedule.section4 }}</h4>
-            </div>
-          </li>
-          <li>
-            <time>11:00</time>
-            <div>
-              <h4>{{ speakers.speaker14.topic }}</h4>
-              <p>{{ speakers.speaker14.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>11:30</time>
-            <div>
-              <h4>{{ speakers.speaker21.topic }}</h4>
-              <p>{{ speakers.speaker21.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>12:00</time>
-            <div>
-              <h4>{{ schedule.section7 }}</h4>
-            </div>
-          </li>
-          <li>
-            <time>13:30</time>
-            <div>
-              <h4>{{ speakers.speaker13.topic }}</h4>
-              <p>{{ speakers.speaker13.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>14:00</time>
-            <div>
-              <h4>Nodebot session introduction</h4>
-              <p>{{ speakers.speaker18.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>14:30</time>
-            <div>
-              <h4>{{ schedule.section3 }} + {{ schedule.section4 }}</h4>
-            </div>
-          </li>
-          <li>
-            <time>14:50</time>
-            <div>
-              <h4>{{ schedule.section5 }}</h4>
-            </div>
-          </li>
-          <li>
-            <time>15:20</time>
-            <div>
-              <h4>{{ speakers.speaker19.topic }}</h4>
-              <p>{{ speakers.speaker19.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>15:50</time>
-            <div>
-              <h4>{{ speakers.speaker16.topic }}</h4>
-              <p>{{ speakers.speaker16.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>16:20</time>
-            <div>
-              <h4>{{ schedule.section4 }}</h4>
-            </div>
-          </li>
-          <li>
-            <time>16:30</time>
-            <div>
-              <h4>{{ speakers.speaker5.topic }}</h4>
-              <p>{{ speakers.speaker5.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>17:00</time>
-            <div>
-              <h4>{{ speakers.speaker8.topic }}</h4>
-              <p>{{ speakers.speaker8.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>17:30</time>
-            <div>
-              <h4>{{ schedule.section3 }}</h4>
-            </div>
-          </li>
-          <li>
-            <time>19:00</time>
-            <div>
-              <h4>{{ schedule.section6 }}</h4>
-            </div>
-          </li>
-          <li>
-            <time>19:00</time>
-            <div>
-              <h4>{{ speakers.speaker18.topic }}</h4>
-              <p>{{ speakers.speaker18.name }}</p>
-            </div>
-          </li>
-        </ul>
+        <div class='line'></div>
       </div>
-      <div class='list day2'>
-        <h2>7/12</h2>
-        <ul>
-          <li></li>
-          <li>
-            <time>09:15</time>
-            <div>
-              <h4>{{ speakers.speaker20.topic }}</h4>
-              <p>{{ speakers.speaker20.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>09:45</time>
-            <div>
-              <h4>{{ speakers.speaker2.topic }}</h4>
-              <p>{{ speakers.speaker2.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>10:15</time>
-            <div>
-              <h4>{{ schedule.section3 }} + {{ schedule.section4 }}</h4>
-            </div>
-          </li>
-          <li>
-            <time>10:30</time>
-            <div>
-              <h4>{{ speakers.speaker4.topic }}</h4>
-              <p>{{ speakers.speaker4.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>11:00</time>
-            <div>
-              <h4>{{ speakers.speaker15.topic }}</h4>
-              <p>{{ speakers.speaker15.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>11:30</time>
-            <div>
-              <h4>{{ speakers.speaker3.topic }}</h4>
-              <p>{{ speakers.speaker3.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>12:00</time>
-            <div>
-              <h4>{{ schedule.section7 }}</h4>
-            </div>
-          </li>
-          <li>
-            <time>13:30</time>
-            <div>
-              <h4>{{ speakers.speaker7.topic }}</h4>
-              <p>{{ speakers.speaker7.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>14:00</time>
-            <div>
-              <h4>{{ speakers.speaker9.topic }}</h4>
-              <p>{{ speakers.speaker9.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>14:30</time>
-            <div>
-              <h4>{{ schedule.section3 }} + {{ schedule.section4 }}</h4>
-            </div>
-          </li>
-          <li>
-            <time>14:50</time>
-            <div>
-              <h4>{{ schedule.section5 }}</h4>
-            </div>
-          </li>
-          <li>
-            <time>15:20</time>
-            <div>
-              <h4>{{ speakers.speaker17.topic }}</h4>
-              <p>{{ speakers.speaker17.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>15:50</time>
-            <div>
-              <h4>{{ speakers.speaker10.topic }}</h4>
-              <p>{{ speakers.speaker10.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>16:20</time>
-            <div>
-              <h4>{{ schedule.section4 }}</h4>
-            </div>
-          </li>
-          <li>
-            <time>16:30</time>
-            <div>
-              <h4>{{ speakers.speaker6.topic }}</h4>
-              <p>{{ speakers.speaker6.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>17:00</time>
-            <div>
-              <h4>{{ speakers.speaker11.topic }}</h4>
-              <p>{{ speakers.speaker11.name }}</p>
-            </div>
-          </li>
-          <li>
-            <time>17:30</time>
-            <div>
-              <h4>{{ schedule.section3 }}</h4>
-            </div>
-          </li>
-          <li>
-            <time>19:00</time>
-            <div>
-              <h4>{{ schedule.section6 }}</h4>
-            </div>
-          </li>
-          <li></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <!-- Banner -->
-  <section class='banner second'>
-    <div class='wrapper'>
-      <h1>{{ banner.second }}</h1>
-      <a class='button buyticket' href='http://shenjs2015.eventdove.com/' target='new'>{{ button.content }}</a>
-    </div>
-  </section>
-  <!-- sponsors-->
-  <section class='section sponsors' id='item4'>
-    <div class='title'>
-      <h1>{{ menu.item4 }}</h1>
-    </div>
-    <div class='wrapper'>
-      <ul>
-        <li>
-          <a href='http://wiredcraft.com/' target='new'><img src='/images/wiredcraft.png' width='250' /></a>
-        </li>
-        <li>
-          <a href='http://www.qiniu.com/' target='new'><img src='/images/qiniu.png' width='250' /></a>
-        </li>
-        <li>
-          <a href='https://bearychat.com/' target='new'><img src='/images/bearyinnovative.png' height='130' /></a>
-        </li>
-        <li>
-          <a href='https://coding.net/' target='new'><img src='/images/coding.png' width='250' /></a>
-        </li>
-        <li>
-          <a href='http://careers.ef.com/cn/categories/technology/' target='new'><img src='/images/ef.png' width='130' /></a>
-        </li>
-        <li>
-          <a href='https://www.teambition.com/' target='new'><img src='/images/teambition.png' width='250' /></a>
-        </li>
-        <li>
-          <a href='http://makeblock.cc' target='new'><img src='/images/makeblock.jpg' width='250' /></a>
-        </li>
-        <li>
-          <a href='http://www.upyun.com/' target='new'><img src='/images/upyun.png' width='250' /></a>
-        </li>
-        <li>
-          <a href='http://www.jinshuju.net/' target='new'><img src='/images/jinshuju.png' width='170' /></a>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- media parter-->
-  <section class='section mediaparter' id='item5'>
-    <div class='title'>
-      <h1>{{ menu.item5 }}</h1>
-    </div>
-    <div class='wrapper'>
-      <ul>
-        <li>
-          <a href='http://segmentfault.com/' target='new'><img src='/images/sf.png' width='250' /></a>
-        </li>
-        <li>
-          <a href='https://knewone.com/' target='new'><img src='/images/knewone.png' width='250' /></a>
-        </li>
-        <li>
-          <a href='http://www.ituring.com.cn/' target='new'><img src='/images/turing.jpg' width='250' /></a>
-        </li>
-        <li>
-          <a href='http://www.broadview.com.cn/' target='new'><img src='/images/broadview.png' width='250' /></a>
-        </li>
-        <li>
-          <a href='https://cnodejs.org/' target='new'><img src='/images/cnode.png' width='250' /></a>
-        </li>
-        <li>
-          <a href='http://www.ptpress.com.cn/default.aspx' target='new'><img src='/images/ptpress.png' width='250' /></a>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- Venue -->
-  <section class='section venue' id='item6'>
-    <div class='wrapper'>
+    </section>
+    <!-- Banner -->
+    <section class='banner first'>
       <div class='left'>
-        <h1>{{ menu.item6 }}</h1>
-        <h4>{{ venue.address | raw }}</h4>
-        <p>{{ venue.detail }}</p>
-        <a target='new' href='http://qh.vanke.com/'>http://qh.vanke.com/</a>
+        <a href='https://jsconf.cn' target='new'>{{ banner.left }}</a>
       </div>
       <div class='right'>
-        <img src='/images/venue.jpg' />
+        <a href='https://github.com/jsconfcn/ShenJS/issues' target='new'>{{ banner.right | raw }}</a>
       </div>
-    </div>
-  </section>
-  <!-- Banner -->
-  <section class='banner third'>
-    <div class='wrapper'>
-      <h1>{{ banner.third }}</h1> {% include 'partials/_subscribe.html' %}
-      <!-- <a class='button buyticket'>{{ button.content }}<span>{{ button.placeholder }}</span></a> -->
-    </div>
-  </section>
-  <!-- Footer -->
-  <footer id='footer'>
-    {% include 'partials/_footer.html' %}
-  </footer>
-  <!-- JS -->
-  <script src='/assets/scripts.js' type='text/javascript'></script>
-  <!--[if lt IE 9]><script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script><![endif]-->
-  {% if site.gauges %}{% include 'partials/_gauges.html' %}{% endif %} {% if site.ga %}{% include 'partials/_ga.html' %}{% endif %}
-</body>
+    </section>
+    <!-- Speakers -->
+    <section class='section speakers' id='item2'>
+      <div class='title'>
+        <h1>{{ menu.item2.title }}</h1>
+      </div>
+      <ul>
+        <li>
+          <a href='{{ speakers.speaker1.url }}' target='new'>
+            <img src='/images/speakers/1.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker1.name }}</h4>
+                <p>{{ speakers.speaker1.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker2.url }}' target='new'>
+            <img src='/images/speakers/2.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker2.name }}</h4>
+                <p>{{ speakers.speaker2.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker3.url }}' target='new'>
+            <img src='/images/speakers/3.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker3.name }}</h4>
+                <p>{{ speakers.speaker3.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker4.url }}' target='new'>
+            <img src='/images/speakers/4.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker4.name }}</h4>
+                <p>{{ speakers.speaker4.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker5.url }}' target='new'>
+            <img src='/images/speakers/5.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker5.name }}</h4>
+                <p>{{ speakers.speaker5.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker6.url }}' target='new'>
+            <img src='/images/speakers/6.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker6.name }}</h4>
+                <p>{{ speakers.speaker6.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker7.url }}' target='new'>
+            <img src='/images/speakers/7.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker7.name }}</h4>
+                <p>{{ speakers.speaker7.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker8.url }}' target='new'>
+            <img src='/images/speakers/8.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker8.name }}</h4>
+                <p>{{ speakers.speaker8.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker9.url }}' target='new'>
+            <img src='/images/speakers/9.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker9.name }}</h4>
+                <p>{{ speakers.speaker9.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker10.url }}' target='new'>
+            <img src='/images/speakers/10.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker10.name }}</h4>
+                <p>{{ speakers.speaker10.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker11.url }}' target='new'>
+            <img src='/images/speakers/11.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker11.name }}</h4>
+                <p>{{ speakers.speaker11.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker12.url }}' target='new'>
+            <img src='/images/speakers/12.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker12.name }}</h4>
+                <p>{{ speakers.speaker12.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker13.url }}' target='new'>
+            <img src='/images/speakers/13.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker13.name }}</h4>
+                <p>{{ speakers.speaker13.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker14.url }}' target='new'>
+            <img src='/images/speakers/14.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker14.name }}</h4>
+                <p>{{ speakers.speaker14.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker15.url }}' target='new'>
+            <img src='/images/speakers/15.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker15.name }}</h4>
+                <p>{{ speakers.speaker15.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker16.url }}' target='new'>
+            <img src='/images/speakers/16.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker16.name }}</h4>
+                <p>{{ speakers.speaker16.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker17.url }}' target='new'>
+            <img src='/images/speakers/17.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker17.name }}</h4>
+                <p>{{ speakers.speaker17.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker18.url }}' target='new'>
+            <img src='/images/speakers/18.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker18.name }}</h4>
+                <p>{{ speakers.speaker18.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker19.url }}' target='new'>
+            <img src='/images/speakers/19.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker19.name }}</h4>
+                <p>{{ speakers.speaker19.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker20.url }}' target='new'>
+            <img src='/images/speakers/20.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker20.name }}</h4>
+                <p>{{ speakers.speaker20.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+        <li>
+          <a href='{{ speakers.speaker21.url }}' target='new'>
+            <img src='/images/speakers/21.jpg' />
+            <div class='cover'>
+              <div class='info'>
+                <h4>{{ speakers.speaker21.name }}</h4>
+                <p>{{ speakers.speaker21.company }}</p>
+              </div>
+          </a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- Schedule -->
+    <section class='section schedule' id='item3'>
+      <div class='title'>
+        <h1>{{ menu.item3.title }}</h1>
+      </div>
+      <div class='wrapper'>
+        <div class='list day1'>
+          <h2>7/11</h2>
+          <ul>
+            <li>
+              <time>08:15</time>
+              <div>
+                <h4>{{ schedule.section1 }}</h4>
+              </div>
+            </li>
+            <li>
+              <time>09:15</time>
+              <div>
+                <h4>{{ schedule.section2 }}</h4>
+                <p>{{ schedule.host }}</p>
+              </div>
+            </li>
+            <li>
+              <time>09:45</time>
+              <div>
+                <h4>{{ speakers.speaker1.topic }}</h4>
+                <p>{{ speakers.speaker1.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>10:15</time>
+              <div>
+                <h4>{{ speakers.speaker12.topic }}</h4>
+                <p>{{ speakers.speaker12.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>10:45</time>
+              <div>
+                <h4>{{ schedule.section3 }} + {{ schedule.section4 }}</h4>
+              </div>
+            </li>
+            <li>
+              <time>11:00</time>
+              <div>
+                <h4>{{ speakers.speaker14.topic }}</h4>
+                <p>{{ speakers.speaker14.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>11:30</time>
+              <div>
+                <h4>{{ speakers.speaker21.topic }}</h4>
+                <p>{{ speakers.speaker21.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>12:00</time>
+              <div>
+                <h4>{{ schedule.section7 }}</h4>
+              </div>
+            </li>
+            <li>
+              <time>13:30</time>
+              <div>
+                <h4>{{ speakers.speaker13.topic }}</h4>
+                <p>{{ speakers.speaker13.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>14:00</time>
+              <div>
+                <h4>Nodebot session introduction</h4>
+                <p>{{ speakers.speaker18.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>14:30</time>
+              <div>
+                <h4>{{ schedule.section3 }} + {{ schedule.section4 }}</h4>
+              </div>
+            </li>
+            <li>
+              <time>14:50</time>
+              <div>
+                <h4>{{ schedule.section5 }}</h4>
+              </div>
+            </li>
+            <li>
+              <time>15:20</time>
+              <div>
+                <h4>{{ speakers.speaker19.topic }}</h4>
+                <p>{{ speakers.speaker19.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>15:50</time>
+              <div>
+                <h4>{{ speakers.speaker16.topic }}</h4>
+                <p>{{ speakers.speaker16.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>16:20</time>
+              <div>
+                <h4>{{ schedule.section4 }}</h4>
+              </div>
+            </li>
+            <li>
+              <time>16:30</time>
+              <div>
+                <h4>{{ speakers.speaker5.topic }}</h4>
+                <p>{{ speakers.speaker5.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>17:00</time>
+              <div>
+                <h4>{{ speakers.speaker8.topic }}</h4>
+                <p>{{ speakers.speaker8.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>17:30</time>
+              <div>
+                <h4>{{ schedule.section3 }}</h4>
+              </div>
+            </li>
+            <li>
+              <time>19:00</time>
+              <div>
+                <h4>{{ schedule.section6 }}</h4>
+              </div>
+            </li>
+            <li>
+              <time>19:00</time>
+              <div>
+                <h4>{{ speakers.speaker18.topic }}</h4>
+                <p>{{ speakers.speaker18.name }}</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class='list day2'>
+          <h2>7/12</h2>
+          <ul>
+            <li></li>
+            <li>
+              <time>09:15</time>
+              <div>
+                <h4>{{ speakers.speaker20.topic }}</h4>
+                <p>{{ speakers.speaker20.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>09:45</time>
+              <div>
+                <h4>{{ speakers.speaker2.topic }}</h4>
+                <p>{{ speakers.speaker2.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>10:15</time>
+              <div>
+                <h4>{{ schedule.section3 }} + {{ schedule.section4 }}</h4>
+              </div>
+            </li>
+            <li>
+              <time>10:30</time>
+              <div>
+                <h4>{{ speakers.speaker4.topic }}</h4>
+                <p>{{ speakers.speaker4.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>11:00</time>
+              <div>
+                <h4>{{ speakers.speaker15.topic }}</h4>
+                <p>{{ speakers.speaker15.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>11:30</time>
+              <div>
+                <h4>{{ speakers.speaker3.topic }}</h4>
+                <p>{{ speakers.speaker3.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>12:00</time>
+              <div>
+                <h4>{{ schedule.section7 }}</h4>
+              </div>
+            </li>
+            <li>
+              <time>13:30</time>
+              <div>
+                <h4>{{ speakers.speaker7.topic }}</h4>
+                <p>{{ speakers.speaker7.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>14:00</time>
+              <div>
+                <h4>{{ speakers.speaker9.topic }}</h4>
+                <p>{{ speakers.speaker9.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>14:30</time>
+              <div>
+                <h4>{{ schedule.section3 }} + {{ schedule.section4 }}</h4>
+              </div>
+            </li>
+            <li>
+              <time>14:50</time>
+              <div>
+                <h4>{{ schedule.section5 }}</h4>
+              </div>
+            </li>
+            <li>
+              <time>15:20</time>
+              <div>
+                <h4>{{ speakers.speaker17.topic }}</h4>
+                <p>{{ speakers.speaker17.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>15:50</time>
+              <div>
+                <h4>{{ speakers.speaker10.topic }}</h4>
+                <p>{{ speakers.speaker10.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>16:20</time>
+              <div>
+                <h4>{{ schedule.section4 }}</h4>
+              </div>
+            </li>
+            <li>
+              <time>16:30</time>
+              <div>
+                <h4>{{ speakers.speaker6.topic }}</h4>
+                <p>{{ speakers.speaker6.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>17:00</time>
+              <div>
+                <h4>{{ speakers.speaker11.topic }}</h4>
+                <p>{{ speakers.speaker11.name }}</p>
+              </div>
+            </li>
+            <li>
+              <time>17:30</time>
+              <div>
+                <h4>{{ schedule.section3 }}</h4>
+              </div>
+            </li>
+            <li>
+              <time>19:00</time>
+              <div>
+                <h4>{{ schedule.section6 }}</h4>
+              </div>
+            </li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Banner -->
+    <section class='banner second'>
+      <div class='wrapper'>
+        <h1>{{ banner.second }}</h1>
+        <a class='button buyticket' href='http://shenjs2015.eventdove.com/' target='new'>{{ button.content }}</a>
+      </div>
+    </section>
+    <!-- sponsors-->
+    <section class='section sponsors' id='item4'>
+      <div class='title'>
+        <h1>{{ menu.item4.title }}</h1>
+      </div>
+      <div class='wrapper'>
+        <h3>{{ menu.item4.section1 }}</h3>
+        <div class='boss'>
+          <a href='http://wiredcraft.com/' target='new'><img src='/images/sponsors/wiredcraft.png' width='360' /></a>
+        </div>
+        <h3>{{ menu.item4.section2 }}</h3>
+        <div>
+          <a href='http://www.qiniu.com/' target='new'><img src='/images/sponsors/qiniu.png' width='240' /></a>
+          <a href='http://careers.ef.com/cn/categories/technology/' target='new'><img src='/images/sponsors/ef.png' width='150' /></a><br/>
+          <a href='https://www.splunk.com/' target='new'><img src='/images/sponsors/splunk.png' width='180' /></a>
+          <a href='http://www.ucloud.cn/' target='new'><img src='/images/sponsors/ucloud.png' width='200' /></a><br/>
+          <a href='https://www.teambition.com/' target='new' class="c-type"><img src='/images/sponsors/teambition.png' width='160' /></a>
+          <a href='http://www.upyun.com/' target='new' class="c-type"><img src='/images/sponsors/upyun.png' width='160' /></a>
+          <a href='https://bearychat.com/' target='new' class="c-type"><img src='/images/sponsors/bearyinnovative.png' height='90' /></a>
+          <a href='http://www.epam.com/' target='new' class="c-type"><img src='/images/sponsors/epam.png' width='150' /></a>
+          <a href='https://coding.net/' target='new' class="c-type"><img src='/images/sponsors/coding.png' width='160' /></a>
+        </div>
+        <h3>{{ menu.item4.section3 }}</h3>
+        <div class='mediapartner'>
+          <a href='http://segmentfault.com/' target='new'><img src='/images/sponsors/sf.png' width='150' /></a>
+          <a href='https://knewone.com/' target='new'><img src='/images/sponsors/knewone.png' width='150' /></a>
+          <a href='http://www.ituring.com.cn/' target='new'><img src='/images/sponsors/turing.jpg' width='150' /></a>
+          <a href='http://www.broadview.com.cn/' target='new'><img src='/images/sponsors/broadview.png' width='150' /></a>
+          <a href='https://cnodejs.org/' target='new'><img src='/images/sponsors/cnode.png' width='150' /></a>
+          <a href='http://www.ptpress.com.cn/default.aspx' target='new'><img src='/images/sponsors/ptpress.png' width='150' /></a>
+          <a href='https://www.oneapm.com/' target='new'><img src='/images/sponsors/oneapm.png' width='80' /></a>
+        </div>
+        <h3>{{ menu.item4.section4 }}</h3>
+        <div class='supporter'>
+          <a href='http://makeblock.cc' target='new'><img src='/images/sponsors/makeblock.jpg' width='120' /></a>
+          <a href='http://www.jinshuju.net/' target='new'><img src='/images/sponsors/jinshuju.png' width='120' /></a>
+          <a href='https://www.jetbrains.com/' target='new'><img src='/images/sponsors/jetbrains.png' width='120' /></a>
+          <a href='http://www.aliyun.com/' target='new'><img src='/images/sponsors/aliyun.png' width='120' /></a>
+        </div>
+      </div>
+    </section>
+    <!-- Venue -->
+    <section class='section venue' id='item6'>
+      <div class='wrapper'>
+        <div class='left'>
+          <h1>{{ menu.item5.title }}</h1>
+          <h4>{{ venue.address | raw }}</h4>
+          <p>{{ venue.detail }}</p>
+          <a target='new' href='http://qh.vanke.com/'>http://qh.vanke.com/</a>
+        </div>
+        <div class='right'>
+          <img src='/images/venue.jpg' />
+        </div>
+      </div>
+    </section>
+    <!-- Banner -->
+    <section class='banner third'>
+      <div class='wrapper'>
+        <h1>{{ banner.third }}</h1> {% include 'partials/_subscribe.html' %}
+        <!-- <a class='button buyticket'>{{ button.content }}<span>{{ button.placeholder }}</span></a> -->
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id='footer'>
+      {% include 'partials/_footer.html' %}
+    </footer>
+    <!-- JS -->
+    <script src='/assets/scripts.js' type='text/javascript'></script>
+    <!--[if lt IE 9]><script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script><![endif]-->
+    {% if site.gauges %}{% include 'partials/_gauges.html' %}{% endif %} {% if site.ga %}{% include 'partials/_ga.html' %}{% endif %}
+  </body>
 
 </html>
+

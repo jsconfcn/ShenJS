@@ -11,12 +11,20 @@ event:
   venue: 中国深圳
 
 menu:
-  item1: 关于我们
-  item2: 演讲嘉宾
-  item3: 日程安排
-  item4: 赞助商
-  item5: 合作媒体
-  item6: 会场地址
+  item1: 
+   title: 关于我们
+  item2: 
+   title: 演讲嘉宾
+  item3:
+   title: 日程安排
+  item4: 
+   title: 赞助商
+   section1: 主办方
+   section2: 赞助方
+   section3: 合作媒体
+   section4: 特别感谢
+  item5: 
+   title: 会场地址
 
 button:
   content: 购票参会
