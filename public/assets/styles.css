@@ -1393,6 +1393,26 @@ table {
     -o-transform: translate(0, -15%);
     transform: translate(0, -15%); } }
 
+/* Map */
+.iw_poi_title {
+  color: #CC5522;
+  font-size: 14px;
+  font-weight: bold;
+  overflow: hidden;
+  padding-right: 13px;
+  white-space: nowrap; }
+
+.iw_poi_content {
+  font: 12px arial, sans-serif;
+  overflow: visible;
+  padding-top: 4px;
+  white-space: -moz-pre-wrap;
+  word-wrap: break-word; }
+
+#dituContent {
+  width: 100%;
+  height: 350px; }
+
 /* Variables */
 /* Grayscale fix (see https://github.com/sass/libsass/issues/151#issuecomment-33536506) */
 /* General */
@@ -2747,12 +2767,10 @@ input:not([type=submit]), textarea {
         @media only screen and (max-width: 768px) {
           .index-launch .section.venue .wrapper .left {
             margin-bottom: 20px; } }
-      .index-launch .section.venue .wrapper .right {
-        float: right; }
-        .index-launch .section.venue .wrapper .right img {
-          float: left;
-          width: 100%; }
+      .index-launch .section.venue .wrapper .map {
+        float: right;
+        width: 50%; }
       @media only screen and (max-width: 768px) {
-        .index-launch .section.venue .wrapper .left, .index-launch .section.venue .wrapper .right {
+        .index-launch .section.venue .wrapper .left, .index-launch .section.venue .wrapper .map {
           width: 100%;
           text-align: center; } }

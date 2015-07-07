@@ -13,6 +13,7 @@ $banner-height: 90px;
 @import 'layout';
 @import 'fonts';
 @import 'animations';
+@import 'map';
 /* Variables */
 
 $width: 960px;
@@ -1211,15 +1212,12 @@ textarea {
             margin-bottom: $gutter;
           }
         }
-        .right {
+        .map {
           float: right;
-          img {
-            float: left;
-            width: 100%;
-          }
+            width: 50%;
         }
         @include tablet {
-          .left, .right {
+          .left, .map {
             width: 100%;
             text-align: center;
           }
@@ -1228,3 +1226,5 @@ textarea {
     }
   }
 }
+
+
