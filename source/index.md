@@ -200,7 +200,7 @@ venue:
   detail: 广东省深圳市东滨路与临海路交汇处前海深港现代服务业合作区内
 
 footer:
-  qrcode: 扫二维码加入JSConf微信群
+  qrcode: 扫二维码关注JSConf
 
 collection: page
 template: index.html
