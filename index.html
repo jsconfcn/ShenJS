@@ -7,8 +7,8 @@
   <meta http-equiv='Content-Language' content='en'/>
   <meta name='keywords' content='Javascript, Node.js, realtime, JSconf, Shenzhen, China, conference'/>
   <meta name='description' content='今年夏天中国主要的JavaScript会议，我们一起在深圳'/>
-  
-  
+
+
   <!-- Favicons -->
   <!-- <link rel='shortcut icon' href='/assets/favicons/favicon.ico'>
 <link rel='apple-touch-icon' sizes='57x57' href='/assets/favicons/apple-touch-icon-57x57.png'>
@@ -628,6 +628,7 @@
           <a href='http://wiredcraft.com/' target='new'><img src='/images/sponsors/wiredcraft.png' width='300' /></a>
           <a href='http://www.qiniu.com/' target='new'><img src='/images/sponsors/qiniu.png' width='230' /></a>
           <a href='http://careers.ef.com/cn/categories/technology/' target='new'><img src='/images/sponsors/ef.png' width='140' /></a>
+          <a href='#' target='new'><img src='/images/sponsors/yueya.png' width='230' height='120' /></a>
           <br/>
           <a href='https://www.splunk.com/' target='new'><img src='/images/sponsors/splunk.png' width='170' /></a>
           <a href='http://www.ucloud.cn/' target='new'><img src='/images/sponsors/ucloud.png?' width='170' /></a>
@@ -677,7 +678,7 @@
     <!-- Banner -->
     <section class='banner third'>
       <div class='wrapper'>
-        <h1>订阅最新信息</h1> 
+        <h1>订阅最新信息</h1>
 
 
 
@@ -696,7 +697,7 @@
     </section>
     <!-- Footer -->
     <footer id='footer'>
-         
+
 <div class='wrapper'>
   <a href='/code-of-conduct' target="_self">Code Of Conduct</a>
   <a href='http://jsconf.cn' target="new">JSConf.cn</a>
@@ -719,7 +720,7 @@
         addMapControl();//向地图添加控件
         addMarker();//向地图中添加marker
     }
-    
+
     //创建地图函数：
     function createMap(){
         var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
@@ -727,7 +728,7 @@
         map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
         window.map = map;//将map变量存储在全局
     }
-    
+
     //地图事件设置函数：
     function setMapEvent(){
         map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
@@ -735,7 +736,7 @@
         map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
         map.enableKeyboard();//启用键盘上下左右键移动地图
     }
-    
+
     //地图控件添加函数：
     function addMapControl(){
         //向地图中添加缩放控件
@@ -748,7 +749,7 @@
 	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
 	map.addControl(ctrl_sca);
     }
-    
+
     //标注点数组
     var markerArr = [{title:"深圳前海万科企业公馆(特区馆)",content:"Qianhai&nbsp;Vanke&nbsp;Enterprise&nbsp;Dream&nbsp;Park&nbsp;-&nbsp;Special&nbsp;Zone&nbsp;Mansion",point:"113.909415|22.523434",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
 		 ];
@@ -770,7 +771,7 @@
                         color:"#333",
                         cursor:"pointer"
             });
-			
+
 			(function(){
 				var index = i;
 				var _iw = createInfoWindow(i);
@@ -805,7 +806,7 @@
         var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
         return icon;
     }
-    
+
     initMap();//创建和初始化地图
 </script>
     <!--[if lt IE 9]><script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script><![endif]-->
@@ -821,7 +822,7 @@
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(t, s);
   })();
-</script> 
+</script>
   </body>
 </html>
 

@@ -2689,13 +2689,14 @@ input:not([type=submit]), textarea {
             width: 100%; } }
     .index-launch .section.sponsors div {
       text-align: center;
+      margin-top: 40px;
       width: 100%; }
       .index-launch .section.sponsors div a {
         display: inline-block;
         height: 120px;
         position: relative;
         padding: 10px 8px;
-        width: 300px; }
+        width: 200px; }
         .index-launch .section.sponsors div a img {
           bottom: 0px;
           position: absolute;
