@@ -1,4 +1,4 @@
-Sitemap: http://2015.jsconf.cn/sitemap.xml
+Sitemap: http://2015.jsconfchina.com/sitemap.xml
 
 User-agent: *
 Disallow: /images/

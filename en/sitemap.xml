@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+
   <url>
-    <loc>http://2015.jsconf.cn/</loc>
+    <loc>http://2015.jsconfchina.com/</loc>
     <lastmod>2015-07-08</lastmod>
   </url>
   <url>
-    <loc>http://2015.jsconf.cn/about</loc>
+    <loc>http://2015.jsconfchina.com/about</loc>
     <lastmod>2015-07-08</lastmod>
   </url>
   <url>
-    <loc>http://2015.jsconf.cn/blog</loc>
+    <loc>http://2015.jsconfchina.com/blog</loc>
     <lastmod>2015-07-08</lastmod>
   </url>
   <url>
-    <loc>http://2015.jsconf.cn/privacy</loc>
+    <loc>http://2015.jsconfchina.com/privacy</loc>
     <lastmod>2015-07-08</lastmod>
   </url>
   <url>
-    <loc>http://2015.jsconf.cn/tos</loc>
+    <loc>http://2015.jsconfchina.com/tos</loc>
     <lastmod>2015-07-08</lastmod>
   </url>
 </urlset>
